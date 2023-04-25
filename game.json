@@ -1840,11 +1840,11 @@
               "WasJumpKeyReleased": false
             },
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 2600,
               "deceleration": 20000,
               "maxSpeed": 1000,
-              "name": "PlatformerObject",
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "gravity": 3150,
               "jumpSpeed": 1500,
               "jumpSustainTime": 0.22,
@@ -3272,9 +3272,9 @@
           "effects": [],
           "behaviors": [
             {
-              "cost": 2,
               "name": "PathfindingObstacle",
               "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+              "cost": 2,
               "impassable": true
             },
             {
@@ -3556,9 +3556,9 @@
           "effects": [],
           "behaviors": [
             {
-              "cost": 0,
               "name": "PathfindingObstacle",
               "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+              "cost": 0,
               "impassable": true
             },
             {
@@ -3947,6 +3947,8 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -3957,12 +3959,12 @@
               "gridOffsetX": 0,
               "gridOffsetY": 0,
               "maxSpeed": 200,
-              "name": "Pathfinding",
               "rotateObject": false,
-              "smoothingMaxCellGap": 1,
-              "type": "PathfindingBehavior::PathfindingBehavior"
+              "smoothingMaxCellGap": 1
             },
             {
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -3972,9 +3974,7 @@
               "ignoreDefaultControls": true,
               "maxSpeed": 200,
               "movementAngleOffset": 0,
-              "name": "TopDownMovement",
               "rotateObject": false,
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "viewpoint": "TopDown"
             }
           ],
@@ -5807,6 +5807,12 @@
             {
               "folded": true,
               "name": "dead",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "justFlipped",
               "type": "boolean",
               "value": false
             }
@@ -7761,7 +7767,6 @@
               "comment2": ""
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7772,32 +7777,30 @@
                     "Player",
                     "\"Attack\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "AnimationEnded2"
+                  },
+                  "parameters": [
+                    "Player"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
-              "actions": [],
-              "events": [
+              "actions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "AnimationEnded2"
-                      },
-                      "parameters": [
-                        "Player"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetAnimationName"
-                      },
-                      "parameters": [
-                        "Player",
-                        "\"Idle\""
-                      ]
-                    }
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"Idle\""
                   ]
                 }
               ]
@@ -7820,7 +7823,6 @@
               "actions": [],
               "events": [
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -7846,6 +7848,12 @@
                             "Player",
                             "PlatformerObject"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
                         }
                       ],
                       "actions": [
@@ -7871,6 +7879,12 @@
                             "Player",
                             "PlatformerObject"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
                         }
                       ],
                       "actions": [
@@ -7896,6 +7910,12 @@
                             "Player",
                             "PlatformerObject"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
                         }
                       ],
                       "actions": [
@@ -7913,7 +7933,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -7940,6 +7959,12 @@
                             "Player",
                             "PlatformerObject"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
                         }
                       ],
                       "actions": [
@@ -8171,12 +8196,17 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "AnimationName"
+                    "value": "AnimationEnded2"
                   },
                   "parameters": [
-                    "Gorilla",
-                    "\"Attack\""
+                    "Gorilla"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [],
@@ -8186,52 +8216,11 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "AnimationEnded2"
-                      },
-                      "parameters": [
-                        "Gorilla"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetAnimationName"
+                        "value": "AnimationName"
                       },
                       "parameters": [
                         "Gorilla",
                         "\"Idle\""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "AnimationName"
-                  },
-                  "parameters": [
-                    "Gorilla",
-                    "\"Idle\""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "AnimationEnded2"
-                      },
-                      "parameters": [
-                        "Gorilla"
                       ]
                     }
                   ],
@@ -8243,6 +8232,31 @@
                       "parameters": [
                         "Gorilla",
                         "\"Walk\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "Gorilla",
+                        "\"Attack\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Gorilla",
+                        "\"Idle\""
                       ]
                     }
                   ]
@@ -8374,12 +8388,6 @@
                       ]
                     }
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
                 }
               ],
               "actions": [],
@@ -8610,7 +8618,6 @@
               "comment2": ""
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8621,32 +8628,30 @@
                     "Bat",
                     "\"Attack\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "AnimationEnded2"
+                  },
+                  "parameters": [
+                    "Bat"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
-              "actions": [],
-              "events": [
+              "actions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "AnimationEnded2"
-                      },
-                      "parameters": [
-                        "Bat"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetAnimationName"
-                      },
-                      "parameters": [
-                        "Bat",
-                        "\"Fly\""
-                      ]
-                    }
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "\"Fly\""
                   ]
                 }
               ]
@@ -8844,7 +8849,6 @@
               "comment2": ""
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8854,6 +8858,17 @@
                   "parameters": [
                     "Bat",
                     "\"Fly\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "Player",
+                    "200",
+                    ""
                   ]
                 },
                 {
@@ -8868,121 +8883,23 @@
                   ]
                 }
               ],
-              "actions": [],
-              "events": [
+              "actions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "FlippedX"
-                      },
-                      "parameters": [
-                        "Bat"
-                      ]
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::ForEach",
-                      "object": "Bat",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "Raycast"
-                          },
-                          "parameters": [
-                            "Player",
-                            "Bat.CenterX()",
-                            "Bat.CenterY()",
-                            "180",
-                            "450",
-                            "",
-                            "",
-                            ""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "Bat",
-                            "\"Attack\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ResetObjectTimer"
-                          },
-                          "parameters": [
-                            "Bat",
-                            "\"canBite\""
-                          ]
-                        }
-                      ]
-                    }
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "\"Attack\""
                   ]
                 },
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "FlippedX"
-                      },
-                      "parameters": [
-                        "Bat"
-                      ]
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::ForEach",
-                      "object": "Bat",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "Raycast"
-                          },
-                          "parameters": [
-                            "Player",
-                            "Bat.CenterX()",
-                            "Bat.CenterY()",
-                            "0",
-                            "450",
-                            "",
-                            "",
-                            ""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "Bat",
-                            "\"Attack\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ResetObjectTimer"
-                          },
-                          "parameters": [
-                            "Bat",
-                            "\"canBite\""
-                          ]
-                        }
-                      ]
-                    }
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "\"canBite\""
                   ]
                 }
               ]
@@ -8991,9 +8908,9 @@
           "parameters": []
         },
         {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
+          "colorB": 38,
+          "colorG": 29,
+          "colorR": 29,
           "creationTime": 0,
           "folded": true,
           "name": "Spider",
@@ -9025,6 +8942,106 @@
               ]
             },
             {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "🎦 Animation",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimationEnded2"
+                  },
+                  "parameters": [
+                    "Spider"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "Spider",
+                        "\"Idle\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Spider",
+                        "\"Walk\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "Spider",
+                        "\"Attack\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Spider",
+                        "\"Idle\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "🏃‍♂️ Movement",
+              "comment2": ""
+            },
+            {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -9091,6 +9108,20 @@
               ]
             },
             {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "🔄️ Orientation",
+              "comment2": ""
+            },
+            {
+              "folded": true,
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "Spider",
               "conditions": [
@@ -9146,46 +9177,29 @@
                         "Spider",
                         ""
                       ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "Spider",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
+                    },
                     {
                       "type": {
-                        "value": "CollisionPoint"
+                        "value": "SetObjectVariableAsBoolean"
                       },
                       "parameters": [
-                        "wall",
-                        "Spider.PointX(\"WallCheck\")",
-                        "Spider.PointY(\"WallCheck\")"
+                        "Spider",
+                        "justFlipped",
+                        "True"
                       ]
                     },
                     {
                       "type": {
-                        "value": "CollisionPoint"
+                        "value": "DebuggerTools::ConsoleLog"
                       },
                       "parameters": [
-                        "jungle_wall",
-                        "Spider.PointX(\"BorderCheck\")",
-                        "Spider.PointY(\"BorderCheck\")"
+                        "\"Spider Flip: No\" ",
+                        "",
+                        ""
                       ]
                     }
                   ]
-                }
-              ],
-              "actions": [],
-              "events": [
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -9196,6 +9210,16 @@
                       },
                       "parameters": [
                         "Spider"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Spider",
+                        "justFlipped",
+                        "False"
                       ]
                     }
                   ],
@@ -9208,21 +9232,73 @@
                         "Spider",
                         "yes"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"Spider Flip: Yes\" ",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Spider",
+                        "justFlipped",
+                        "False"
+                      ]
                     }
                   ]
                 }
               ]
             },
             {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "⚔️ Attack",
+              "comment2": ""
+            },
+            {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "AnimationName"
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "Player.Y()",
+                    "<=",
+                    "Spider.PointY(\"AttackCheck\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
                   },
                   "parameters": [
                     "Spider",
-                    "\"Walk\""
+                    "Player",
+                    "300",
+                    ""
                   ]
                 },
                 {
@@ -9244,69 +9320,31 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": true,
                         "value": "FlippedX"
                       },
                       "parameters": [
                         "Spider"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "Player.X()",
+                        "<=",
+                        "Spider.PointX(\"AttackCheck\")"
+                      ]
                     }
                   ],
-                  "actions": [],
-                  "events": [
+                  "actions": [
                     {
-                      "type": "BuiltinCommonInstructions::ForEach",
-                      "object": "Spider",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Or"
-                          },
-                          "parameters": [],
-                          "subInstructions": [
-                            {
-                              "type": {
-                                "value": "Raycast"
-                              },
-                              "parameters": [
-                                "Player",
-                                "Spider.PointX(\"AttackCheck\")",
-                                "Spider.PointY(\"AttackCheck\")",
-                                "180",
-                                "400",
-                                "",
-                                "",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Raycast"
-                              },
-                              "parameters": [
-                                "Player",
-                                "Spider.PointX(\"WallCheck\")",
-                                "Spider.PointY(\"WallCheck\")",
-                                "270",
-                                "300",
-                                "",
-                                "",
-                                ""
-                              ]
-                            }
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "Spider",
-                            "\"Attack\""
-                          ]
-                        }
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Spider",
+                        "\"Attack\""
                       ]
                     }
                   ]
@@ -9316,68 +9354,47 @@
                   "conditions": [
                     {
                       "type": {
+                        "inverted": true,
                         "value": "FlippedX"
                       },
                       "parameters": [
                         "Spider"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "Player.X()",
+                        ">=",
+                        "Spider.PointX(\"AttackCheck\")"
+                      ]
                     }
                   ],
-                  "actions": [],
-                  "events": [
+                  "actions": [
                     {
-                      "type": "BuiltinCommonInstructions::ForEach",
-                      "object": "Spider",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Or"
-                          },
-                          "parameters": [],
-                          "subInstructions": [
-                            {
-                              "type": {
-                                "value": "Raycast"
-                              },
-                              "parameters": [
-                                "Player",
-                                "Spider.PointX(\"AttackCheck\")",
-                                "Spider.PointY(\"AttackCheck\")",
-                                "0",
-                                "400",
-                                "",
-                                "",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Raycast"
-                              },
-                              "parameters": [
-                                "Player",
-                                "Spider.PointX(\"WallCheck\")",
-                                "Spider.PointY(\"WallCheck\")",
-                                "270",
-                                "300",
-                                "",
-                                "",
-                                ""
-                              ]
-                            }
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "Spider",
-                            "\"Attack\""
-                          ]
-                        }
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Spider",
+                        "\"Attack\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Spider",
+                        "\"cooldown\""
                       ]
                     }
                   ]
@@ -9385,6 +9402,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -9419,163 +9437,49 @@
                       "parameters": []
                     }
                   ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "FlippedX"
-                          },
-                          "parameters": [
-                            "Spider"
-                          ]
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Create"
-                              },
-                              "parameters": [
-                                "",
-                                "Spider_Egg",
-                                "Spider.PointX(\"AttackHole\")",
-                                "Spider.PointY(\"AttackHole\")",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ChangePlan"
-                              },
-                              "parameters": [
-                                "Spider_Egg",
-                                "=",
-                                "120"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Physics2::ApplyForce"
-                              },
-                              "parameters": [
-                                "Spider_Egg",
-                                "Physics2",
-                                "RandomFloatInRange(-300,100)",
-                                "-350",
-                                "",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ResetObjectTimer"
-                              },
-                              "parameters": [
-                                "Spider_Egg",
-                                "\"Explote\""
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "FlippedX"
-                          },
-                          "parameters": [
-                            "Spider"
-                          ]
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Create"
-                              },
-                              "parameters": [
-                                "",
-                                "Spider_Egg",
-                                "Spider.PointX(\"AttackHole\")",
-                                "Spider.PointY(\"AttackHole\")",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ChangePlan"
-                              },
-                              "parameters": [
-                                "Spider_Egg",
-                                "=",
-                                "120"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Physics2::ApplyForce"
-                              },
-                              "parameters": [
-                                "Spider_Egg",
-                                "Physics2",
-                                "RandomFloatInRange(-100,300)",
-                                "-350",
-                                "",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ResetObjectTimer"
-                              },
-                              "parameters": [
-                                "Spider_Egg",
-                                "\"Explote\""
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "AnimationEnded2"
-                      },
-                      "parameters": [
-                        "Spider"
-                      ]
-                    }
-                  ],
                   "actions": [
                     {
                       "type": {
-                        "value": "SetAnimationName"
+                        "value": "Create"
                       },
                       "parameters": [
-                        "Spider",
-                        "\"Idle\""
+                        "",
+                        "Spider_Egg",
+                        "Spider.PointX(\"AttackHole\")",
+                        "Spider.PointY(\"AttackHole\")",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Spider_Egg",
+                        "=",
+                        "120"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Physics2::ApplyForce"
+                      },
+                      "parameters": [
+                        "Spider_Egg",
+                        "Physics2",
+                        "(Player.CenterX() - Spider.CenterX())*RandomFloatInRange(0.5,1.5)",
+                        "-350",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Spider_Egg",
+                        "\"Explote\""
                       ]
                     }
                   ]
@@ -9583,45 +9487,75 @@
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "AnimationName"
-                  },
-                  "parameters": [
-                    "Spider",
-                    "\"Idle\""
-                  ]
-                }
-              ],
-              "actions": [],
+              "colorB": 38,
+              "colorG": 29,
+              "colorR": 29,
+              "creationTime": 0,
+              "folded": true,
+              "name": "Spider Ball",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Spider_Egg",
                   "conditions": [
                     {
                       "type": {
-                        "value": "AnimationEnded2"
+                        "value": "CollisionNP"
                       },
                       "parameters": [
-                        "Spider"
+                        "Spider_Egg",
+                        "wall",
+                        "",
+                        "",
+                        ""
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "SetAnimationName"
+                        "value": "ActivateBehavior"
                       },
                       "parameters": [
-                        "Spider",
-                        "\"Walk\""
+                        "Spider_Egg",
+                        "Physics2",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Spider_Egg",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Spider_Egg",
+                        "\"Explote\"",
+                        ">=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Spider_Egg",
+                        ""
                       ]
                     }
                   ]
                 }
-              ]
+              ],
+              "parameters": []
             }
           ],
           "parameters": []
@@ -9631,6 +9565,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "disabled": true,
           "folded": true,
           "name": "Monster",
           "source": "",
@@ -9817,77 +9752,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
-          "name": "Spider Ball",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "Spider_Egg",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Spider_Egg",
-                    "wall",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ActivateBehavior"
-                  },
-                  "parameters": [
-                    "Spider_Egg",
-                    "Physics2",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "Spider_Egg",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CompareObjectTimer"
-                  },
-                  "parameters": [
-                    "Spider_Egg",
-                    "\"Explote\"",
-                    ">=",
-                    "3"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Spider_Egg",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
+          "disabled": true,
           "folded": true,
           "name": "Player Death",
           "source": "",
@@ -11426,13 +11291,7 @@
                     "",
                     ""
                   ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
+                },
                 {
                   "type": {
                     "value": "ClampCamera"
