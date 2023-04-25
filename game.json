@@ -1602,7 +1602,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.2203832250680638,
+        "zoomFactor": 0.15301883837859886,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1840,15 +1840,15 @@
               "WasJumpKeyReleased": false
             },
             {
+              "acceleration": 2600,
+              "deceleration": 20000,
+              "maxSpeed": 1000,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
-              "acceleration": 2501,
-              "deceleration": 10502,
               "gravity": 3150,
               "jumpSpeed": 1500,
               "jumpSustainTime": 0.22,
               "maxFallingSpeed": 2480,
-              "maxSpeed": 900,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": true,
               "canGrabWithoutMoving": true,
@@ -1925,7 +1925,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pi0.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -1961,7 +1967,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pi1.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -1997,7 +2009,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pi2.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2033,7 +2051,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pi3.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2082,7 +2106,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pw0.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2118,7 +2148,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pw1.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2154,7 +2190,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pw2.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2190,7 +2232,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pw3.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2226,7 +2274,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pw4.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2262,7 +2316,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pw5.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2298,7 +2358,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pw6.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2334,7 +2400,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pw7.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2383,7 +2455,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pj0.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2419,7 +2497,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pj12.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2455,7 +2539,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pj22.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2491,7 +2581,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pj52.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2540,7 +2636,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pj32.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2576,7 +2678,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pj42.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2624,7 +2732,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pa0.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2660,7 +2774,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pa3.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2696,7 +2816,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pa4.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2732,7 +2858,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pa5.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -2768,7 +2900,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pa6.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "BatTarget",
+                          "x": 72,
+                          "y": 103
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 127.5,
@@ -3134,9 +3272,9 @@
           "effects": [],
           "behaviors": [
             {
+              "cost": 2,
               "name": "PathfindingObstacle",
               "type": "PathfindingBehavior::PathfindingObstacleBehavior",
-              "cost": 2,
               "impassable": true
             },
             {
@@ -3418,9 +3556,9 @@
           "effects": [],
           "behaviors": [
             {
+              "cost": 0,
               "name": "PathfindingObstacle",
               "type": "PathfindingBehavior::PathfindingObstacleBehavior",
-              "cost": 2,
               "impassable": true
             },
             {
@@ -3642,14 +3780,7 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [
-            {
-              "name": "PathfindingObstacle",
-              "type": "PathfindingBehavior::PathfindingObstacleBehavior",
-              "cost": 1,
-              "impassable": false
-            }
-          ],
+          "behaviors": [],
           "animations": [
             {
               "name": "wallTile0",
@@ -3816,40 +3947,35 @@
           "effects": [],
           "behaviors": [
             {
-              "name": "Pathfinding",
-              "type": "PathfindingBehavior::PathfindingBehavior",
-              "acceleration": 600,
+              "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
               "angularMaxSpeed": 180,
               "cellHeight": 20,
               "cellWidth": 20,
-              "extraBorder": 20,
+              "extraBorder": 0,
               "gridOffsetX": 0,
               "gridOffsetY": 0,
-              "maxSpeed": 300,
+              "maxSpeed": 200,
+              "name": "Pathfinding",
               "rotateObject": false,
-              "smoothingMaxCellGap": 1
+              "smoothingMaxCellGap": 1,
+              "type": "PathfindingBehavior::PathfindingBehavior"
             },
             {
-              "name": "PlatformerObject",
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
-              "acceleration": 1500,
-              "canGoDownFromJumpthru": true,
-              "canGrabPlatforms": false,
-              "canGrabWithoutMoving": true,
-              "deceleration": 1500,
-              "gravity": 0,
+              "acceleration": 400,
+              "allowDiagonals": true,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "customIsometryAngle": 30,
+              "deceleration": 800,
               "ignoreDefaultControls": true,
-              "jumpSpeed": 600,
-              "jumpSustainTime": 0.2,
-              "ladderClimbingSpeed": 150,
-              "maxFallingSpeed": 700,
-              "maxSpeed": 250,
-              "slopeMaxAngle": 60,
-              "useLegacyTrajectory": false,
-              "xGrabTolerance": 10,
-              "yGrabOffset": 0
+              "maxSpeed": 200,
+              "movementAngleOffset": 0,
+              "name": "TopDownMovement",
+              "rotateObject": false,
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "viewpoint": "TopDown"
             }
           ],
           "animations": [
@@ -3867,8 +3993,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 83,
+                        "y": 72
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -3903,8 +4029,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 83,
+                        "y": 72
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -3939,8 +4065,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 83,
+                        "y": 72
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -3987,8 +4113,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 83,
+                        "y": 72
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -4023,8 +4149,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 83,
+                        "y": 72
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -4059,8 +4185,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 83,
+                        "y": 72
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -4095,8 +4221,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 83,
+                        "y": 72
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -4131,8 +4257,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 83,
+                        "y": 72
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -4179,8 +4305,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 83,
+                        "y": 72
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -4215,8 +4341,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 83,
+                        "y": 72
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -4251,8 +4377,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 83,
+                        "y": 72
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -4287,8 +4413,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 83,
+                        "y": 72
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -4341,6 +4467,12 @@
               "name": "canPunch",
               "type": "boolean",
               "value": true
+            },
+            {
+              "folded": true,
+              "name": "justFlipped",
+              "type": "boolean",
+              "value": false
             }
           ],
           "effects": [],
@@ -7606,9 +7738,9 @@
       ],
       "events": [
         {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
+          "colorB": 38,
+          "colorG": 29,
+          "colorR": 29,
           "creationTime": 0,
           "folded": true,
           "name": "Player",
@@ -7616,31 +7748,20 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "x"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetAnimationName"
-                  },
-                  "parameters": [
-                    "Player",
-                    "\"Attack\""
-                  ]
-                }
-              ]
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "🎦 Animation",
+              "comment2": ""
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7682,6 +7803,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7791,6 +7913,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -7832,92 +7955,162 @@
                       ]
                     }
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "🔄️ Orientation",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
-                      },
-                      "parameters": [
-                        "Player",
-                        "PlatformerObject",
-                        "\"Left\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "FlipX"
-                      },
-                      "parameters": [
-                        "Player",
-                        "yes"
-                      ]
-                    }
+                  "type": {
+                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject",
+                    "\"Left\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlipX"
+                  },
+                  "parameters": [
+                    "Player",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject",
+                    "\"Right\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlipX"
+                  },
+                  "parameters": [
+                    "Player",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "⚔️ Attack",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "x"
                   ]
                 },
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
-                      },
-                      "parameters": [
-                        "Player",
-                        "PlatformerObject",
-                        "\"Right\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "FlipX"
-                      },
-                      "parameters": [
-                        "Player",
-                        "no"
-                      ]
-                    }
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"Attack\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "🔊 Sound Effect",
+              "comment2": ""
+            },
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsJumping"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject"
                   ]
                 },
                 {
-                  "disabled": true,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::IsJumping"
-                      },
-                      "parameters": [
-                        "Player",
-                        "PlatformerObject"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "Jump.wav",
-                        "",
-                        "",
-                        ""
-                      ]
-                    }
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "Jump.wav",
+                    "",
+                    "",
+                    ""
                   ]
                 }
               ]
@@ -7926,10 +8119,11 @@
           "parameters": []
         },
         {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
+          "colorB": 38,
+          "colorG": 29,
+          "colorR": 29,
           "creationTime": 0,
+          "folded": true,
           "name": "Gorilla",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8334,7 +8528,7 @@
                         "value": "BuiltinCommonInstructions::CompareNumbers"
                       },
                       "parameters": [
-                        "Player.CenterX()",
+                        "Player.X()",
                         ">=",
                         "Gorilla.PointX(\"AttackCheck\")"
                       ]
@@ -8369,7 +8563,7 @@
                         "value": "BuiltinCommonInstructions::CompareNumbers"
                       },
                       "parameters": [
-                        "Player.CenterX()",
+                        "Player.X()",
                         "<=",
                         "Gorilla.PointX(\"AttackCheck\")"
                       ]
@@ -8383,6 +8577,410 @@
                       "parameters": [
                         "Gorilla",
                         "\"Attack\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 38,
+          "colorG": 29,
+          "colorR": 29,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Bat",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "🎦 Animation",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimationName"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "\"Attack\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimationEnded2"
+                      },
+                      "parameters": [
+                        "Bat"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Bat",
+                        "\"Fly\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "🏃‍♂️ Movement & 🔄️ Orientation",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "Player",
+                    "1000",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Bat",
+                  "conditions": [],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "Player.CenterX()",
+                            ">",
+                            "Bat.CenterX()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "FlipX"
+                          },
+                          "parameters": [
+                            "Bat",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TopDownMovementBehavior::SimulateRightKey"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "TopDownMovement"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "Player.CenterX()",
+                            "<",
+                            "Bat.CenterX()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "FlipX"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "yes"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TopDownMovementBehavior::SimulateLeftKey"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "TopDownMovement"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "Player.CenterY()",
+                            "<",
+                            "Bat.CenterY()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TopDownMovementBehavior::SimulateUpKey"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "TopDownMovement"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "Player.CenterY()",
+                            ">",
+                            "Bat.CenterY()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TopDownMovementBehavior::SimulateDownKey"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "TopDownMovement"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SeparateFromObjects"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "wall",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "⚔️ Attack",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimationName"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "\"Fly\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "\"canBite\"",
+                    ">",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "FlippedX"
+                      },
+                      "parameters": [
+                        "Bat"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "Bat",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Raycast"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Bat.CenterX()",
+                            "Bat.CenterY()",
+                            "180",
+                            "450",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetAnimationName"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "\"Attack\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "\"canBite\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "FlippedX"
+                      },
+                      "parameters": [
+                        "Bat"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "Bat",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Raycast"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Bat.CenterX()",
+                            "Bat.CenterY()",
+                            "0",
+                            "450",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetAnimationName"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "\"Attack\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Bat",
+                            "\"canBite\""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -9034,287 +9632,6 @@
           "colorR": 74,
           "creationTime": 0,
           "folded": true,
-          "name": "Bat",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "AnimationName"
-                  },
-                  "parameters": [
-                    "Bat",
-                    "\"Attack\""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "AnimationEnded2"
-                      },
-                      "parameters": [
-                        "Bat"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetAnimationName"
-                      },
-                      "parameters": [
-                        "Bat",
-                        "\"Fly\""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "AnimationName"
-                  },
-                  "parameters": [
-                    "Bat",
-                    "\"Fly\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CompareObjectTimer"
-                  },
-                  "parameters": [
-                    "Bat",
-                    "\"canBite\"",
-                    ">",
-                    "2"
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "FlippedX"
-                      },
-                      "parameters": [
-                        "Bat"
-                      ]
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::ForEach",
-                      "object": "Bat",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "Raycast"
-                          },
-                          "parameters": [
-                            "Player",
-                            "Bat.CenterX()",
-                            "Bat.CenterY()",
-                            "180",
-                            "450",
-                            "",
-                            "",
-                            ""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "Bat",
-                            "\"Attack\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ResetObjectTimer"
-                          },
-                          "parameters": [
-                            "Bat",
-                            "\"canBite\""
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "FlippedX"
-                      },
-                      "parameters": [
-                        "Bat"
-                      ]
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::ForEach",
-                      "object": "Bat",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "Raycast"
-                          },
-                          "parameters": [
-                            "Player",
-                            "Bat.CenterX()",
-                            "Bat.CenterY()",
-                            "0",
-                            "450",
-                            "",
-                            "",
-                            ""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "Bat",
-                            "\"Attack\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ResetObjectTimer"
-                          },
-                          "parameters": [
-                            "Bat",
-                            "\"canBite\""
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Distance"
-                  },
-                  "parameters": [
-                    "Bat",
-                    "Player",
-                    "1500",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PathfindingBehavior::SetDestination"
-                  },
-                  "parameters": [
-                    "Bat",
-                    "Pathfinding",
-                    "Player.X()",
-                    "Player.CenterX()",
-                    "Player.CenterY()"
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PosX"
-                      },
-                      "parameters": [
-                        "Player",
-                        ">",
-                        "Bat.X()"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "FlipX"
-                      },
-                      "parameters": [
-                        "Bat",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PosX"
-                      },
-                      "parameters": [
-                        "Player",
-                        "<",
-                        "Bat.X()"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "FlipX"
-                      },
-                      "parameters": [
-                        "Bat",
-                        "yes"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "folded": true,
           "name": "Monster",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9635,6 +9952,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Level Genetarion",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -11050,6 +11368,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Camera",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -11212,6 +11531,10 @@
         {
           "name": "SmoothCamera",
           "type": "SmoothCamera::SmoothCamera"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         }
       ]
     },
