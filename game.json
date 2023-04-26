@@ -1927,9 +1927,14 @@
                       "image": "pi0.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -1969,9 +1974,14 @@
                       "image": "pi1.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2011,9 +2021,14 @@
                       "image": "pi2.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2053,9 +2068,14 @@
                       "image": "pi3.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2108,9 +2128,14 @@
                       "image": "pw0.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2150,9 +2175,14 @@
                       "image": "pw1.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2192,9 +2222,14 @@
                       "image": "pw2.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2234,9 +2269,14 @@
                       "image": "pw3.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2276,9 +2316,14 @@
                       "image": "pw4.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2318,9 +2363,14 @@
                       "image": "pw5.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2360,9 +2410,14 @@
                       "image": "pw6.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2402,9 +2457,14 @@
                       "image": "pw7.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2457,9 +2517,14 @@
                       "image": "pj0.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2499,9 +2564,14 @@
                       "image": "pj12.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2541,9 +2611,14 @@
                       "image": "pj22.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2583,9 +2658,14 @@
                       "image": "pj52.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2638,9 +2718,14 @@
                       "image": "pj32.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2680,9 +2765,14 @@
                       "image": "pj42.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2734,9 +2824,14 @@
                       "image": "pa0.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2776,9 +2871,14 @@
                       "image": "pa3.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2818,9 +2918,14 @@
                       "image": "pa4.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2860,9 +2965,14 @@
                       "image": "pa5.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -2902,9 +3012,14 @@
                       "image": "pa6.png",
                       "points": [
                         {
-                          "name": "BatTarget",
-                          "x": 72,
+                          "name": "Head",
+                          "x": 127.5,
                           "y": 103
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -3942,6 +4057,18 @@
               "name": "dead",
               "type": "boolean",
               "value": false
+            },
+            {
+              "folded": true,
+              "name": "lastX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "lastY",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -4499,6 +4626,174 @@
             }
           ],
           "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "gorilla\\gi0.png",
+                      "points": [
+                        {
+                          "name": "AttackCheck",
+                          "x": 300.5,
+                          "y": 433
+                        },
+                        {
+                          "name": "WallCheck",
+                          "x": 108.5,
+                          "y": 337.5
+                        },
+                        {
+                          "name": "BorderCheck",
+                          "x": 107.5,
+                          "y": 538.5
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 299,
+                        "y": 224
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 211,
+                            "y": 116
+                          },
+                          {
+                            "x": 474,
+                            "y": 116
+                          },
+                          {
+                            "x": 474,
+                            "y": 448
+                          },
+                          {
+                            "x": 211,
+                            "y": 448
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "gorilla\\gi1.png",
+                      "points": [
+                        {
+                          "name": "AttackCheck",
+                          "x": 300.5,
+                          "y": 433
+                        },
+                        {
+                          "name": "WallCheck",
+                          "x": 108.5,
+                          "y": 337.5
+                        },
+                        {
+                          "name": "BorderCheck",
+                          "x": 107.5,
+                          "y": 538.5
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 299,
+                        "y": 224
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 211,
+                            "y": 116
+                          },
+                          {
+                            "x": 474,
+                            "y": 116
+                          },
+                          {
+                            "x": 474,
+                            "y": 448
+                          },
+                          {
+                            "x": 211,
+                            "y": 448
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "gorilla\\gi2.png",
+                      "points": [
+                        {
+                          "name": "AttackCheck",
+                          "x": 300.5,
+                          "y": 433
+                        },
+                        {
+                          "name": "WallCheck",
+                          "x": 108.5,
+                          "y": 337.5
+                        },
+                        {
+                          "name": "BorderCheck",
+                          "x": 107.5,
+                          "y": 538.5
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 299,
+                        "y": 224
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 211,
+                            "y": 116
+                          },
+                          {
+                            "x": 474,
+                            "y": 116
+                          },
+                          {
+                            "x": 474,
+                            "y": 448
+                          },
+                          {
+                            "x": 211,
+                            "y": 448
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "name": "Attack",
               "useMultipleDirections": false,
@@ -5408,174 +5703,6 @@
               ]
             },
             {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "gorilla\\gi0.png",
-                      "points": [
-                        {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 299,
-                        "y": 224
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 211,
-                            "y": 116
-                          },
-                          {
-                            "x": 474,
-                            "y": 116
-                          },
-                          {
-                            "x": 474,
-                            "y": 448
-                          },
-                          {
-                            "x": 211,
-                            "y": 448
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "gorilla\\gi1.png",
-                      "points": [
-                        {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 299,
-                        "y": 224
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 211,
-                            "y": 116
-                          },
-                          {
-                            "x": 474,
-                            "y": 116
-                          },
-                          {
-                            "x": 474,
-                            "y": 448
-                          },
-                          {
-                            "x": 211,
-                            "y": 448
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "gorilla\\gi2.png",
-                      "points": [
-                        {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 299,
-                        "y": 224
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 211,
-                            "y": 116
-                          },
-                          {
-                            "x": 474,
-                            "y": 116
-                          },
-                          {
-                            "x": 474,
-                            "y": 448
-                          },
-                          {
-                            "x": 211,
-                            "y": 448
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
               "name": "Walk",
               "useMultipleDirections": false,
               "directions": [
@@ -5841,6 +5968,189 @@
             }
           ],
           "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "spider\\si0.png",
+                      "points": [
+                        {
+                          "name": "AttackCheck",
+                          "x": 224.5,
+                          "y": 196
+                        },
+                        {
+                          "name": "BorderCheck",
+                          "x": 385,
+                          "y": 251
+                        },
+                        {
+                          "name": "WallCheck",
+                          "x": 385,
+                          "y": 144
+                        },
+                        {
+                          "name": "AttackHole",
+                          "x": 196,
+                          "y": 47.5
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 223.5,
+                        "y": 100.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 38,
+                        "y": 207.5
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 102,
+                            "y": 57
+                          },
+                          {
+                            "x": 293,
+                            "y": 57
+                          },
+                          {
+                            "x": 293,
+                            "y": 200
+                          },
+                          {
+                            "x": 102,
+                            "y": 200
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "spider\\si1.png",
+                      "points": [
+                        {
+                          "name": "AttackCheck",
+                          "x": 224.5,
+                          "y": 196
+                        },
+                        {
+                          "name": "BorderCheck",
+                          "x": 385,
+                          "y": 251
+                        },
+                        {
+                          "name": "WallCheck",
+                          "x": 385,
+                          "y": 144
+                        },
+                        {
+                          "name": "AttackHole",
+                          "x": 196,
+                          "y": 47.5
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 223.5,
+                        "y": 100.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 38,
+                        "y": 207.5
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 102,
+                            "y": 57
+                          },
+                          {
+                            "x": 293,
+                            "y": 57
+                          },
+                          {
+                            "x": 293,
+                            "y": 200
+                          },
+                          {
+                            "x": 102,
+                            "y": 200
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "spider\\si2.png",
+                      "points": [
+                        {
+                          "name": "AttackCheck",
+                          "x": 224.5,
+                          "y": 196
+                        },
+                        {
+                          "name": "BorderCheck",
+                          "x": 385,
+                          "y": 251
+                        },
+                        {
+                          "name": "WallCheck",
+                          "x": 385,
+                          "y": 144
+                        },
+                        {
+                          "name": "AttackHole",
+                          "x": 196,
+                          "y": 47.5
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 223.5,
+                        "y": 100.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 38,
+                        "y": 207.5
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 102,
+                            "y": 57
+                          },
+                          {
+                            "x": 293,
+                            "y": 57
+                          },
+                          {
+                            "x": 293,
+                            "y": 200
+                          },
+                          {
+                            "x": 102,
+                            "y": 200
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "name": "Walk",
               "useMultipleDirections": false,
@@ -6720,189 +7030,6 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "spider\\sa9.png",
-                      "points": [
-                        {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
-                          "name": "AttackHole",
-                          "x": 196,
-                          "y": 47.5
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 223.5,
-                        "y": 100.5
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 38,
-                        "y": 207.5
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 102,
-                            "y": 57
-                          },
-                          {
-                            "x": 293,
-                            "y": 57
-                          },
-                          {
-                            "x": 293,
-                            "y": 200
-                          },
-                          {
-                            "x": 102,
-                            "y": 200
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "spider\\si0.png",
-                      "points": [
-                        {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
-                          "name": "AttackHole",
-                          "x": 196,
-                          "y": 47.5
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 223.5,
-                        "y": 100.5
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 38,
-                        "y": 207.5
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 102,
-                            "y": 57
-                          },
-                          {
-                            "x": 293,
-                            "y": 57
-                          },
-                          {
-                            "x": 293,
-                            "y": 200
-                          },
-                          {
-                            "x": 102,
-                            "y": 200
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "spider\\si1.png",
-                      "points": [
-                        {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
-                          "name": "AttackHole",
-                          "x": 196,
-                          "y": 47.5
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 223.5,
-                        "y": 100.5
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 38,
-                        "y": 207.5
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 102,
-                            "y": 57
-                          },
-                          {
-                            "x": 293,
-                            "y": 57
-                          },
-                          {
-                            "x": 293,
-                            "y": 200
-                          },
-                          {
-                            "x": 102,
-                            "y": 200
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "spider\\si2.png",
                       "points": [
                         {
                           "name": "AttackCheck",
@@ -8154,30 +8281,6 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "DepartScene"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "FlipX"
-                  },
-                  "parameters": [
-                    "Gorilla",
-                    "yes"
-                  ]
-                }
-              ]
-            },
-            {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -8273,7 +8376,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "🏃‍♂️ Movement",
+              "comment": "🏃‍♂️ Movementd",
               "comment2": ""
             },
             {
@@ -8363,6 +8466,15 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "PlatformBehavior::IsOnFloor"
+                  },
+                  "parameters": [
+                    "Gorilla",
+                    "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Or"
                   },
                   "parameters": [],
@@ -8402,6 +8514,12 @@
                       "parameters": [
                         "Gorilla"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -8447,6 +8565,12 @@
                         "justFlipped",
                         "False"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -8670,7 +8794,6 @@
               "comment2": ""
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8681,6 +8804,18 @@
                     "Bat",
                     "Player",
                     "1000",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "Player",
+                    "120",
                     ""
                   ]
                 }
@@ -8771,7 +8906,7 @@
                             "value": "BuiltinCommonInstructions::CompareNumbers"
                           },
                           "parameters": [
-                            "Player.CenterY()",
+                            "Player.PointY(\"Head\")",
                             "<",
                             "Bat.CenterY()"
                           ]
@@ -8797,7 +8932,7 @@
                             "value": "BuiltinCommonInstructions::CompareNumbers"
                           },
                           "parameters": [
-                            "Player.CenterY()",
+                            "Player.PointY(\"Foot\")",
                             ">",
                             "Bat.CenterY()"
                           ]
@@ -8917,30 +9052,6 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "DepartScene"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "FlipX"
-                  },
-                  "parameters": [
-                    "Spider",
-                    "no"
-                  ]
-                }
-              ]
-            },
             {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
@@ -9127,6 +9238,15 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "PlatformBehavior::IsOnFloor"
+                  },
+                  "parameters": [
+                    "Spider",
+                    "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Or"
                   },
                   "parameters": [],
@@ -9285,7 +9405,7 @@
                     "value": "BuiltinCommonInstructions::CompareNumbers"
                   },
                   "parameters": [
-                    "Player.Y()",
+                    "Player.CenterY()",
                     "<=",
                     "Spider.PointY(\"AttackCheck\")"
                   ]
@@ -9297,7 +9417,7 @@
                   "parameters": [
                     "Spider",
                     "Player",
-                    "300",
+                    "500",
                     ""
                   ]
                 },
@@ -9467,7 +9587,7 @@
                       "parameters": [
                         "Spider_Egg",
                         "Physics2",
-                        "(Player.CenterX() - Spider.CenterX())*RandomFloatInRange(0.5,1.5)",
+                        "(Player.CenterX() - Spider.CenterX())*RandomFloatInRange(0.5,1.2)",
                         "-350",
                         "",
                         ""
@@ -10154,6 +10274,7 @@
               ]
             },
             {
+              "folded": true,
               "infiniteLoopWarning": true,
               "type": "BuiltinCommonInstructions::While",
               "whileConditions": [
@@ -10172,6 +10293,7 @@
               "actions": [],
               "events": [
                 {
+                  "folded": true,
                   "infiniteLoopWarning": true,
                   "type": "BuiltinCommonInstructions::While",
                   "whileConditions": [
@@ -39804,7 +39926,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.22786458333333334,
+        "zoomFactor": 0.28740758917102055,
         "windowMask": false
       }
     },
