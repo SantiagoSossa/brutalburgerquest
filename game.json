@@ -1567,6 +1567,60 @@
         "name": "pj52.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "jungle_boss/NewSprite2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jungle_boss\\NewSprite2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "jungle_boss/Idle/Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jungle_boss\\Idle\\Idle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "jungle_boss/Attack1/Attack1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jungle_boss\\Attack1\\Attack1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "jungle_boss/Attack2/Attack2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jungle_boss\\Attack2\\Attack2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "jungle_boss/Attack3/Attack3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jungle_boss\\Attack3\\Attack3.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1602,7 +1656,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.17472583761143787,
+        "zoomFactor": 0.16902621775647525,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1620,6 +1674,41 @@
             },
             {
               "name": "jungle_extra"
+            }
+          ]
+        },
+        {
+          "name": "environment",
+          "objects": [
+            {
+              "name": "jungle_block"
+            },
+            {
+              "name": "jungle_floor"
+            },
+            {
+              "name": "jungle_platform"
+            },
+            {
+              "name": "jungle_extra"
+            },
+            {
+              "name": "jungle_wall"
+            },
+            {
+              "name": "jungle_terrain"
+            },
+            {
+              "name": "Bat"
+            },
+            {
+              "name": "Gorilla"
+            },
+            {
+              "name": "Spider"
+            },
+            {
+              "name": "jungle_breakeble"
             }
           ]
         }
@@ -1807,6 +1896,30 @@
           "name": "downFlag",
           "type": "boolean",
           "value": true
+        },
+        {
+          "folded": true,
+          "name": "jungle_enemyGroundY",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "bossSpawnCheck",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Index",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "code",
+              "type": "string",
+              "value": "boss"
+            }
+          ]
         }
       ],
       "instances": [],
@@ -1840,11 +1953,11 @@
               "WasJumpKeyReleased": false
             },
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "deceleration": 28000,
               "gravity": 3750,
               "jumpSpeed": 1700,
-              "name": "PlatformerObject",
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 2600,
               "maxSpeed": 1000,
               "jumpSustainTime": 0.22,
@@ -4605,12 +4718,12 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1000,
               "deceleration": 32000,
               "gravity": 2000,
               "maxSpeed": 220,
-              "name": "PlatformerObject",
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
               "canGrabWithoutMoving": true,
@@ -5953,10 +6066,10 @@
           "effects": [],
           "behaviors": [
             {
-              "deceleration": 35000,
-              "gravity": 2000,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "deceleration": 35000,
+              "gravity": 2000,
               "acceleration": 200,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
@@ -7873,6 +7986,191 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "jungle_boss",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "folded": true,
+              "name": "Left",
+              "type": "boolean",
+              "value": true
+            }
+          ],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "jungle_boss\\Idle\\Idle.png",
+                      "points": [
+                        {
+                          "name": "RayCast",
+                          "x": 96,
+                          "y": 192
+                        },
+                        {
+                          "name": "PseudoCenter",
+                          "x": 288,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Attack1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "jungle_boss\\Attack1\\Attack1.png",
+                      "points": [
+                        {
+                          "name": "RayCast",
+                          "x": 96,
+                          "y": 192
+                        },
+                        {
+                          "name": "PseudoCenter",
+                          "x": 288,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Attack2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "jungle_boss\\Attack2\\Attack2.png",
+                      "points": [
+                        {
+                          "name": "RayCast",
+                          "x": 96,
+                          "y": 192
+                        },
+                        {
+                          "name": "PseudoCenter",
+                          "x": 288,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Attack3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "jungle_boss\\Attack3\\Attack3.png",
+                      "points": [
+                        {
+                          "name": "RayCast",
+                          "x": 96,
+                          "y": 192
+                        },
+                        {
+                          "name": "PseudoCenter",
+                          "x": 288,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -8458,7 +8756,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "Gorilla",
               "conditions": [],
@@ -8740,6 +9037,7 @@
           "colorG": 29,
           "colorR": 29,
           "creationTime": 0,
+          "folded": true,
           "name": "Bat",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9167,7 +9465,6 @@
               "comment2": ""
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -9253,7 +9550,6 @@
                   "comment2": ""
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -9327,16 +9623,6 @@
                             "justFlipped",
                             "True"
                           ]
-                        },
-                        {
-                          "type": {
-                            "value": "DebuggerTools::ConsoleLog"
-                          },
-                          "parameters": [
-                            "\"Spider Flip: No\" ",
-                            "",
-                            ""
-                          ]
                         }
                       ]
                     },
@@ -9371,16 +9657,6 @@
                           "parameters": [
                             "Spider",
                             "yes"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "DebuggerTools::ConsoleLog"
-                          },
-                          "parameters": [
-                            "\"Spider Flip: Yes\" ",
-                            "",
-                            ""
                           ]
                         }
                       ]
@@ -9639,6 +9915,7 @@
               "colorG": 29,
               "colorR": 29,
               "creationTime": 0,
+              "folded": true,
               "name": "Spider Ball",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -11307,6 +11584,60 @@
                     "10"
                   ]
                 }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "jungle_wall"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "jungle_wall",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "wall"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "wall",
+                        "=",
+                        "10"
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ],
@@ -11476,6 +11807,13 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "jungle_boss"
         }
       ],
       "layers": [
@@ -11560,6 +11898,10 @@
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ]
     },
@@ -11941,8 +12283,674 @@
       "behaviorsSharedData": []
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "associatedLayout": "Main_Game",
+      "lastChangeTimeStamp": 0,
+      "name": "jungle_boss",
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Spawn",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CheatCode::CheatCodeEntered"
+                  },
+                  "parameters": [
+                    "",
+                    "\"boss\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"boss entered\"",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "environment",
+                        ">=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "environment",
+                        "<=",
+                        "1720"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "environment",
+                        ">=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "environment",
+                        "<=",
+                        "1344"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "environment",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"room(jungle_boss)\"",
+                        "0",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "jungle_wall"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "jungle_wall",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "jungle_wall",
+                        "\"wallTile4\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "wall"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "wall",
+                        "=",
+                        "10"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Player",
+                        "=",
+                        "192",
+                        "=",
+                        "960"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "jungle_boss",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "jungle_boss",
+                        "1056",
+                        "576",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "jungle_boss",
+                        "Left",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "jungle_boss",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "jungle_boss",
+                        "768",
+                        "576",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "jungle_boss",
+                        "=",
+                        "200"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Raycast"
+                      },
+                      "parameters": [
+                        "wall",
+                        "jungle_boss.PointX(\"RayCast\")",
+                        "jungle_boss.PointY(\"RayCast\")",
+                        "90",
+                        "1000",
+                        "",
+                        "jungle_enemyGroundY",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "jungle_boss"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.6"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "jungle_boss",
+                        "Tween",
+                        "\"fall\"",
+                        "Variable(jungle_enemyGroundY) - 192",
+                        "\"easeInExpo\"",
+                        "500",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CheatCode::CheatCodeEntered"
+              },
+              "parameters": [
+                "",
+                "\"one\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AjoutObjConcern"
+              },
+              "parameters": [
+                "",
+                "jungle_boss"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "Tween",
+                    "\"rise\"",
+                    "jungle_boss.Y() - 576",
+                    "\"easeInExpo\"",
+                    "500",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "jungle_boss",
+                "Tween",
+                "\"rise\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionXTween"
+              },
+              "parameters": [
+                "jungle_boss",
+                "Tween",
+                "\"overPlayer\"",
+                "jungle_boss.X() + (DistanceBetweenPositions(Player.CenterX(), 0, jungle_boss.PointX(\"PseudoCenter\"), 0)*sign(Player.CenterX()-jungle_boss.PointX(\"PseudoCenter\")))",
+                "\"easeInExpo\"",
+                "500",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::RemoveTween"
+              },
+              "parameters": [
+                "jungle_boss",
+                "Tween",
+                "\"rise\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "jungle_boss",
+                "Tween",
+                "\"overPlayer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Raycast"
+              },
+              "parameters": [
+                "wall",
+                "jungle_boss.PointX(\"RayCast\")",
+                "jungle_boss.PointY(\"RayCast\")",
+                "90",
+                "1000",
+                "",
+                "jungle_enemyGroundY",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AjoutObjConcern"
+              },
+              "parameters": [
+                "",
+                "jungle_boss"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "jungle_boss",
+                "Tween",
+                "\"fall\"",
+                "Variable(jungle_enemyGroundY) - 192",
+                "\"easeInExpo\"",
+                "500",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::RemoveTween"
+              },
+              "parameters": [
+                "jungle_boss",
+                "Tween",
+                "\"overPlayer\""
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "eventsFunctionsExtensions": [
+    {
+      "author": "",
+      "category": "Input",
+      "extensionNamespace": "",
+      "fullName": "CheatCode",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWZvcm0tdGV4dGJveC1wYXNzd29yZCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xNyw3SDIyVjE3SDE3VjE5QTEsMSAwIDAsMCAxOCwyMEgyMFYyMkgxNy41QzE2Ljk1LDIyIDE2LDIxLjU1IDE2LDIxQzE2LDIxLjU1IDE1LjA1LDIyIDE0LjUsMjJIMTJWMjBIMTRBMSwxIDAgMCwwIDE1LDE5VjVBMSwxIDAgMCwwIDE0LDRIMTJWMkgxNC41QzE1LjA1LDIgMTYsMi40NSAxNiwzQzE2LDIuNDUgMTYuOTUsMiAxNy41LDJIMjBWNEgxOEExLDEgMCAwLDAgMTcsNVY3TTIsN0gxM1Y5SDRWMTVIMTNWMTdIMlY3TTIwLDE1VjlIMTdWMTVIMjBNOC41LDEyQTEuNSwxLjUgMCAwLDAgNywxMC41QTEuNSwxLjUgMCAwLDAgNS41LDEyQTEuNSwxLjUgMCAwLDAgNywxMy41QTEuNSwxLjUgMCAwLDAgOC41LDEyTTEzLDEwLjg5QzEyLjM5LDEwLjMzIDExLjQ0LDEwLjM4IDEwLjg4LDExQzEwLjMyLDExLjYgMTAuMzcsMTIuNTUgMTEsMTMuMTFDMTEuNTUsMTMuNjMgMTIuNDMsMTMuNjMgMTMsMTMuMTFWMTAuODlaIiAvPjwvc3ZnPg==",
+      "name": "CheatCode",
+      "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/5ab10adef033825feddc9138b59d79d9a7aa94c58dd58fba0d21cd7b99be4aff_form-textbox-password.svg",
+      "shortDescription": "Add cheat codes to your game.",
+      "version": "1.0.1",
+      "description": [
+        "- Use \"Cheat Code Entered\" (A Condition to check if a cheat code was entered).",
+        "",
+        "Note: Only lowercase alphabets and no special characters can be used in a cheat code."
+      ],
+      "tags": [
+        "cheatcode",
+        "code"
+      ],
+      "authorIds": [
+        "TJLmS4MUFJSWNNietFUWDxVSKnB3"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [
+        {
+          "description": "Check if a cheat code was entered.",
+          "fullName": "Cheat Code Entered",
+          "functionType": "Condition",
+          "name": "CheatCodeEntered",
+          "sentence": "_PARAM1_ code entered",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "How it works:\n\n1) The program checks if a key is pressed.\n2) In a structure named \"CheatCodeIndexStructure\" each code has a variable that stores the index of the current letter in the code that is to be checked.\n3) If the key that was pressed matches the required letter, the variable's value is incremented by 1 (one).\n4) If not, the variable is set back to 0 (zero).\n5) Once each letter is checked, the variable reaches the final index, confirming that the correct code was entered and the condition returns true.",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnyKeyPressed"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareStrings"
+                      },
+                      "parameters": [
+                        "LastPressedKey()",
+                        "!=",
+                        "StrAt(GetArgumentAsString(\"Code\"), Variable(CheatCodeIndexStructure[GetArgumentAsString(\"Code\")]))"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "CheatCodeIndexStructure[GetArgumentAsString(\"Code\")]",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareStrings"
+                      },
+                      "parameters": [
+                        "LastPressedKey()",
+                        "=",
+                        "StrAt(GetArgumentAsString(\"Code\"), Variable(CheatCodeIndexStructure[GetArgumentAsString(\"Code\")]))"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "CheatCodeIndexStructure[GetArgumentAsString(\"Code\")]",
+                        "+",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "CheatCodeIndexStructure[GetArgumentAsString(\"Code\")]",
+                    "=",
+                    "StrLength(GetArgumentAsString(\"Code\"))"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "CheatCodeIndexStructure[GetArgumentAsString(\"Code\")]",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Code",
+              "name": "Code",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [],
+      "eventsBasedObjects": []
+    },
     {
       "author": "Entropy",
       "category": "Movement",
@@ -38697,6 +39705,1225 @@
   "externalLayouts": [
     {
       "associatedLayout": "Main_Game",
+      "name": "room(jungle_boss)",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_floor",
+          "persistentUuid": "a5b4ab17-e768-44a9-b103-2c2e941515d9",
+          "width": 0,
+          "x": 0,
+          "y": 1152,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_floor",
+          "persistentUuid": "08f0253d-4db2-4c63-8fb5-87cf0fe6ce41",
+          "width": 0,
+          "x": 1344,
+          "y": 1344,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_floor",
+          "persistentUuid": "6bac7d0e-2e11-4ff6-a47b-75478057c8f3",
+          "width": 0,
+          "x": 1728,
+          "y": 1152,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_block",
+          "persistentUuid": "c5103386-6980-46cf-81e7-cbf54793ba48",
+          "width": 0,
+          "x": 192,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_block",
+          "persistentUuid": "b3a2ceab-ab4c-418d-8236-21d2f79cc022",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_block",
+          "persistentUuid": "57470ff1-36a8-473a-9125-65a56fb4caed",
+          "width": 0,
+          "x": 384,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_block",
+          "persistentUuid": "b1a3948f-fa11-477c-aedf-3aa837585f7b",
+          "width": 0,
+          "x": 576,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_block",
+          "persistentUuid": "db607f51-7e36-4dd4-87f1-122400c0fb40",
+          "width": 0,
+          "x": 768,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_block",
+          "persistentUuid": "7b19e546-6308-4047-95f3-d07f6985e803",
+          "width": 0,
+          "x": 960,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_block",
+          "persistentUuid": "1ebb5fbf-fa8a-4aa7-94ce-9188d2e785a9",
+          "width": 0,
+          "x": 1152,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_block",
+          "persistentUuid": "d864c995-68fe-4400-9eb9-97c8516e8576",
+          "width": 0,
+          "x": 1344,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_block",
+          "persistentUuid": "e05838c0-d21d-467e-b3ac-1b8e94301da1",
+          "width": 0,
+          "x": 1536,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_block",
+          "persistentUuid": "449a76f3-e040-40df-a8a4-34d9a30f2dc6",
+          "width": 0,
+          "x": 1728,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_block",
+          "persistentUuid": "f5dbbf26-c30a-4c50-a230-79d6d6c0d9bf",
+          "width": 0,
+          "x": 0,
+          "y": 1344,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_block",
+          "persistentUuid": "f6122df1-9241-4e55-bbfc-1c3e0cdea5ff",
+          "width": 0,
+          "x": 1728,
+          "y": 1344,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_floor",
+          "persistentUuid": "fd738fe6-01f5-4d06-b100-ba1336fa34ef",
+          "width": 0,
+          "x": 1152,
+          "y": 1344,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "c70e125a-fac7-4a23-a0e4-d9534e6f803e",
+          "width": 0,
+          "x": 0,
+          "y": 192,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "5c3254b5-27c9-4da5-83e8-584b1f4a3546",
+          "width": 0,
+          "x": 192,
+          "y": 192,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "132f95d8-7526-4071-9182-d384065d9a09",
+          "width": 0,
+          "x": 192,
+          "y": 384,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "6f889b5f-8bd5-43a1-a278-7e5fe8301333",
+          "width": 0,
+          "x": 0,
+          "y": 384,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "1587e241-a591-4e6a-b533-5e409650237c",
+          "width": 0,
+          "x": 0,
+          "y": 576,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "9b60f65f-7a83-4dc8-8df1-edf16aed6dc1",
+          "width": 0,
+          "x": 576,
+          "y": 576,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "bf47be0a-2577-45f2-b941-6429679c316f",
+          "width": 0,
+          "x": 384,
+          "y": 576,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "064242be-34e6-4295-8a4f-47bd65110686",
+          "width": 0,
+          "x": 576,
+          "y": 384,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "473136b4-d51a-400d-b249-c85dcc6bf8ea",
+          "width": 0,
+          "x": 384,
+          "y": 384,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "1696a77d-cd57-492d-a3ca-2b116068d712",
+          "width": 0,
+          "x": 768,
+          "y": 576,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "d3bfdddd-7653-437b-9443-54debfd545b8",
+          "width": 0,
+          "x": 960,
+          "y": 576,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "829d054a-b850-4a38-9b50-919b349a71e2",
+          "width": 0,
+          "x": 1152,
+          "y": 576,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "d1d6665b-a9b0-44a0-88f9-18e076b4894b",
+          "width": 0,
+          "x": 1344,
+          "y": 576,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "cbdcd922-38ae-425c-95a5-d28648946bcd",
+          "width": 0,
+          "x": 1152,
+          "y": 768,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "b32a3a31-b7f6-46dd-917d-edb7c05b30c1",
+          "width": 0,
+          "x": 1344,
+          "y": 768,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "ee200996-165b-4be9-9b98-4f061aac49c0",
+          "width": 0,
+          "x": 1536,
+          "y": 768,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "2cd77993-2ef9-4cb1-8a59-6be2b3b5be36",
+          "width": 0,
+          "x": 1728,
+          "y": 768,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "d6681630-b757-43fe-ad6e-8716fabf4583",
+          "width": 0,
+          "x": 768,
+          "y": 960,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "cf55eb4a-9663-4780-a6d0-250129a8e0e1",
+          "width": 0,
+          "x": 960,
+          "y": 960,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "4c1e1991-4f04-422b-903b-1050e59f9ada",
+          "width": 0,
+          "x": 1152,
+          "y": 960,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "5afb1cbc-4bb2-431c-b96e-0f13355e2e8e",
+          "width": 0,
+          "x": 1344,
+          "y": 960,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "81ed3a82-beb0-4cd9-af77-39802cebcd45",
+          "width": 0,
+          "x": 768,
+          "y": 1152,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "a8fa939d-e5c1-412d-a61c-8cdea5d7e805",
+          "width": 0,
+          "x": 960,
+          "y": 1152,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "3fd4c324-598a-4a3f-a595-33c666143a25",
+          "width": 0,
+          "x": 1152,
+          "y": 1152,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "796e9191-d9f9-49b0-a5da-c54b24e27325",
+          "width": 0,
+          "x": 1344,
+          "y": 1152,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "f8151df5-df50-496c-8e11-6c37f8a76f31",
+          "width": 0,
+          "x": 768,
+          "y": 192,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "4c0bde2c-7f4a-4e23-8570-81726dd8862e",
+          "width": 0,
+          "x": 960,
+          "y": 192,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "64c6eda2-01ea-4321-8eb5-d6de47f1388d",
+          "width": 0,
+          "x": 1152,
+          "y": 192,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "7210f7a4-c8af-4d08-bbd2-d0200217eabd",
+          "width": 0,
+          "x": 1344,
+          "y": 192,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "490ea80d-2301-45fb-b1cb-429a35e51a30",
+          "width": 0,
+          "x": 768,
+          "y": 384,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "abf33edd-8da0-4dd9-a4ec-f408b9f125e4",
+          "width": 0,
+          "x": 960,
+          "y": 384,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "b205dfda-28e4-4e50-bbbe-4eff8670913b",
+          "width": 0,
+          "x": 1536,
+          "y": 576,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "43cbf6d4-15de-4f19-9f72-4bbfc7a5b7a5",
+          "width": 0,
+          "x": 1728,
+          "y": 576,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "69c0e71d-5a02-4157-b656-a66d1c0cd437",
+          "width": 0,
+          "x": 1536,
+          "y": 960,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "39d3740f-fa82-48b3-901e-8ba3a8a98958",
+          "width": 0,
+          "x": 1728,
+          "y": 960,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "f677fd17-8471-4565-abcc-992cac78778d",
+          "width": 0,
+          "x": 1536,
+          "y": 192,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "56c9c519-66ef-4ad6-a180-260924b81e1d",
+          "width": 0,
+          "x": 1728,
+          "y": 192,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "2a11f6f2-38b9-4281-a229-ffd258967c81",
+          "width": 0,
+          "x": 1728,
+          "y": 384,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "f32642bf-9628-470a-a099-5f5844ecd901",
+          "width": 0,
+          "x": 1152,
+          "y": 384,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "357d75be-33a1-4f25-bf11-a8f378168bae",
+          "width": 0,
+          "x": 0,
+          "y": 768,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "e17219b2-1f7f-46d9-ad90-ef2188677293",
+          "width": 0,
+          "x": 0,
+          "y": 960,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "32de540d-876b-44f7-aa83-4d36f6d7a07a",
+          "width": 0,
+          "x": 1536,
+          "y": 1152,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "741e069a-84ab-4e47-b606-f01ee7933fff",
+          "width": 0,
+          "x": 576,
+          "y": 1152,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "e2881352-e03e-4b91-9426-9067402d81ac",
+          "width": 0,
+          "x": 192,
+          "y": 576,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "000bb2aa-1d88-497b-92a3-51de79ea34a9",
+          "width": 0,
+          "x": 192,
+          "y": 768,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_floor",
+          "persistentUuid": "912d585d-a50d-40cb-b8c6-5d397202302c",
+          "width": 0,
+          "x": 192,
+          "y": 1344,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_floor",
+          "persistentUuid": "d2997a4f-0889-40eb-bb60-76b724d8f3eb",
+          "width": 0,
+          "x": 384,
+          "y": 1344,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_floor",
+          "persistentUuid": "63435bc0-53f9-4e51-b9fc-d9a67f1138f5",
+          "width": 0,
+          "x": 576,
+          "y": 1344,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_floor",
+          "persistentUuid": "53002bf7-e284-443e-a3aa-69ab157455b5",
+          "width": 0,
+          "x": 768,
+          "y": 1344,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_floor",
+          "persistentUuid": "09b507b4-e760-473f-93be-1d73e7c357aa",
+          "width": 0,
+          "x": 960,
+          "y": 1344,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "aa1d9ca0-ae3a-451c-b7df-f22190febedc",
+          "width": 0,
+          "x": 384,
+          "y": 768,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "56b5182d-c184-4430-93f5-8b3b87dbe67c",
+          "width": 0,
+          "x": 576,
+          "y": 768,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "838e6bcc-0ecd-4780-9b27-5370373fa00f",
+          "width": 0,
+          "x": 768,
+          "y": 768,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "17e0fe57-bfa7-4040-846e-d937878f2a72",
+          "width": 0,
+          "x": 960,
+          "y": 768,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "dbf23e19-4be2-4cda-a58b-4fe6dedef08b",
+          "width": 0,
+          "x": 192,
+          "y": 960,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "060faf25-5aca-4e34-9dcc-a6d0d6494e93",
+          "width": 0,
+          "x": 384,
+          "y": 960,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "f5f2e22a-c570-408d-afd4-ee2080fa3ab4",
+          "width": 0,
+          "x": 192,
+          "y": 1152,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "662a3bc4-022c-4906-b4e9-e64f2f96e890",
+          "width": 0,
+          "x": 384,
+          "y": 1152,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "b4b7aab1-e7bc-4ed8-b570-ba7a771dd951",
+          "width": 0,
+          "x": 576,
+          "y": 960,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "777a0f14-953c-4e4b-a352-7e1eb8a103ab",
+          "width": 0,
+          "x": 1344,
+          "y": 384,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "bd8472ff-56ff-4190-9bcf-77448dbb005b",
+          "width": 0,
+          "x": 1536,
+          "y": 384,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "28a57572-0642-4f6b-a8fa-b9ec9e7dad1c",
+          "width": 0,
+          "x": 384,
+          "y": 192,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "22731dd0-329a-4b83-933f-32d486117f1e",
+          "width": 0,
+          "x": 576,
+          "y": 192,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_floor",
+          "persistentUuid": "3519cd57-2336-4b7a-a39c-7cfe8c5d50f2",
+          "width": 0,
+          "x": 1536,
+          "y": 1344,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": true,
+        "gridType": "rectangular",
+        "gridWidth": 192,
+        "gridHeight": 192,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": true,
+        "zoomFactor": 0.1806572626959323,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Main_Game",
       "name": "room10",
       "instances": [
         {
@@ -39970,7 +42197,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.28740758917102055,
+        "zoomFactor": 0.26896273763797823,
         "windowMask": false
       }
     },
@@ -41249,7 +43476,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.22664107233034428,
+        "zoomFactor": 0.2675185515162028,
         "windowMask": false
       }
     },
