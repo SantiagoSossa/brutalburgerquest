@@ -1932,9 +1932,21 @@
             },
             {
               "folded": true,
+              "name": "leftWallX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
               "name": "rightGroundY",
               "type": "number",
               "value": 1000
+            },
+            {
+              "folded": true,
+              "name": "rightWallX",
+              "type": "number",
+              "value": 0
             }
           ]
         },
@@ -8031,7 +8043,7 @@
           "variables": [
             {
               "folded": true,
-              "name": "State",
+              "name": "oldXPos",
               "type": "number",
               "value": 0
             }
@@ -8041,7 +8053,7 @@
             {
               "name": "FireBullet",
               "type": "FireBullet::FireBullet",
-              "FireCooldown": 0.5,
+              "FireCooldown": 0.8,
               "HasJustFired": false,
               "FiringArc": 0,
               "BulletQuantity": 1,
@@ -8067,13 +8079,6 @@
               "BulletLayer": "",
               "RandomizedAngle": 0,
               "BulletSpeedVariance": 0
-            },
-            {
-              "canBeGrabbed": true,
-              "name": "Platform",
-              "platformType": "NormalPlatform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "yGrabOffset": 0
             },
             {
               "name": "Tween",
@@ -13032,7 +13037,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -13153,7 +13157,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Attack2",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13194,17 +13197,17 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ModVarScene"
+                    "value": "ResetTimer"
                   },
                   "parameters": [
-                    "jungle_boss.attackState",
-                    "=",
-                    "1"
+                    "",
+                    "\"jungle_bossAttack2\""
                   ]
                 }
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -13218,12 +13221,13 @@
                 },
                 {
                   "type": {
-                    "value": "VarScene"
+                    "value": "CompareTimer"
                   },
                   "parameters": [
-                    "jungle_boss.attackState",
-                    "!=",
-                    "0"
+                    "",
+                    "\"jungle_bossAttack2\"",
+                    "<",
+                    "5"
                   ]
                 }
               ],
@@ -13232,18 +13236,6 @@
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
-                    {
-                      "type": {
-                        "value": "RepeatEveryXSeconds::RepeatXTimes"
-                      },
-                      "parameters": [
-                        "",
-                        "\"jungleBossAmmoLeft\"",
-                        "1",
-                        "5",
-                        ""
-                      ]
-                    },
                     {
                       "type": {
                         "inverted": true,
@@ -13279,34 +13271,12 @@
                         "=",
                         "10"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "jungle_boss.attackState",
-                        "+",
-                        "1"
-                      ]
                     }
                   ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
-                    {
-                      "type": {
-                        "value": "RepeatEveryXSeconds::RepeatXTimes"
-                      },
-                      "parameters": [
-                        "",
-                        "\"jungleBossAmmoRight\"",
-                        "1",
-                        "5",
-                        ""
-                      ]
-                    },
                     {
                       "type": {
                         "value": "FlippedX"
@@ -13341,16 +13311,6 @@
                         "=",
                         "10"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "jungle_boss.attackState",
-                        "+",
-                        "1"
-                      ]
                     }
                   ]
                 }
@@ -13361,12 +13321,34 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "VarScene"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "jungle_boss.attackState",
-                    "=",
-                    "6"
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "jungle_boss_ammo",
+                        "Player",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "jungle_boss_ammo",
+                        "wall",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
                   ]
                 },
                 {
@@ -13379,12 +13361,217 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ModVarScene"
+                    "value": "Delete"
                   },
                   "parameters": [
-                    "jungle_boss.attackState",
-                    "=",
-                    "0"
+                    "jungle_boss_ammo",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Attack3",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "Tween",
+                    "\"initfall\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CheatCode::CheatCodeEntered"
+                  },
+                  "parameters": [
+                    "",
+                    "\"three\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "FlippedX"
+                      },
+                      "parameters": [
+                        "jungle_boss"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Raycast"
+                      },
+                      "parameters": [
+                        "wall",
+                        "jungle_boss.X()",
+                        "jungle_boss.Y() + 190",
+                        "-180",
+                        "2000",
+                        "jungle_boss.leftWallX",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "jungle_boss",
+                        "oldXPos",
+                        "=",
+                        "jungle_boss.X()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionXTween"
+                      },
+                      "parameters": [
+                        "jungle_boss",
+                        "Tween",
+                        "\"open\"",
+                        "Variable(jungle_boss.leftWallX)",
+                        "\"easeInExpo\"",
+                        "500",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "FlippedX"
+                      },
+                      "parameters": [
+                        "jungle_boss"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Raycast"
+                      },
+                      "parameters": [
+                        "wall",
+                        "jungle_boss.X()",
+                        "jungle_boss.Y() + 190",
+                        "0",
+                        "2000",
+                        "jungle_boss.rightWallX",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "jungle_boss",
+                        "oldXPos",
+                        "=",
+                        "jungle_boss.X()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionXTween"
+                      },
+                      "parameters": [
+                        "jungle_boss",
+                        "Tween",
+                        "\"open\"",
+                        "Variable(jungle_boss.rightWallX) - 288",
+                        "\"easeInExpo\"",
+                        "500",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "Tween",
+                    "\"open\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "jungle_boss"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.6"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionXTween"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "Tween",
+                    "\"open\"",
+                    "jungle_boss.Variable(oldXPos)",
+                    "\"easeInExpo\"",
+                    "500",
+                    ""
                   ]
                 }
               ]
@@ -13396,551 +13583,6 @@
     }
   ],
   "eventsFunctionsExtensions": [
-    {
-      "author": "VegeTato, arthuro555",
-      "category": "General",
-      "extensionNamespace": "",
-      "fullName": "Repeat every X seconds",
-      "helpPath": "",
-      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXJlcGVhdCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xNywxN0g3VjE0TDMsMThMNywyMlYxOUgxOVYxM0gxN003LDdIMTdWMTBMMjEsNkwxNywyVjVINVYxMUg3VjdaIiAvPjwvc3ZnPg==",
-      "name": "RepeatEveryXSeconds",
-      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/repeat.svg",
-      "shortDescription": "This allows to trigger an event every X seconds.",
-      "version": "0.1.0",
-      "description": "Convenience conditions, actions and behaviors for timers to trigger a condition every X seconds.",
-      "origin": {
-        "identifier": "RepeatEveryXSeconds",
-        "name": "gdevelop-extension-store"
-      },
-      "tags": [
-        "repeat",
-        "timer",
-        "time",
-        "convenience"
-      ],
-      "authorIds": [
-        "ZgrsWuRTAkXgeuPV9bo0zuEcA2w1",
-        "IRIhkkTTl2UHhfjrLTTH5GYwkYu1"
-      ],
-      "dependencies": [],
-      "eventsFunctions": [
-        {
-          "description": "Triggers every X seconds.",
-          "fullName": "Repeat every X seconds",
-          "functionType": "Condition",
-          "name": "Repeat",
-          "sentence": "Repeat timer _PARAM1_ every _PARAM2_ seconds",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "player",
-                    "GetArgumentAsString(\"timerName\")"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Timer"
-                  },
-                  "parameters": [
-                    "player",
-                    "GetArgumentAsNumber(\"time\")",
-                    "GetArgumentAsString(\"timerName\")"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "player",
-                    "GetArgumentAsString(\"timerName\")"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetReturnBoolean"
-                  },
-                  "parameters": [
-                    "True"
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "description": "The name of the timer to loop",
-              "name": "timerName",
-              "type": "string"
-            },
-            {
-              "description": "The time in seconds between each trigger",
-              "name": "time",
-              "type": "expression"
-            }
-          ],
-          "objectGroups": []
-        },
-        {
-          "description": "Triggers every X seconds X amount of times.",
-          "fullName": "Repeat every X seconds in X number",
-          "functionType": "Condition",
-          "name": "RepeatXTimes",
-          "sentence": "Repeat timer _PARAM1_ every _PARAM2_ seconds _PARAM3_ times",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "player",
-                    "GetArgumentAsString(\"timerName\")"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "__RepeatEveryXSeconds_.Counter[GetArgumentAsString(\"timerName\")]",
-                    "=",
-                    "0"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Timer"
-                  },
-                  "parameters": [
-                    "player",
-                    "GetArgumentAsNumber(\"time\")",
-                    "GetArgumentAsString(\"timerName\")"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "Egal"
-                      },
-                      "parameters": [
-                        "GetArgumentAsNumber(\"limit\")",
-                        "=",
-                        "-1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "VarScene"
-                      },
-                      "parameters": [
-                        "__RepeatEveryXSeconds_.Counter[GetArgumentAsString(\"timerName\")]",
-                        "<",
-                        "GetArgumentAsNumber(\"limit\")"
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "player",
-                    "GetArgumentAsString(\"timerName\")"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "__RepeatEveryXSeconds_.Counter[GetArgumentAsString(\"timerName\")]",
-                    "+",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetReturnBoolean"
-                  },
-                  "parameters": [
-                    "True"
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "description": "The name of the timer to loop",
-              "name": "timerName",
-              "type": "string"
-            },
-            {
-              "description": "The time in seconds between each trigger",
-              "name": "time",
-              "type": "expression"
-            },
-            {
-              "description": "The limit of loops",
-              "longDescription": "The condition will trigger at most this amount of times. Make it -1 for looping forever.",
-              "name": "limit",
-              "type": "expression"
-            }
-          ],
-          "objectGroups": []
-        }
-      ],
-      "eventsBasedBehaviors": [
-        {
-          "description": "Allows to repeat an object timer every X seconds.",
-          "fullName": "Repeat every X seconds",
-          "name": "RepeatTimer",
-          "objectType": "",
-          "eventsFunctions": [
-            {
-              "fullName": "",
-              "functionType": "Action",
-              "name": "onCreated",
-              "sentence": "",
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "ResetObjectTimer"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Object.Behavior::PropertyTimerName()"
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "parameters": [
-                {
-                  "description": "Object",
-                  "name": "Object",
-                  "type": "object"
-                },
-                {
-                  "description": "Behavior",
-                  "name": "Behavior",
-                  "supplementaryInformation": "RepeatEveryXSeconds::RepeatTimer",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "Triggers every X seconds, where X is defined in the behavior properties.",
-              "fullName": "Repeat every X seconds",
-              "functionType": "Condition",
-              "name": "Repeat",
-              "sentence": "Recurring timer _PARAM1_ of _PARAM0_ has triggered",
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "ObjectTimer"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Object.Behavior::PropertyTimerName()",
-                        "Object.Behavior::PropertyTimerLength()"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "RepeatEveryXSeconds::RepeatTimer::PropertyLimit"
-                          },
-                          "parameters": [
-                            "Object",
-                            "Behavior",
-                            "=",
-                            "-1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "RepeatEveryXSeconds::RepeatTimer::PropertyCounter"
-                          },
-                          "parameters": [
-                            "Object",
-                            "Behavior",
-                            "<",
-                            "Object.Behavior::PropertyLimit()"
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "ResetObjectTimer"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Object.Behavior::PropertyTimerName()"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "RepeatEveryXSeconds::RepeatTimer::SetPropertyCounter"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "+",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetReturnBoolean"
-                      },
-                      "parameters": [
-                        "True"
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "parameters": [
-                {
-                  "description": "Object",
-                  "name": "Object",
-                  "type": "object"
-                },
-                {
-                  "description": "Behavior",
-                  "name": "Behavior",
-                  "supplementaryInformation": "RepeatEveryXSeconds::RepeatTimer",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "Pauses a recurring timer.",
-              "fullName": "Pause a recurring timer",
-              "functionType": "Action",
-              "name": "Pause",
-              "sentence": "Pause recurring timer _PARAM1_ of _PARAM0_",
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "PauseObjectTimer"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Object.Behavior::PropertyTimerName()"
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "parameters": [
-                {
-                  "description": "Object",
-                  "name": "Object",
-                  "type": "object"
-                },
-                {
-                  "description": "Behavior",
-                  "name": "Behavior",
-                  "supplementaryInformation": "RepeatEveryXSeconds::RepeatTimer",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "Resumes a paused recurring timer.",
-              "fullName": "Resume a recurring timer",
-              "functionType": "Action",
-              "name": "Resume",
-              "sentence": "Resume recurring timer _PARAM1_ of _PARAM0_",
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "UnPauseObjectTimer"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Object.Behavior::PropertyTimerName()"
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "parameters": [
-                {
-                  "description": "Object",
-                  "name": "Object",
-                  "type": "object"
-                },
-                {
-                  "description": "Behavior",
-                  "name": "Behavior",
-                  "supplementaryInformation": "RepeatEveryXSeconds::RepeatTimer",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "Allows to trigger the recurring timer X times again.",
-              "fullName": "Reset the limit",
-              "functionType": "Action",
-              "name": "ResetLimit",
-              "sentence": "Allow to trigger the recurring timer _PARAM1_ of _PARAM0_ X times again",
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "RepeatEveryXSeconds::RepeatTimer::SetPropertyCounter"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "=",
-                        "0"
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "parameters": [
-                {
-                  "description": "Object",
-                  "name": "Object",
-                  "type": "object"
-                },
-                {
-                  "description": "Behavior",
-                  "name": "Behavior",
-                  "supplementaryInformation": "RepeatEveryXSeconds::RepeatTimer",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            }
-          ],
-          "propertyDescriptors": [
-            {
-              "value": "MyTimer",
-              "type": "String",
-              "label": "The name of the timer to repeat",
-              "description": "",
-              "group": "",
-              "extraInformation": [],
-              "hidden": false,
-              "name": "TimerName"
-            },
-            {
-              "value": "1",
-              "type": "Number",
-              "label": "The time between each trigger (in seconds)",
-              "description": "",
-              "group": "",
-              "extraInformation": [],
-              "hidden": false,
-              "name": "TimerLength"
-            },
-            {
-              "value": "-1",
-              "type": "Number",
-              "label": "How many times should the timer trigger? -1 for forever.",
-              "description": "",
-              "group": "",
-              "extraInformation": [],
-              "hidden": false,
-              "name": "Limit"
-            },
-            {
-              "value": "0",
-              "type": "Number",
-              "label": "An internal counter",
-              "description": "",
-              "group": "",
-              "extraInformation": [],
-              "hidden": true,
-              "name": "Counter"
-            }
-          ],
-          "sharedPropertyDescriptors": []
-        }
-      ],
-      "eventsBasedObjects": []
-    },
     {
       "author": "@4ian",
       "category": "Game mechanic",
@@ -47149,7 +46791,7 @@
           "persistentUuid": "0788627d-8478-4732-9bb0-bd8bfa0d0c46",
           "width": 0,
           "x": 1728,
-          "y": 1344,
+          "y": 1152,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -47164,8 +46806,38 @@
           "persistentUuid": "77e4a00c-0ca7-4d30-bb73-1186ad1f0267",
           "width": 0,
           "x": 0,
-          "y": 1344,
+          "y": 1152,
           "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_block",
+          "persistentUuid": "2756d1f3-50a6-47a5-b027-0bf40a329c27",
+          "width": 0,
+          "x": 0,
+          "y": 1344,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_block",
+          "persistentUuid": "0a81f01e-acbf-4953-a9a2-f54cf4c2b43d",
+          "width": 0,
+          "x": 1728,
+          "y": 1344,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
