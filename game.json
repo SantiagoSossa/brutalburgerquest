@@ -1928,7 +1928,7 @@
               "folded": true,
               "name": "leftGroundY",
               "type": "number",
-              "value": 1000
+              "value": 0
             },
             {
               "folded": true,
@@ -1940,7 +1940,7 @@
               "folded": true,
               "name": "rightGroundY",
               "type": "number",
-              "value": 1000
+              "value": 0
             },
             {
               "folded": true,
@@ -2089,7 +2089,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2136,7 +2136,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2183,7 +2183,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2230,7 +2230,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2290,7 +2290,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2337,7 +2337,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2384,7 +2384,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2431,7 +2431,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2478,7 +2478,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2525,7 +2525,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2572,7 +2572,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2619,7 +2619,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2679,7 +2679,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2726,7 +2726,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2773,7 +2773,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2820,7 +2820,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2880,7 +2880,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2927,7 +2927,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -2986,7 +2986,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -3033,7 +3033,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -3080,7 +3080,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -3127,7 +3127,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -3174,7 +3174,7 @@
                         {
                           "name": "Head",
                           "x": 127.5,
-                          "y": 103
+                          "y": 108
                         },
                         {
                           "name": "Foot",
@@ -11858,6 +11858,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -13056,6 +13057,55 @@
                   "parameters": []
                 }
               ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "Tween",
+                    "\"fall\"",
+                    "Player.PointY(\"Head\")",
+                    "\"easeInExpo\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::RemoveTween"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "Tween",
+                    "\"overPlayer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": true,
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "Tween",
+                    "\"overPlayer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
               "actions": [],
               "events": [
                 {
@@ -13129,7 +13179,7 @@
                         "jungle_boss",
                         "Tween",
                         "\"fall\"",
-                        "min(Variable(jungle_enemy.leftGroundY),Variable(jungle_enemy.rightGroundY)) - 192",
+                        "max(Variable(jungle_enemy.leftGroundY),Variable(jungle_enemy.rightGroundY)) - 192",
                         "\"easeInExpo\"",
                         "500",
                         ""
@@ -13148,6 +13198,129 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::IsPlaying"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "Tween",
+                    "\"fall\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "wall"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "jungle_boss",
+                        "wall",
+                        "",
+                        "",
+                        "yes"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "jungle_wall",
+                        "wall.X()",
+                        "wall.Y()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "jungle_wall",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "jungle_wall",
+                        "\"wallTile4\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "wall",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "jungle_terrain"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "jungle_boss",
+                        "jungle_terrain",
+                        "",
+                        "",
+                        "yes"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "jungle_terrain",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -13157,6 +13330,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Attack2",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13350,12 +13524,6 @@
                       ]
                     }
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
                 }
               ],
               "actions": [
@@ -13567,11 +13735,21 @@
                   "parameters": [
                     "jungle_boss",
                     "Tween",
-                    "\"open\"",
+                    "\"close\"",
                     "jungle_boss.Variable(oldXPos)",
                     "\"easeInExpo\"",
                     "500",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::RemoveTween"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "Tween",
+                    "\"open\""
                   ]
                 }
               ]
@@ -46757,36 +46935,6 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "jungle_wall",
-          "persistentUuid": "ab3aa1ed-5450-4563-9385-186f32a191bd",
-          "width": 0,
-          "x": 1728,
-          "y": 1152,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "jungle_wall",
-          "persistentUuid": "5d5fcd75-ef1b-4ff9-b18a-e12e853b3fa7",
-          "width": 0,
-          "x": 0,
-          "y": 1152,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
           "name": "jungle_floor",
           "persistentUuid": "0788627d-8478-4732-9bb0-bd8bfa0d0c46",
           "width": 0,
@@ -46853,7 +47001,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.2062850030728704,
+        "zoomFactor": 0.19955591185563532,
         "windowMask": false
       }
     },
