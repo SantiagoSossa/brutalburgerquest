@@ -1837,6 +1837,51 @@
         "name": "jbi12.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "jb1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jb1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "jb2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jb2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "jb3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jb3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "jb4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jb4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "jb5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jb5.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1872,7 +1917,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.16902621775647528,
+        "zoomFactor": 0.16351252155731058,
         "windowMask": false
       },
       "objectsGroups": [
@@ -9287,7 +9332,7 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.13,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
