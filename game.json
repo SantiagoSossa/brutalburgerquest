@@ -5026,6 +5026,10 @@
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -5042,19 +5046,14 @@
                       "image": "gorilla\\gi0.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5094,19 +5093,14 @@
                       "image": "gorilla\\gi1.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5146,19 +5140,14 @@
                       "image": "gorilla\\gi2.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5210,19 +5199,14 @@
                       "image": "gorilla\\ga0.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5262,19 +5246,14 @@
                       "image": "gorilla\\ga1.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5314,19 +5293,14 @@
                       "image": "gorilla\\ga2.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5366,19 +5340,14 @@
                       "image": "gorilla\\ga3.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5418,19 +5387,14 @@
                       "image": "gorilla\\ga4.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5470,19 +5434,14 @@
                       "image": "gorilla\\ga5.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5522,19 +5481,14 @@
                       "image": "gorilla\\ga6.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5574,19 +5528,14 @@
                       "image": "gorilla\\ga7.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5626,19 +5575,14 @@
                       "image": "gorilla\\ga8.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5678,19 +5622,14 @@
                       "image": "gorilla\\ga9.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5742,19 +5681,14 @@
                       "image": "gorilla\\gd0.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5794,19 +5728,14 @@
                       "image": "gorilla\\gd1.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5846,19 +5775,14 @@
                       "image": "gorilla\\gd2.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5898,19 +5822,14 @@
                       "image": "gorilla\\gd3.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -5950,19 +5869,14 @@
                       "image": "gorilla\\gd4.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -6002,19 +5916,14 @@
                       "image": "gorilla\\gd5.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -6054,19 +5963,14 @@
                       "image": "gorilla\\gd6.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -6118,19 +6022,14 @@
                       "image": "gorilla\\gw0.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -6170,19 +6069,14 @@
                       "image": "gorilla\\gw1.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -6222,19 +6116,14 @@
                       "image": "gorilla\\gw2.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -6274,19 +6163,14 @@
                       "image": "gorilla\\gw3.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 300.5,
-                          "y": 433
+                          "name": "Head",
+                          "x": 108,
+                          "y": 82
                         },
                         {
-                          "name": "WallCheck",
-                          "x": 108.5,
-                          "y": 337.5
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 107.5,
-                          "y": 538.5
+                          "name": "Foot",
+                          "x": 108,
+                          "y": 435
                         }
                       ],
                       "originPoint": {
@@ -6390,24 +6274,19 @@
                       "image": "spider\\si0.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -6447,24 +6326,19 @@
                       "image": "spider\\si1.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -6504,24 +6378,19 @@
                       "image": "spider\\si2.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -6573,24 +6442,19 @@
                       "image": "spider\\sw0.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -6630,24 +6494,19 @@
                       "image": "spider\\sw1.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -6687,24 +6546,19 @@
                       "image": "spider\\sw2.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -6744,24 +6598,19 @@
                       "image": "spider\\sw3.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -6814,24 +6663,19 @@
                       "image": "spider\\sa0.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -6871,24 +6715,19 @@
                       "image": "spider\\sa1.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -6928,24 +6767,19 @@
                       "image": "spider\\sa2.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -6985,24 +6819,19 @@
                       "image": "Attack2",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -7042,24 +6871,19 @@
                       "image": "Attack3",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -7099,24 +6923,19 @@
                       "image": "spider\\sa3.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -7156,24 +6975,19 @@
                       "image": "spider\\sa4.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -7213,24 +7027,19 @@
                       "image": "spider\\sa5.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -7270,24 +7079,19 @@
                       "image": "spider\\sa6.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -7327,24 +7131,19 @@
                       "image": "spider\\sa7.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -7384,24 +7183,19 @@
                       "image": "spider\\sa8.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -7441,24 +7235,19 @@
                       "image": "spider\\sa9.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -7510,24 +7299,19 @@
                       "image": "spider\\sd0.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -7567,24 +7351,19 @@
                       "image": "spider\\sd1.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -7624,24 +7403,19 @@
                       "image": "spider\\sd2.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -7681,24 +7455,19 @@
                       "image": "spider\\sd3.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -7738,24 +7507,19 @@
                       "image": "spider\\sd4.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -7795,24 +7559,19 @@
                       "image": "spider\\sd5.png",
                       "points": [
                         {
-                          "name": "AttackCheck",
-                          "x": 224.5,
-                          "y": 196
-                        },
-                        {
-                          "name": "BorderCheck",
-                          "x": 385,
-                          "y": 251
-                        },
-                        {
-                          "name": "WallCheck",
-                          "x": 385,
-                          "y": 144
-                        },
-                        {
                           "name": "AttackHole",
                           "x": 196,
                           "y": 47.5
+                        },
+                        {
+                          "name": "Head",
+                          "x": 385,
+                          "y": 30
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 385,
+                          "y": 196
                         }
                       ],
                       "originPoint": {
@@ -10369,25 +10128,24 @@
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "🏃‍♂️ Movementd",
-              "comment2": ""
-            },
-            {
-              "folded": true,
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "Gorilla",
               "conditions": [],
               "actions": [],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "🏃‍♂️ Movementd",
+                  "comment2": ""
+                },
                 {
                   "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
@@ -10469,6 +10227,7 @@
                   "comment2": ""
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -10488,16 +10247,6 @@
                       "subInstructions": [
                         {
                           "type": {
-                            "value": "CollisionPoint"
-                          },
-                          "parameters": [
-                            "wall",
-                            "Gorilla.PointX(\"WallCheck\")",
-                            "Gorilla.PointY(\"WallCheck\")"
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "BuiltinCommonInstructions::Not"
                           },
                           "parameters": [],
@@ -10508,10 +10257,25 @@
                               },
                               "parameters": [
                                 "wall",
-                                "Gorilla.PointX(\"BorderCheck\")",
-                                "Gorilla.PointY(\"BorderCheck\")"
+                                "Gorilla.PointX(\"Foot\")",
+                                "Gorilla.PointY(\"Foot\") + 90"
                               ]
                             }
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "RaycastToPosition"
+                          },
+                          "parameters": [
+                            "wall",
+                            "Gorilla.PointX(\"Head\")",
+                            "Gorilla.PointY(\"Head\")",
+                            "Gorilla.PointX(\"Foot\")",
+                            "Gorilla.PointY(\"Foot\")",
+                            "",
+                            "",
+                            ""
                           ]
                         }
                       ]
@@ -10612,6 +10376,418 @@
                             "Gorilla",
                             "justFlipped",
                             "False"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "⚔️ Attack",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "Gorilla",
+                        "Player",
+                        "250",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "Player.Y()",
+                        "<=",
+                        "Gorilla.PointY(\"Foot\")"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "FlippedX"
+                          },
+                          "parameters": [
+                            "Gorilla"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "Player.X()",
+                            ">",
+                            "Gorilla.CenterX()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetAnimationName"
+                          },
+                          "parameters": [
+                            "Gorilla",
+                            "\"Attack\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "FlippedX"
+                          },
+                          "parameters": [
+                            "Gorilla"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "Player.X()",
+                            "<=",
+                            "Gorilla.CenterX()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetAnimationName"
+                          },
+                          "parameters": [
+                            "Gorilla",
+                            "\"Attack\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Test",
+              "comment2": ""
+            },
+            {
+              "disabled": true,
+              "folded": true,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Gorilla",
+              "conditions": [],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "🔄️ Orientation",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "Tween::HasFinished"
+                          },
+                          "parameters": [
+                            "Gorilla",
+                            "Tween",
+                            "\"move\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Tween::Exists"
+                          },
+                          "parameters": [
+                            "Gorilla",
+                            "Tween",
+                            "\"move\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "RaycastToPosition"
+                          },
+                          "parameters": [
+                            "wall",
+                            "Gorilla.PointX(\"Head\")",
+                            "Gorilla.PointY(\"Head\")",
+                            "Gorilla.PointX(\"Foot\")",
+                            "Gorilla.PointY(\"Foot\") - 10",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Not"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "CollisionPoint"
+                              },
+                              "parameters": [
+                                "wall",
+                                "Gorilla.PointX(\"BorderCheck\")",
+                                "Gorilla.PointY(\"BorderCheck\")"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "FlippedX"
+                          },
+                          "parameters": [
+                            "Gorilla"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "FlipX"
+                          },
+                          "parameters": [
+                            "Gorilla",
+                            "yes"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Gorilla",
+                            "justFlipped",
+                            "True"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "FlippedX"
+                          },
+                          "parameters": [
+                            "Gorilla"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Gorilla",
+                            "justFlipped",
+                            "False"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "FlipX"
+                          },
+                          "parameters": [
+                            "Gorilla",
+                            "no"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Gorilla",
+                            "justFlipped",
+                            "False"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "🏃‍♂️ Movementd",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "Gorilla",
+                        "\"Attack\""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "FlippedX"
+                          },
+                          "parameters": [
+                            "Gorilla"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Tween::AddObjectPositionXTween"
+                          },
+                          "parameters": [
+                            "Gorilla",
+                            "Tween",
+                            "\"move\"",
+                            "Gorilla.X() - 180",
+                            "\"linear\"",
+                            "800",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "FlippedX"
+                          },
+                          "parameters": [
+                            "Gorilla"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Tween::AddObjectPositionXTween"
+                          },
+                          "parameters": [
+                            "Gorilla",
+                            "Tween",
+                            "\"move\"",
+                            "Gorilla.X() + 180",
+                            "\"linear\"",
+                            "800",
+                            ""
                           ]
                         }
                       ]
@@ -11154,91 +11330,90 @@
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "🏃‍♂️ Movement",
-              "comment2": ""
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "AnimationName"
-                  },
-                  "parameters": [
-                    "Spider",
-                    "\"Walk\""
-                  ]
-                }
-              ],
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Spider",
+              "conditions": [],
               "actions": [],
               "events": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "FlippedX"
-                      },
-                      "parameters": [
-                        "Spider"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::SimulateLeftKey"
-                      },
-                      "parameters": [
-                        "Spider",
-                        "PlatformerObject"
-                      ]
-                    }
-                  ]
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "🏃‍♂️ Movement",
+                  "comment2": ""
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "FlippedX"
-                      },
-                      "parameters": [
-                        "Spider"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::SimulateRightKey"
+                        "value": "AnimationName"
                       },
                       "parameters": [
                         "Spider",
-                        "PlatformerObject"
+                        "\"Walk\""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "FlippedX"
+                          },
+                          "parameters": [
+                            "Spider"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateLeftKey"
+                          },
+                          "parameters": [
+                            "Spider",
+                            "PlatformerObject"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "FlippedX"
+                          },
+                          "parameters": [
+                            "Spider"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateRightKey"
+                          },
+                          "parameters": [
+                            "Spider",
+                            "PlatformerObject"
+                          ]
+                        }
                       ]
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "Spider",
-              "conditions": [],
-              "actions": [],
-              "events": [
+                },
                 {
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
@@ -11276,8 +11451,8 @@
                           },
                           "parameters": [
                             "wall",
-                            "Spider.PointX(\"WallCheck\")",
-                            "Spider.PointY(\"WallCheck\")"
+                            "Spider.PointX(\"Foot\")",
+                            "Spider.PointY(\"Foot\") - 45"
                           ]
                         },
                         {
@@ -11292,8 +11467,8 @@
                               },
                               "parameters": [
                                 "wall",
-                                "Gorilla.PointX(\"BorderCheck\")",
-                                "Gorilla.PointY(\"BorderCheck\")"
+                                "Spider.PointX(\"Foot\")",
+                                "Spider.PointY(\"Foot\") + 45"
                               ]
                             }
                           ]
@@ -11425,7 +11600,7 @@
                       "parameters": [
                         "Player.Y()",
                         "<=",
-                        "Spider.PointY(\"AttackCheck\")"
+                        "Spider.PointY(\"Foot\")"
                       ]
                     },
                     {
@@ -11472,7 +11647,7 @@
                           "parameters": [
                             "Player.X()",
                             "<",
-                            "Spider.PointX(\"AttackCheck\")"
+                            "Spider.CenterX()"
                           ]
                         }
                       ],
@@ -11507,7 +11682,7 @@
                           "parameters": [
                             "Player.X()",
                             ">=",
-                            "Spider.PointX(\"AttackCheck\")"
+                            "Spider.CenterX()"
                           ]
                         }
                       ],
