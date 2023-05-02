@@ -1917,7 +1917,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.16351252155731058,
+        "zoomFactor": 0.6805851865728197,
         "windowMask": false
       },
       "objectsGroups": [
@@ -8341,17 +8341,33 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "jbi02.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "GroundCast",
+                          "x": 210,
+                          "y": 400
+                        },
+                        {
+                          "name": "PseudoCenter",
+                          "x": 420,
+                          "y": 290
+                        },
+                        {
+                          "name": "Ammo",
+                          "x": 99.5,
+                          "y": 320.5
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 211.5,
-                        "y": 199
+                        "x": 0,
+                        "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
-                        "x": 211.5,
-                        "y": 201
+                        "x": 0,
+                        "y": 0
                       },
                       "customCollisionMask": [
                         [
@@ -8395,17 +8411,33 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "jbi12.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "GroundCast",
+                          "x": 210,
+                          "y": 400
+                        },
+                        {
+                          "name": "PseudoCenter",
+                          "x": 420,
+                          "y": 290
+                        },
+                        {
+                          "name": "Ammo",
+                          "x": 99.5,
+                          "y": 320.5
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 211.5,
-                        "y": 199
+                        "x": 0,
+                        "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
-                        "x": 211.5,
-                        "y": 201
+                        "x": 0,
+                        "y": 0
                       },
                       "customCollisionMask": [
                         [
@@ -8464,13 +8496,13 @@
                       "points": [
                         {
                           "name": "GroundCast",
-                          "x": 192,
+                          "x": 210,
                           "y": 400
                         },
                         {
                           "name": "PseudoCenter",
-                          "x": 288,
-                          "y": 96
+                          "x": 420,
+                          "y": 290
                         },
                         {
                           "name": "Ammo",
@@ -8534,13 +8566,13 @@
                       "points": [
                         {
                           "name": "GroundCast",
-                          "x": 192,
+                          "x": 210,
                           "y": 400
                         },
                         {
                           "name": "PseudoCenter",
-                          "x": 288,
-                          "y": 96
+                          "x": 420,
+                          "y": 290
                         },
                         {
                           "name": "Ammo",
@@ -8604,13 +8636,13 @@
                       "points": [
                         {
                           "name": "GroundCast",
-                          "x": 192,
+                          "x": 210,
                           "y": 400
                         },
                         {
                           "name": "PseudoCenter",
-                          "x": 288,
-                          "y": 96
+                          "x": 420,
+                          "y": 290
                         },
                         {
                           "name": "Ammo",
@@ -8686,13 +8718,13 @@
                       "points": [
                         {
                           "name": "GroundCast",
-                          "x": 192,
+                          "x": 210,
                           "y": 400
                         },
                         {
                           "name": "PseudoCenter",
-                          "x": 288,
-                          "y": 96
+                          "x": 420,
+                          "y": 290
                         },
                         {
                           "name": "Ammo",
@@ -8756,13 +8788,13 @@
                       "points": [
                         {
                           "name": "GroundCast",
-                          "x": 192,
+                          "x": 210,
                           "y": 400
                         },
                         {
                           "name": "PseudoCenter",
-                          "x": 288,
-                          "y": 96
+                          "x": 420,
+                          "y": 290
                         },
                         {
                           "name": "Ammo",
@@ -8826,13 +8858,13 @@
                       "points": [
                         {
                           "name": "GroundCast",
-                          "x": 192,
+                          "x": 210,
                           "y": 400
                         },
                         {
                           "name": "PseudoCenter",
-                          "x": 288,
-                          "y": 96
+                          "x": 420,
+                          "y": 290
                         },
                         {
                           "name": "Ammo",
@@ -8896,13 +8928,13 @@
                       "points": [
                         {
                           "name": "GroundCast",
-                          "x": 192,
+                          "x": 210,
                           "y": 400
                         },
                         {
                           "name": "PseudoCenter",
-                          "x": 288,
-                          "y": 96
+                          "x": 420,
+                          "y": 290
                         },
                         {
                           "name": "Ammo",
@@ -8966,13 +8998,13 @@
                       "points": [
                         {
                           "name": "GroundCast",
-                          "x": 192,
+                          "x": 210,
                           "y": 400
                         },
                         {
                           "name": "PseudoCenter",
-                          "x": 288,
-                          "y": 96
+                          "x": 420,
+                          "y": 290
                         },
                         {
                           "name": "Ammo",
@@ -9048,13 +9080,13 @@
                       "points": [
                         {
                           "name": "GroundCast",
-                          "x": 192,
+                          "x": 210,
                           "y": 400
                         },
                         {
                           "name": "PseudoCenter",
-                          "x": 288,
-                          "y": 96
+                          "x": 420,
+                          "y": 290
                         },
                         {
                           "name": "Ammo",
@@ -9118,13 +9150,13 @@
                       "points": [
                         {
                           "name": "GroundCast",
-                          "x": 192,
+                          "x": 210,
                           "y": 400
                         },
                         {
                           "name": "PseudoCenter",
-                          "x": 288,
-                          "y": 96
+                          "x": 420,
+                          "y": 290
                         },
                         {
                           "name": "Ammo",
@@ -9188,13 +9220,13 @@
                       "points": [
                         {
                           "name": "GroundCast",
-                          "x": 192,
+                          "x": 210,
                           "y": 400
                         },
                         {
                           "name": "PseudoCenter",
-                          "x": 288,
-                          "y": 96
+                          "x": 420,
+                          "y": 290
                         },
                         {
                           "name": "Ammo",
@@ -9258,13 +9290,13 @@
                       "points": [
                         {
                           "name": "GroundCast",
-                          "x": 192,
+                          "x": 210,
                           "y": 400
                         },
                         {
                           "name": "PseudoCenter",
-                          "x": 288,
-                          "y": 96
+                          "x": 420,
+                          "y": 290
                         },
                         {
                           "name": "Ammo",
@@ -9337,7 +9369,23 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "jbh0.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "GroundCast",
+                          "x": 210,
+                          "y": 400
+                        },
+                        {
+                          "name": "PseudoCenter",
+                          "x": 420,
+                          "y": 290
+                        },
+                        {
+                          "name": "Ammo",
+                          "x": 99.5,
+                          "y": 320.5
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -9391,7 +9439,23 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "jbh1.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "GroundCast",
+                          "x": 210,
+                          "y": 400
+                        },
+                        {
+                          "name": "PseudoCenter",
+                          "x": 420,
+                          "y": 290
+                        },
+                        {
+                          "name": "Ammo",
+                          "x": 99.5,
+                          "y": 320.5
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -9445,7 +9509,23 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "jbh2.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "GroundCast",
+                          "x": 210,
+                          "y": 400
+                        },
+                        {
+                          "name": "PseudoCenter",
+                          "x": 420,
+                          "y": 290
+                        },
+                        {
+                          "name": "Ammo",
+                          "x": 99.5,
+                          "y": 320.5
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -9511,7 +9591,23 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "jbl0.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "GroundCast",
+                          "x": 210,
+                          "y": 400
+                        },
+                        {
+                          "name": "PseudoCenter",
+                          "x": 420,
+                          "y": 290
+                        },
+                        {
+                          "name": "Ammo",
+                          "x": 99.5,
+                          "y": 320.5
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -9565,7 +9661,23 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "jbl1.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "GroundCast",
+                          "x": 210,
+                          "y": 400
+                        },
+                        {
+                          "name": "PseudoCenter",
+                          "x": 420,
+                          "y": 290
+                        },
+                        {
+                          "name": "Ammo",
+                          "x": 99.5,
+                          "y": 320.5
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -9619,7 +9731,23 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "jbl2.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "GroundCast",
+                          "x": 210,
+                          "y": 400
+                        },
+                        {
+                          "name": "PseudoCenter",
+                          "x": 420,
+                          "y": 290
+                        },
+                        {
+                          "name": "Ammo",
+                          "x": 99.5,
+                          "y": 320.5
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -10255,77 +10383,78 @@
             },
             {
               "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "AnimationName"
-                  },
-                  "parameters": [
-                    "Gorilla",
-                    "\"Walk\""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "FlippedX"
-                      },
-                      "parameters": [
-                        "Gorilla"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::SimulateRightKey"
-                      },
-                      "parameters": [
-                        "Gorilla",
-                        "PlatformerObject"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "FlippedX"
-                      },
-                      "parameters": [
-                        "Gorilla"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::SimulateLeftKey"
-                      },
-                      "parameters": [
-                        "Gorilla",
-                        "PlatformerObject"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "Gorilla",
               "conditions": [],
               "actions": [],
               "events": [
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "Gorilla",
+                        "\"Walk\""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "FlippedX"
+                          },
+                          "parameters": [
+                            "Gorilla"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateRightKey"
+                          },
+                          "parameters": [
+                            "Gorilla",
+                            "PlatformerObject"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "FlippedX"
+                          },
+                          "parameters": [
+                            "Gorilla"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateLeftKey"
+                          },
+                          "parameters": [
+                            "Gorilla",
+                            "PlatformerObject"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
@@ -10369,12 +10498,20 @@
                         },
                         {
                           "type": {
-                            "value": "CollisionPoint"
+                            "value": "BuiltinCommonInstructions::Not"
                           },
-                          "parameters": [
-                            "jungle_wall",
-                            "Gorilla.PointX(\"BorderCheck\")",
-                            "Gorilla.PointY(\"BorderCheck\")"
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "CollisionPoint"
+                              },
+                              "parameters": [
+                                "wall",
+                                "Gorilla.PointX(\"BorderCheck\")",
+                                "Gorilla.PointY(\"BorderCheck\")"
+                              ]
+                            }
                           ]
                         }
                       ]
@@ -11096,6 +11233,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "Spider",
               "conditions": [],
@@ -11144,12 +11282,20 @@
                         },
                         {
                           "type": {
-                            "value": "CollisionPoint"
+                            "value": "BuiltinCommonInstructions::Not"
                           },
-                          "parameters": [
-                            "jungle_wall",
-                            "Spider.PointX(\"BorderCheck\")",
-                            "Spider.PointY(\"BorderCheck\")"
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "CollisionPoint"
+                              },
+                              "parameters": [
+                                "wall",
+                                "Gorilla.PointX(\"BorderCheck\")",
+                                "Gorilla.PointY(\"BorderCheck\")"
+                              ]
+                            }
                           ]
                         }
                       ]
@@ -13864,6 +14010,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Spawn",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -14150,7 +14297,7 @@
                         "jungle_boss",
                         "Tween",
                         "\"initfall\"",
-                        "Variable(jungle_enemy.leftGroundY) - 192",
+                        "Variable(jungle_enemy.leftGroundY) - jungle_boss.Height()",
                         "\"easeInExpo\"",
                         "500",
                         ""
@@ -14178,6 +14325,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Attack1",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -14276,7 +14424,7 @@
                     "jungle_boss",
                     "Tween",
                     "\"overPlayer\"",
-                    "jungle_boss.X() + (round( (DistanceBetweenPositions(Player.CenterX(), 0, jungle_boss.PointX(\"PseudoCenter\"), 0)*sign(Player.CenterX()-jungle_boss.PointX(\"PseudoCenter\")))/192)*192)",
+                    "jungle_boss.X() + (round( (DistanceBetweenPositions(Player.CenterX(), 0, jungle_boss.PointX(\"PseudoCenter\"), 0)*sign(Player.CenterX()-jungle_boss.PointX(\"PseudoCenter\")))/jungle_boss.Height())*jungle_boss.Height())",
                     "\"easeInExpo\"",
                     "500",
                     ""
@@ -14323,7 +14471,7 @@
                     "jungle_boss",
                     "Tween",
                     "\"fall\"",
-                    "Player.PointY(\"Head\")",
+                    "Player.PointY(\"Foot\") - jungle_boss.Height()",
                     "\"easeInExpo\"",
                     "500",
                     ""
@@ -14477,15 +14625,6 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "AjoutObjConcern"
-                      },
-                      "parameters": [
-                        "",
-                        "wall"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "CollisionNP"
                       },
                       "parameters": [
@@ -14497,45 +14636,53 @@
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "jungle_wall",
-                        "wall.X()",
-                        "wall.Y()",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangePlan"
-                      },
-                      "parameters": [
-                        "jungle_wall",
-                        "=",
-                        "2"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetAnimationName"
-                      },
-                      "parameters": [
-                        "jungle_wall",
-                        "\"wallTile4\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "wall",
-                        ""
+                      "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "wall",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "jungle_wall",
+                            "wall.X()",
+                            "wall.Y()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "jungle_wall",
+                            "=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetAnimationName"
+                          },
+                          "parameters": [
+                            "jungle_wall",
+                            "\"wallTile4\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "wall",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -14587,6 +14734,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Attack2",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -14768,6 +14916,39 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"jungle_bossAttack2\"",
+                    ">",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "\"Idle\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Or"
                   },
                   "parameters": [],
@@ -14869,7 +15050,7 @@
                       "parameters": [
                         "wall",
                         "jungle_boss.X()",
-                        "jungle_boss.Y() + 190",
+                        "jungle_boss.PointY(\"Ammo\")",
                         "-180",
                         "2000",
                         "jungle_boss.leftWallX",
@@ -14924,7 +15105,7 @@
                       "parameters": [
                         "wall",
                         "jungle_boss.X()",
-                        "jungle_boss.Y() + 190",
+                        "jungle_boss.PointY(\"Ammo\")",
                         "0",
                         "2000",
                         "jungle_boss.rightWallX",
@@ -14953,7 +15134,7 @@
                         "jungle_boss",
                         "Tween",
                         "\"open\"",
-                        "Variable(jungle_boss.rightWallX) - 288",
+                        "Variable(jungle_boss.rightWallX) - jungle_boss.Width()",
                         "\"easeInExpo\"",
                         "500",
                         ""
