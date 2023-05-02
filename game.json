@@ -1917,7 +1917,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.6805851865728197,
+        "zoomFactor": 0.1581786841172202,
         "windowMask": false
       },
       "objectsGroups": [
@@ -5008,16 +5008,16 @@
           "effects": [],
           "behaviors": [
             {
+              "canGoDownFromJumpthru": true,
+              "canGrabWithoutMoving": false,
+              "ignoreDefaultControls": true,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1000,
               "deceleration": 32000,
               "gravity": 2000,
               "maxSpeed": 220,
-              "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
-              "canGrabWithoutMoving": true,
-              "ignoreDefaultControls": true,
               "jumpSpeed": 600,
               "jumpSustainTime": 0.2,
               "ladderClimbingSpeed": 150,
@@ -5026,10 +5026,6 @@
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -6240,6 +6236,7 @@
           "effects": [],
           "behaviors": [
             {
+              "canGrabWithoutMoving": false,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "deceleration": 35000,
@@ -6247,7 +6244,6 @@
               "acceleration": 200,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
-              "canGrabWithoutMoving": true,
               "ignoreDefaultControls": true,
               "jumpSpeed": 600,
               "jumpSustainTime": 0.2,
@@ -10147,7 +10143,6 @@
                   "comment2": ""
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -10227,7 +10222,6 @@
                   "comment2": ""
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -10476,418 +10470,6 @@
                             "Player.X()",
                             "<=",
                             "Gorilla.CenterX()"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "Gorilla",
-                            "\"Attack\""
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Test",
-              "comment2": ""
-            },
-            {
-              "disabled": true,
-              "folded": true,
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "Gorilla",
-              "conditions": [],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "🔄️ Orientation",
-                  "comment2": ""
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "Tween::HasFinished"
-                          },
-                          "parameters": [
-                            "Gorilla",
-                            "Tween",
-                            "\"move\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "Tween::Exists"
-                          },
-                          "parameters": [
-                            "Gorilla",
-                            "Tween",
-                            "\"move\""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "RaycastToPosition"
-                          },
-                          "parameters": [
-                            "wall",
-                            "Gorilla.PointX(\"Head\")",
-                            "Gorilla.PointY(\"Head\")",
-                            "Gorilla.PointX(\"Foot\")",
-                            "Gorilla.PointY(\"Foot\") - 10",
-                            "",
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Not"
-                          },
-                          "parameters": [],
-                          "subInstructions": [
-                            {
-                              "type": {
-                                "value": "CollisionPoint"
-                              },
-                              "parameters": [
-                                "wall",
-                                "Gorilla.PointX(\"BorderCheck\")",
-                                "Gorilla.PointY(\"BorderCheck\")"
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "FlippedX"
-                          },
-                          "parameters": [
-                            "Gorilla"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "FlipX"
-                          },
-                          "parameters": [
-                            "Gorilla",
-                            "yes"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "Gorilla",
-                            "justFlipped",
-                            "True"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "FlippedX"
-                          },
-                          "parameters": [
-                            "Gorilla"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "Gorilla",
-                            "justFlipped",
-                            "False"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "FlipX"
-                          },
-                          "parameters": [
-                            "Gorilla",
-                            "no"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "Gorilla",
-                            "justFlipped",
-                            "False"
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "🏃‍♂️ Movementd",
-                  "comment2": ""
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "AnimationName"
-                      },
-                      "parameters": [
-                        "Gorilla",
-                        "\"Attack\""
-                      ]
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "FlippedX"
-                          },
-                          "parameters": [
-                            "Gorilla"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Tween::AddObjectPositionXTween"
-                          },
-                          "parameters": [
-                            "Gorilla",
-                            "Tween",
-                            "\"move\"",
-                            "Gorilla.X() - 180",
-                            "\"linear\"",
-                            "800",
-                            ""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "FlippedX"
-                          },
-                          "parameters": [
-                            "Gorilla"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Tween::AddObjectPositionXTween"
-                          },
-                          "parameters": [
-                            "Gorilla",
-                            "Tween",
-                            "\"move\"",
-                            "Gorilla.X() + 180",
-                            "\"linear\"",
-                            "800",
-                            ""
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "⚔️ Attack",
-                  "comment2": ""
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "Distance"
-                      },
-                      "parameters": [
-                        "Gorilla",
-                        "Player",
-                        "250",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::CompareNumbers"
-                      },
-                      "parameters": [
-                        "Player.Y()",
-                        "<=",
-                        "Gorilla.PointY(\"AttackCheck\")"
-                      ]
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "FlippedX"
-                          },
-                          "parameters": [
-                            "Gorilla"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::CompareNumbers"
-                          },
-                          "parameters": [
-                            "Player.X()",
-                            ">",
-                            "Gorilla.PointX(\"AttackCheck\")"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "Gorilla",
-                            "\"Attack\""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "FlippedX"
-                          },
-                          "parameters": [
-                            "Gorilla"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::CompareNumbers"
-                          },
-                          "parameters": [
-                            "Player.X()",
-                            "<=",
-                            "Gorilla.PointX(\"AttackCheck\")"
                           ]
                         }
                       ],
