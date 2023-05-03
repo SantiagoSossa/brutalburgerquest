@@ -2431,6 +2431,15 @@
         "name": "player\\PlayerDust2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "player/PlayerDust3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "player\\PlayerDust3.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2466,7 +2475,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.2689037629992741,
+        "zoomFactor": 0.33917066492768627,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2880,7 +2889,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -2927,7 +2936,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -2974,7 +2983,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3021,7 +3030,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3081,7 +3090,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3128,7 +3137,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3175,7 +3184,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3222,7 +3231,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3269,7 +3278,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3316,7 +3325,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3363,7 +3372,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3410,7 +3419,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3470,7 +3479,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3517,7 +3526,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3564,7 +3573,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3611,7 +3620,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3671,7 +3680,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3730,7 +3739,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3777,7 +3786,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3824,7 +3833,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3871,7 +3880,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3918,7 +3927,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -3977,7 +3986,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -4024,7 +4033,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -4071,7 +4080,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -4130,7 +4139,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -4189,7 +4198,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -4236,7 +4245,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -4283,7 +4292,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -4330,7 +4339,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -4377,7 +4386,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -4424,7 +4433,7 @@
                       "points": [
                         {
                           "name": "Head",
-                          "x": 127.5,
+                          "x": 160,
                           "y": 108
                         },
                         {
@@ -9515,7 +9524,7 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": true,
+                  "looping": false,
                   "timeBetweenFrames": 0.15,
                   "sprites": [
                     {
@@ -11067,6 +11076,98 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "additive": false,
+          "assetStoreId": "",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 90,
+          "emitterForceMax": 500,
+          "emitterForceMin": 500,
+          "flow": 300,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 50,
+          "name": "PlayerBurp",
+          "particleAlpha1": 255,
+          "particleAlpha2": 120,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": -50,
+          "particleAngle2": 50,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 79,
+          "particleBlue2": 157,
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 106,
+          "particleGreen2": 198,
+          "particleLifeTimeMax": 0.8,
+          "particleLifeTimeMin": 0.6,
+          "particleRed1": 45,
+          "particleRed2": 116,
+          "particleSize1": 40,
+          "particleSize2": 200,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 1,
+          "rendererParam2": 1,
+          "rendererType": "Quad",
+          "tags": "",
+          "tank": 50,
+          "textureParticleName": "player\\PlayerDust3.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 5,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "additive": false,
+          "assetStoreId": "",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 45,
+          "emitterForceMax": 200,
+          "emitterForceMin": 100,
+          "flow": 300,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 5,
+          "name": "PlayerBurpAddon",
+          "particleAlpha1": 255,
+          "particleAlpha2": 120,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 255,
+          "particleBlue2": 255,
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 255,
+          "particleGreen2": 255,
+          "particleLifeTimeMax": 0.8,
+          "particleLifeTimeMin": 0.6,
+          "particleRed1": 255,
+          "particleRed2": 255,
+          "particleSize1": 100,
+          "particleSize2": 200,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 10,
+          "rendererParam2": 2,
+          "rendererType": "Line",
+          "tags": "",
+          "tank": 5,
+          "textureParticleName": "",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 5,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "events": [
@@ -11086,184 +11187,387 @@
               "colorR": 74,
               "creationTime": 0,
               "folded": true,
-              "name": "Player Dust (Experiment)",
+              "name": "Experimental",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Dust",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
                     {
-                      "type": {
-                        "value": "DepartScene"
-                      },
-                      "parameters": [
-                        ""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "DepartScene"
+                          },
+                          "parameters": [
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "PlayerDust1",
+                            "-100",
+                            "-100",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "PlayerDust1",
+                            "=",
+                            "6"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"Dust1\""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "PlayerDust1",
+                            "=",
+                            "Player.PointX(\"Foot\")",
+                            "=",
+                            "Player.PointY(\"Foot\") - 10"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::IsOnFloor"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"Dust1\"",
+                            "<",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ParticleSystem::StartEmission"
+                          },
+                          "parameters": [
+                            "PlayerDust1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"Dust1\"",
+                            ">",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ParticleSystem::StopEmission"
+                          },
+                          "parameters": [
+                            "PlayerDust1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "abs(Player.PlatformerObject::CurrentSpeed())",
+                            "<",
+                            "100"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"Dust1\""
+                          ]
+                        }
+                      ]
                     }
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "PlayerDust1",
-                        "Player.PointX(\"Foot\")",
-                        "Player.PointY(\"Foot\") - 10",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangePlan"
-                      },
-                      "parameters": [
-                        "PlayerDust1",
-                        "=",
-                        "6"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ResetObjectTimer"
-                      },
-                      "parameters": [
-                        "Player",
-                        "\"Dust1\""
-                      ]
-                    }
-                  ]
+                  "parameters": []
                 },
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Burp",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
                     {
-                      "type": {
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "PlayerDust1",
-                        "=",
-                        "Player.PointX(\"Foot\")",
-                        "=",
-                        "Player.PointY(\"Foot\") - 10"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::IsOnFloor"
-                      },
-                      "parameters": [
-                        "Player",
-                        "PlatformerObject"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "x"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "PlayerBurp",
+                            "Player.PointX(\"Head\")",
+                            "Player.PointY(\"Head\") + 75",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "PlayerBurpAddon",
+                            "Player.PointX(\"Head\")",
+                            "Player.PointY(\"Head\") + 75",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "PlayerBurp",
+                            "=",
+                            "10"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "PlayerBurpAddon",
+                            "=",
+                            "12"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Cache"
+                          },
+                          "parameters": [
+                            "PlayerBurpAddon"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "FlippedX"
+                              },
+                              "parameters": [
+                                "Player"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetAngle"
+                              },
+                              "parameters": [
+                                "PlayerBurp",
+                                "=",
+                                "-30"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetAngle"
+                              },
+                              "parameters": [
+                                "PlayerBurpAddon",
+                                "=",
+                                "-30"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "FlippedX"
+                              },
+                              "parameters": [
+                                "Player"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetAngle"
+                              },
+                              "parameters": [
+                                "PlayerBurp",
+                                "=",
+                                "-150"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetAngle"
+                              },
+                              "parameters": [
+                                "PlayerBurpAddon",
+                                "=",
+                                "-150"
+                              ]
+                            }
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
-                      },
-                      "parameters": [
-                        "Player",
-                        "PlatformerObject"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "CompareObjectTimer"
-                      },
-                      "parameters": [
-                        "Player",
-                        "\"Dust1\"",
-                        "<",
-                        "1"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "PlayerBurp",
+                            "=",
+                            "Player.PointX(\"Head\")",
+                            "=",
+                            "Player.PointY(\"Head\") + 75"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "PlayerBurpAddon",
+                            "=",
+                            "Player.PointX(\"Head\")",
+                            "=",
+                            "Player.PointY(\"Head\") + 75"
+                          ]
+                        }
                       ]
                     }
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "ParticleSystem::StartEmission"
-                      },
-                      "parameters": [
-                        "PlayerDust1"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CompareObjectTimer"
-                      },
-                      "parameters": [
-                        "Player",
-                        "\"Dust1\"",
-                        ">",
-                        "1"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "ParticleSystem::StopEmission"
-                      },
-                      "parameters": [
-                        "PlayerDust1"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
-                      },
-                      "parameters": [
-                        "Player",
-                        "PlatformerObject"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::CompareNumbers"
-                      },
-                      "parameters": [
-                        "abs(Player.PlatformerObject::CurrentSpeed())",
-                        "<",
-                        "100"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "ResetObjectTimer"
-                      },
-                      "parameters": [
-                        "Player",
-                        "\"Dust1\""
-                      ]
-                    }
-                  ]
+                  "parameters": []
                 }
               ],
               "parameters": []
@@ -11321,6 +11625,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -11634,6 +11939,7 @@
               "comment2": ""
             },
             {
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -15841,6 +16147,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Spawn",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -16637,7 +16944,17 @@
                   ]
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "\"Attack2\""
+                  ]
+                }
+              ],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -16650,18 +16967,17 @@
                       "parameters": [
                         "jungle_boss"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimationEnded2"
+                      },
+                      "parameters": [
+                        "jungle_boss"
+                      ]
                     }
                   ],
                   "actions": [
-                    {
-                      "type": {
-                        "value": "SetAnimationName"
-                      },
-                      "parameters": [
-                        "jungle_boss",
-                        "\"Attack2\""
-                      ]
-                    },
                     {
                       "type": {
                         "value": "FireBullet::FireBullet::Fire"
@@ -16699,18 +17015,17 @@
                       "parameters": [
                         "jungle_boss"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimationEnded2"
+                      },
+                      "parameters": [
+                        "jungle_boss"
+                      ]
                     }
                   ],
                   "actions": [
-                    {
-                      "type": {
-                        "value": "SetAnimationName"
-                      },
-                      "parameters": [
-                        "jungle_boss",
-                        "\"Attack2\""
-                      ]
-                    },
                     {
                       "type": {
                         "value": "FireBullet::FireBullet::Fire"
@@ -50284,7 +50599,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.19955591185563532,
+        "zoomFactor": 0.26896273763797834,
         "windowMask": false
       }
     },
