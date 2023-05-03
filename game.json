@@ -2359,6 +2359,60 @@
         "name": "Asset 2@4x3.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pd0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pd0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pd1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pd1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pd2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pd2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pd3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pd3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pd5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pd5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pd6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pd6.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -4055,6 +4109,300 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "pf13.png",
+                      "points": [
+                        {
+                          "name": "Head",
+                          "x": 127.5,
+                          "y": 108
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 127.5,
+                        "y": 185
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 127.5,
+                        "y": 185
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 45,
+                            "y": 120
+                          },
+                          {
+                            "x": 200,
+                            "y": 120
+                          },
+                          {
+                            "x": 200,
+                            "y": 300
+                          },
+                          {
+                            "x": 45,
+                            "y": 300
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.12,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pd0.png",
+                      "points": [
+                        {
+                          "name": "Head",
+                          "x": 127.5,
+                          "y": 108
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 127.5,
+                        "y": 185
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 127.5,
+                        "y": 185
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 45,
+                            "y": 120
+                          },
+                          {
+                            "x": 200,
+                            "y": 120
+                          },
+                          {
+                            "x": 200,
+                            "y": 300
+                          },
+                          {
+                            "x": 45,
+                            "y": 300
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pd1.png",
+                      "points": [
+                        {
+                          "name": "Head",
+                          "x": 127.5,
+                          "y": 108
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 127.5,
+                        "y": 185
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 127.5,
+                        "y": 185
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 45,
+                            "y": 120
+                          },
+                          {
+                            "x": 200,
+                            "y": 120
+                          },
+                          {
+                            "x": 200,
+                            "y": 300
+                          },
+                          {
+                            "x": 45,
+                            "y": 300
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pd2.png",
+                      "points": [
+                        {
+                          "name": "Head",
+                          "x": 127.5,
+                          "y": 108
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 127.5,
+                        "y": 185
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 127.5,
+                        "y": 185
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 45,
+                            "y": 120
+                          },
+                          {
+                            "x": 200,
+                            "y": 120
+                          },
+                          {
+                            "x": 200,
+                            "y": 300
+                          },
+                          {
+                            "x": 45,
+                            "y": 300
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pd3.png",
+                      "points": [
+                        {
+                          "name": "Head",
+                          "x": 127.5,
+                          "y": 108
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 127.5,
+                        "y": 185
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 127.5,
+                        "y": 185
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 45,
+                            "y": 120
+                          },
+                          {
+                            "x": 200,
+                            "y": 120
+                          },
+                          {
+                            "x": 200,
+                            "y": 300
+                          },
+                          {
+                            "x": 45,
+                            "y": 300
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pd5.png",
+                      "points": [
+                        {
+                          "name": "Head",
+                          "x": 127.5,
+                          "y": 108
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 127.5,
+                        "y": 185
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 127.5,
+                        "y": 185
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 45,
+                            "y": 120
+                          },
+                          {
+                            "x": 200,
+                            "y": 120
+                          },
+                          {
+                            "x": 200,
+                            "y": 300
+                          },
+                          {
+                            "x": 45,
+                            "y": 300
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pd6.png",
                       "points": [
                         {
                           "name": "Head",
@@ -6355,7 +6703,7 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.12,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -7973,7 +8321,7 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.12,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -13265,7 +13613,6 @@
               ]
             },
             {
-              "folded": true,
               "infiniteLoopWarning": true,
               "type": "BuiltinCommonInstructions::While",
               "whileConditions": [
@@ -13284,7 +13631,6 @@
               "actions": [],
               "events": [
                 {
-                  "folded": true,
                   "infiniteLoopWarning": true,
                   "type": "BuiltinCommonInstructions::While",
                   "whileConditions": [
