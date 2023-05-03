@@ -2413,6 +2413,24 @@
         "name": "pd6.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "player/PlayerDust1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "player\\PlayerDust1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "player/PlayerDust2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "player\\PlayerDust2.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2448,7 +2466,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.1581786841172202,
+        "zoomFactor": 0.2689037629992741,
         "windowMask": false
       },
       "objectsGroups": [
@@ -9143,7 +9161,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -9213,7 +9231,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -9295,7 +9313,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -9365,7 +9383,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -9435,7 +9453,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -9517,7 +9535,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -9587,7 +9605,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -9657,7 +9675,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -9727,7 +9745,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -9797,7 +9815,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -9879,7 +9897,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -9949,7 +9967,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -10019,7 +10037,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -10089,7 +10107,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -10171,7 +10189,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -10241,7 +10259,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -10311,7 +10329,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -10393,7 +10411,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -10463,7 +10481,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -10533,7 +10551,7 @@
                         {
                           "name": "Ammo",
                           "x": 99,
-                          "y": 288
+                          "y": 300
                         }
                       ],
                       "originPoint": {
@@ -10616,8 +10634,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 120,
+                        "y": 32
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -10633,8 +10651,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 120,
+                        "y": 32
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -10650,8 +10668,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 120,
+                        "y": 32
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -10667,8 +10685,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 120,
+                        "y": 32
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -11003,6 +11021,52 @@
               ]
             }
           ]
+        },
+        {
+          "additive": false,
+          "assetStoreId": "",
+          "destroyWhenNoParticles": false,
+          "emitterAngleA": 0,
+          "emitterAngleB": 45,
+          "emitterForceMax": 0,
+          "emitterForceMin": 0,
+          "flow": 5,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 20,
+          "name": "PlayerDust1",
+          "particleAlpha1": 255,
+          "particleAlpha2": 255,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": -50,
+          "particleAngle2": 50,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 255,
+          "particleBlue2": 255,
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 255,
+          "particleGreen2": 255,
+          "particleLifeTimeMax": 1.5,
+          "particleLifeTimeMin": 0.5,
+          "particleRed1": 255,
+          "particleRed2": 255,
+          "particleSize1": 200,
+          "particleSize2": 30,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 1,
+          "rendererParam2": 1,
+          "rendererType": "Quad",
+          "tags": "",
+          "tank": -1,
+          "textureParticleName": "player\\PlayerDust2.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 2,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "events": [
@@ -11016,6 +11080,194 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "folded": true,
+              "name": "Player Dust (Experiment)",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DepartScene"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "PlayerDust1",
+                        "Player.PointX(\"Foot\")",
+                        "Player.PointY(\"Foot\") - 10",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "PlayerDust1",
+                        "=",
+                        "6"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"Dust1\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "PlayerDust1",
+                        "=",
+                        "Player.PointX(\"Foot\")",
+                        "=",
+                        "Player.PointY(\"Foot\") - 10"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsOnFloor"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"Dust1\"",
+                        "<",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ParticleSystem::StartEmission"
+                      },
+                      "parameters": [
+                        "PlayerDust1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"Dust1\"",
+                        ">",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ParticleSystem::StopEmission"
+                      },
+                      "parameters": [
+                        "PlayerDust1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "abs(Player.PlatformerObject::CurrentSpeed())",
+                        "<",
+                        "100"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"Dust1\""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
             {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
@@ -13277,6 +13529,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Level Genetarion",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
