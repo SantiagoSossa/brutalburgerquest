@@ -2494,6 +2494,139 @@
         "name": "player\\PlayerDust2.png2",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "horn.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "horn.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "hand.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hand.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bur1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bur1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bur2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bur2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bur3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bur3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bur4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bur4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bur5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bur5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bbqlogo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bbqlogo.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/horn2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "horn2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/hand2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hand2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "KCWaxMuseum.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "KCWaxMuseum.otf",
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "logo gdevelop.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "logo gdevelop.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "logo gdevelop2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "logo gdevelop2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/bur2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "bur2",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -11536,7 +11669,6 @@
           "colorG": 29,
           "colorR": 29,
           "creationTime": 0,
-          "folded": true,
           "name": "Player",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -11546,7 +11678,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Experimental",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -11556,7 +11687,6 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "Dust",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -11732,6 +11862,54 @@
                           "parameters": [
                             "Player",
                             "\"Dust1\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::IsGrabbingPlatform"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ParticleSystem::StopEmission"
+                          },
+                          "parameters": [
+                            "PlayerDust1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::IsFalling"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ParticleSystem::StopEmission"
+                          },
+                          "parameters": [
+                            "PlayerDust1"
                           ]
                         }
                       ]
@@ -11985,7 +12163,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -12120,7 +12297,7 @@
                             "Player",
                             "PlatformerObject",
                             ">",
-                            "1750"
+                            "1500"
                           ]
                         }
                       ],
@@ -15602,7 +15779,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Camera",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -15890,14 +16066,14 @@
       "uiSettings": {
         "grid": true,
         "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
+        "gridWidth": 192,
+        "gridHeight": 192,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.19672994097256713,
+        "zoomFactor": 0.2033637395188295,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -15921,14 +16097,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 351,
+          "height": 396,
           "layer": "",
-          "name": "ExitGame",
-          "persistentUuid": "f8cd3790-1d3a-4dee-85bc-f07b40a0db57",
-          "width": 527,
-          "x": 1676,
-          "y": 2465,
-          "zOrder": 6,
+          "name": "horn",
+          "persistentUuid": "66e05485-afe4-4f96-8bbb-b401ebda2c02",
+          "width": 545,
+          "x": 924,
+          "y": 577,
+          "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -15936,14 +16112,164 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 512,
+          "height": 396,
+          "layer": "",
+          "name": "horn2",
+          "persistentUuid": "a6dcb207-7555-43b9-bc58-bf931a9bfe07",
+          "width": 545,
+          "x": 2339,
+          "y": 578,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 734,
+          "layer": "",
+          "name": "bbqlogo",
+          "persistentUuid": "b74d2b32-a773-4bc8-8851-ddbc82297b28",
+          "width": 1224,
+          "x": 1302,
+          "y": 420,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 893,
+          "layer": "",
+          "name": "hand",
+          "persistentUuid": "40e9c053-795d-4d92-8ce7-2c257289c0f6",
+          "width": 874,
+          "x": 601,
+          "y": 1224,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 893,
+          "layer": "",
+          "name": "hand2",
+          "persistentUuid": "2cb918f7-422d-45f3-acad-b53e2a6c949d",
+          "width": 874,
+          "x": 2354,
+          "y": 1222,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 359,
+          "layer": "",
+          "name": "burger5",
+          "persistentUuid": "c87e6fe7-adba-4447-b3fa-9edf3937828b",
+          "width": 532,
+          "x": 1672,
+          "y": 1056,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 446,
+          "layer": "",
+          "name": "burger4",
+          "persistentUuid": "80b3b602-f096-4cae-b2c5-d2e11cd07644",
+          "width": 1442,
+          "x": 1195,
+          "y": 2111,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 298,
+          "layer": "",
+          "name": "burger3",
+          "persistentUuid": "ab0cf51f-cb1c-4529-bd6b-bff905a7a8de",
+          "width": 1151,
+          "x": 1359,
+          "y": 1870,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 242,
+          "layer": "",
+          "name": "burger2",
+          "persistentUuid": "6bc5e323-e911-4c39-bccb-25abf6668792",
+          "width": 558,
+          "x": 1656,
+          "y": 1259,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 491,
+          "layer": "",
+          "name": "burger1",
+          "persistentUuid": "d1a9afde-1428-42ce-ad70-3d7a58d5a70d",
+          "width": 874,
+          "x": 1495,
+          "y": 1411,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 274,
           "layer": "",
           "name": "NewGame",
-          "persistentUuid": "c37d8612-b45d-4242-b09e-d19a81721d92",
-          "width": 1675,
-          "x": 1183,
-          "y": 2112,
-          "zOrder": 5,
+          "persistentUuid": "f4b304af-719e-468b-9369-aa1fd096639b",
+          "width": 1908,
+          "x": 972,
+          "y": 1659,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "made_with",
+          "persistentUuid": "19c1f306-e2b8-45ca-9b01-22f7e5745922",
+          "width": 0,
+          "x": 576,
+          "y": 2630,
+          "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -15951,14 +16277,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 1636,
+          "height": 103,
           "layer": "",
-          "name": "MainTitle",
-          "persistentUuid": "8f3683f5-152a-4b26-a2fa-69fb2e069c2d",
-          "width": 2076,
-          "x": 964,
-          "y": 320,
-          "zOrder": 7,
+          "name": "LogoGdevelop",
+          "persistentUuid": "a360ea06-2480-4c41-9239-de82b1d1eac8",
+          "width": 102,
+          "x": 940,
+          "y": 2605,
+          "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -15968,27 +16294,12 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "player_spin",
-          "persistentUuid": "7a0e9d2d-8b96-455b-8f54-e91bfaa2ff33",
+          "name": "year",
+          "persistentUuid": "5e49231c-5cb5-4a2a-9fb2-22a67db1d3b5",
           "width": 0,
-          "x": 2762,
-          "y": 2144,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "player_spin",
-          "persistentUuid": "17286000-41c5-47d2-a2c3-1c60e6b1698d",
-          "width": 0,
-          "x": 842,
-          "y": 2144,
-          "zOrder": 9,
+          "x": 3060,
+          "y": 2624,
+          "zOrder": 24,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -16006,15 +16317,20 @@
           "underlined": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
-          "string": "New Game",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 300,
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "press any key",
+          "font": "KCWaxMuseum.otf",
+          "textAlignment": "center",
+          "characterSize": 210,
           "color": {
-            "b": 218,
-            "g": 252,
-            "r": 255
+            "b": 0,
+            "g": 220,
+            "r": 254
           }
         },
         {
@@ -16251,6 +16567,539 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "horn",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "horn.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "horn2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "horn2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "horn2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "hand",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "hand.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "hand2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "hand2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "hand2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "burger1",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bur1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "burger2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "bur2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bur2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "burger3",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bur3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "burger4",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bur4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "burger5",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bur5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "bbqlogo",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bbqlogo.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "made_with",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "made with           develop",
+          "font": "KCWaxMuseum.otf",
+          "textAlignment": "left",
+          "characterSize": 70,
+          "color": {
+            "b": 218,
+            "g": 252,
+            "r": 254
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "year",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "©2023",
+          "font": "KCWaxMuseum.otf",
+          "textAlignment": "left",
+          "characterSize": 70,
+          "color": {
+            "b": 218,
+            "g": 252,
+            "r": 254
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "LogoGdevelop",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "logo gdevelop2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -16259,21 +17108,9 @@
           "conditions": [
             {
               "type": {
-                "value": "MouseButtonReleased"
+                "value": "AnyKeyPressed"
               },
               "parameters": [
-                "",
-                "Left"
-              ]
-            },
-            {
-              "type": {
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "NewGame",
-                "",
-                "",
                 ""
               ]
             }
@@ -16296,21 +17133,9 @@
           "conditions": [
             {
               "type": {
-                "value": "MouseButtonReleased"
+                "value": "DepartScene"
               },
               "parameters": [
-                "",
-                "Left"
-              ]
-            },
-            {
-              "type": {
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "ExitGame",
-                "",
-                "",
                 ""
               ]
             }
@@ -16318,9 +17143,498 @@
           "actions": [
             {
               "type": {
-                "value": "Quit"
+                "value": "ZoomCamera"
               },
               "parameters": [
+                "",
+                "1.2",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleTween"
+              },
+              "parameters": [
+                "NewGame",
+                "Tween",
+                "\"pressstart\"",
+                "1.02",
+                "1.02",
+                "\"easeInQuad\"",
+                "1000",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "hand2",
+                "Tween",
+                "\"hand2move\"",
+                "hand2.Y()+50",
+                "\"easeOutSine\"",
+                "2000",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "hand",
+                "Tween",
+                "\"handmove\"",
+                "hand.Y()-50",
+                "\"easeOutSine\"",
+                "2000",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "burger1",
+                "Tween",
+                "\"burger1move\"",
+                "burger1.Y()+10",
+                "\"easeOutSine\"",
+                "1500",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "burger2",
+                "Tween",
+                "\"burger2move\"",
+                "burger2.Y()+10",
+                "\"easeOutSine\"",
+                "700",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "NewGame",
+                "Tween",
+                "\"pressstart2\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::RemoveTween"
+              },
+              "parameters": [
+                "NewGame",
+                "Tween",
+                "\"pressstart2\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleTween"
+              },
+              "parameters": [
+                "NewGame",
+                "Tween",
+                "\"pressstart\"",
+                "1.02",
+                "1.02",
+                "\"easeInQuad\"",
+                "1000",
+                "",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "NewGame",
+                "Tween",
+                "\"pressstart\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::RemoveTween"
+              },
+              "parameters": [
+                "NewGame",
+                "Tween",
+                "\"pressstart\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleTween"
+              },
+              "parameters": [
+                "NewGame",
+                "Tween",
+                "\"pressstart2\"",
+                "0.98",
+                "0.98",
+                "\"easeInQuad\"",
+                "1000",
+                "",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "hand2",
+                "Tween",
+                "\"hand2move2\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::RemoveTween"
+              },
+              "parameters": [
+                "hand2",
+                "Tween",
+                "\"hand2move2\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "hand2",
+                "Tween",
+                "\"hand2move\"",
+                "hand2.Y()+100",
+                "\"easeOutSine\"",
+                "2000",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "hand2",
+                "Tween",
+                "\"hand2move\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::RemoveTween"
+              },
+              "parameters": [
+                "hand2",
+                "Tween",
+                "\"hand2move\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "hand2",
+                "Tween",
+                "\"hand2move2\"",
+                "hand2.Y()-100",
+                "\"easeOutSine\"",
+                "2000",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "hand",
+                "Tween",
+                "\"handmove2\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::RemoveTween"
+              },
+              "parameters": [
+                "hand",
+                "Tween",
+                "\"handmove2\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "hand",
+                "Tween",
+                "\"handmove\"",
+                "hand.Y()-100",
+                "\"easeOutSine\"",
+                "2000",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "hand",
+                "Tween",
+                "\"handmove\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::RemoveTween"
+              },
+              "parameters": [
+                "hand",
+                "Tween",
+                "\"handmove\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "hand",
+                "Tween",
+                "\"handmove2\"",
+                "hand.Y()+100",
+                "\"easeOutSine\"",
+                "2000",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "burger1",
+                "Tween",
+                "\"burger1move2\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::RemoveTween"
+              },
+              "parameters": [
+                "burger1",
+                "Tween",
+                "\"burger1move2\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "burger1",
+                "Tween",
+                "\"burger1move\"",
+                "burger1.Y()+20",
+                "\"easeOutSine\"",
+                "1500",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "burger1",
+                "Tween",
+                "\"burger1move\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::RemoveTween"
+              },
+              "parameters": [
+                "burger1",
+                "Tween",
+                "\"burger1move\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "burger1",
+                "Tween",
+                "\"burger1move2\"",
+                "burger1.Y()-20",
+                "\"easeOutSine\"",
+                "1500",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "burger2",
+                "Tween",
+                "\"burger2move2\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::RemoveTween"
+              },
+              "parameters": [
+                "burger2",
+                "Tween",
+                "\"burger2move2\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "burger2",
+                "Tween",
+                "\"burger2move\"",
+                "burger2.Y()+20",
+                "\"easeOutSine\"",
+                "1500",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "burger2",
+                "Tween",
+                "\"burger2move\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::RemoveTween"
+              },
+              "parameters": [
+                "burger2",
+                "Tween",
+                "\"burger2move\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "burger2",
+                "Tween",
+                "\"burger2move2\"",
+                "burger2.Y()-20",
+                "\"easeOutSine\"",
+                "1500",
                 ""
               ]
             }
@@ -16351,7 +17665,12 @@
           "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
     },
     {
       "b": 209,
@@ -16539,6 +17858,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Spawn",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -16821,13 +18141,11 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Attack1",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -58041,7 +59359,7 @@
           "name": "jungle_wall",
           "persistentUuid": "ffed76bc-d17c-44e2-9225-148daee1b812",
           "width": 0,
-          "x": 1536,
+          "x": 1728,
           "y": 768,
           "zOrder": 7,
           "numberProperties": [],
@@ -58206,7 +59524,7 @@
           "name": "jungle_platform",
           "persistentUuid": "f9f40d18-b1e5-420a-9027-6f55fac072d4",
           "width": 0,
-          "x": 1728,
+          "x": 1536,
           "y": 768,
           "zOrder": 9,
           "numberProperties": [],
@@ -60311,41 +61629,11 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "jungle_block",
-          "persistentUuid": "55b02730-3a85-4afc-a13e-fe8134f7dfee",
-          "width": 0,
-          "x": 768,
-          "y": 576,
-          "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "jungle_block",
-          "persistentUuid": "3dce9300-c232-47a2-83b8-a3d1d598b6c8",
-          "width": 0,
-          "x": 1152,
-          "y": 576,
-          "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
           "name": "jungle_floor",
           "persistentUuid": "e820086c-b02c-4c6b-8fe0-60e1cd7e3f08",
           "width": 0,
-          "x": 1152,
-          "y": 384,
+          "x": 1344,
+          "y": 576,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -60479,7 +61767,7 @@
           "name": "jungle_extra",
           "persistentUuid": "11d6e4fe-7abf-419f-aa1e-440b73f6be67",
           "width": 0,
-          "x": 960,
+          "x": 1152,
           "y": 576,
           "zOrder": 10,
           "numberProperties": [],
@@ -60721,21 +62009,6 @@
           "width": 0,
           "x": 1728,
           "y": 960,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "jungle_wall",
-          "persistentUuid": "8e8dac16-8d19-4dd6-95c0-e2643ae63000",
-          "width": 0,
-          "x": 1344,
-          "y": 576,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -61050,7 +62323,7 @@
           "persistentUuid": "51cf5d59-7b79-43da-85ee-2d6e107905c4",
           "width": 0,
           "x": 1536,
-          "y": 768,
+          "y": 384,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -61097,6 +62370,51 @@
           "x": 576,
           "y": 1152,
           "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_floor",
+          "persistentUuid": "8d06bfff-81c1-4f90-8002-0a2a5d96d6d3",
+          "width": 0,
+          "x": 1152,
+          "y": 384,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "3c1c00be-8d95-4a32-8c18-dde029938004",
+          "width": 0,
+          "x": 768,
+          "y": 576,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "d95916f8-d3c7-4b4f-a905-14deb076f1d4",
+          "width": 0,
+          "x": 960,
+          "y": 576,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -61654,21 +62972,6 @@
           "persistentUuid": "211f38e3-e800-47cc-9bd8-8d74834d9ee8",
           "width": 0,
           "x": 1344,
-          "y": 384,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "jungle_platform",
-          "persistentUuid": "e9f9d693-2bb5-4f31-bc7c-652f877da54f",
-          "width": 0,
-          "x": 1536,
           "y": 384,
           "zOrder": 11,
           "numberProperties": [],
@@ -62346,6 +63649,21 @@
           "x": 0,
           "y": 1344,
           "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "jungle_wall",
+          "persistentUuid": "d98419c7-b87e-4f6d-9e08-68aff4578af5",
+          "width": 0,
+          "x": 1536,
+          "y": 384,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
