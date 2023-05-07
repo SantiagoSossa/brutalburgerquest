@@ -9365,7 +9365,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -9440,7 +9440,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -9527,7 +9527,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -9602,7 +9602,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -9677,7 +9677,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -9764,7 +9764,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -9839,7 +9839,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -9914,7 +9914,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -9989,7 +9989,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -10064,7 +10064,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -10151,7 +10151,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -10226,7 +10226,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -10301,7 +10301,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -10376,7 +10376,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -10463,7 +10463,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -10538,7 +10538,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -10613,7 +10613,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -10700,7 +10700,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -10775,7 +10775,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -10850,7 +10850,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -10937,7 +10937,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -10975,7 +10975,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -11013,7 +11013,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -11051,7 +11051,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -11089,7 +11089,7 @@
                         },
                         {
                           "name": "WallCheck",
-                          "x": 31,
+                          "x": -350,
                           "y": 300
                         }
                       ],
@@ -12563,7 +12563,6 @@
           "colorG": 29,
           "colorR": 29,
           "creationTime": 0,
-          "folded": true,
           "name": "Gorilla",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12660,7 +12659,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "Gorilla",
               "conditions": [],
@@ -15779,6 +15777,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Camera",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -17858,7 +17857,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Spawn",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -18855,7 +18853,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Attack3",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -18943,7 +18940,7 @@
                         "jungle_boss",
                         "Tween",
                         "\"open\"",
-                        "Variable(jungle_boss.rightWallX) - jungle_boss.Width()",
+                        "Variable(jungle_boss.rightWallX) - jungle_boss.Width()+78",
                         "\"easeInExpo\"",
                         "500",
                         ""
@@ -18999,7 +18996,7 @@
                         "jungle_boss",
                         "Tween",
                         "\"open\"",
-                        "Variable(jungle_boss.leftWallX)",
+                        "Variable(jungle_boss.leftWallX)-78",
                         "\"easeInExpo\"",
                         "500",
                         ""
@@ -19021,6 +19018,12 @@
                     "jungle_boss.PointX(\"WallCheck\")",
                     "jungle_boss.PointY(\"WallCheck\")"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
