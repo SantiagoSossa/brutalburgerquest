@@ -5742,10 +5742,10 @@
           "effects": [],
           "behaviors": [
             {
-              "acceleration": 500,
-              "maxSpeed": 300,
               "name": "TopDownMovement",
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "acceleration": 500,
+              "maxSpeed": 300,
               "allowDiagonals": true,
               "angleOffset": 0,
               "angularMaxSpeed": 180,
@@ -12652,6 +12652,17 @@
                         "250",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Enemy",
+                        "Health",
+                        ">",
+                        "0"
+                      ]
                     }
                   ],
                   "actions": [],
@@ -12808,6 +12819,7 @@
           "colorG": 29,
           "colorR": 29,
           "creationTime": 0,
+          "folded": true,
           "name": "Enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12839,12 +12851,6 @@
                     "<=",
                     "0"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
                 }
               ],
               "actions": [
@@ -12912,6 +12918,17 @@
                       "parameters": [
                         "Gorilla"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Gorilla",
+                        "Health",
+                        "!=",
+                        "0"
+                      ]
                     }
                   ],
                   "actions": [
@@ -12945,6 +12962,17 @@
                       "parameters": [
                         "Gorilla"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Gorilla",
+                        "Health",
+                        "!=",
+                        "0"
+                      ]
                     }
                   ],
                   "actions": [
@@ -12962,7 +12990,19 @@
                 {
                   "type": "BuiltinCommonInstructions::ForEach",
                   "object": "Gorilla",
-                  "conditions": [],
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Gorilla",
+                        "Health",
+                        "!=",
+                        "0"
+                      ]
+                    }
+                  ],
                   "actions": [],
                   "events": [
                     {
@@ -13334,6 +13374,7 @@
               "colorG": 29,
               "colorR": 29,
               "creationTime": 0,
+              "folded": true,
               "name": "Bat",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -13369,6 +13410,17 @@
                       },
                       "parameters": [
                         "Bat"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Bat",
+                        "Health",
+                        "!=",
+                        "0"
                       ]
                     }
                   ],
@@ -13421,6 +13473,17 @@
                         "Player",
                         "120",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Bat",
+                        "Health",
+                        "!=",
+                        "0"
                       ]
                     }
                   ],
@@ -13908,7 +13971,7 @@
                                     "Bat",
                                     "\"MoveY\"",
                                     "<",
-                                    "2.5"
+                                    "3"
                                   ]
                                 },
                                 {
@@ -14093,7 +14156,7 @@
                                     "Bat",
                                     "\"MoveY\"",
                                     ">",
-                                    "2.5"
+                                    "3"
                                   ]
                                 },
                                 {
@@ -14150,6 +14213,34 @@
                             }
                           ]
                         }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "Bat",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "ToString(Bat.Variable(Health))",
+                        "",
+                        ""
                       ]
                     }
                   ]
@@ -14274,6 +14365,17 @@
                       "parameters": [
                         "Spider"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Spider",
+                        "Health",
+                        "!=",
+                        "0"
+                      ]
                     }
                   ],
                   "actions": [
@@ -14307,6 +14409,17 @@
                       "parameters": [
                         "Spider"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Spider",
+                        "Health",
+                        "!=",
+                        "0"
+                      ]
                     }
                   ],
                   "actions": [
@@ -14324,7 +14437,19 @@
                 {
                   "type": "BuiltinCommonInstructions::ForEach",
                   "object": "Spider",
-                  "conditions": [],
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Spider",
+                        "Health",
+                        "!=",
+                        "0"
+                      ]
+                    }
+                  ],
                   "actions": [],
                   "events": [
                     {
