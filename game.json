@@ -5714,13 +5714,13 @@
             },
             {
               "folded": true,
-              "name": "lastX",
+              "name": "MoveX",
               "type": "number",
               "value": 0
             },
             {
               "folded": true,
-              "name": "lastY",
+              "name": "MoveY",
               "type": "number",
               "value": 0
             }
@@ -11669,6 +11669,7 @@
           "colorG": 29,
           "colorR": 29,
           "creationTime": 0,
+          "folded": true,
           "name": "Player",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12563,6 +12564,7 @@
           "colorG": 29,
           "colorR": 29,
           "creationTime": 0,
+          "folded": true,
           "name": "Gorilla",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13142,122 +13144,641 @@
                       "conditions": [
                         {
                           "type": {
-                            "value": "BuiltinCommonInstructions::CompareNumbers"
-                          },
-                          "parameters": [
-                            "Player.CenterX()",
-                            ">",
-                            "Bat.CenterX()"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "FlipX"
+                            "value": "VarObjet"
                           },
                           "parameters": [
                             "Bat",
-                            ""
+                            "MoveX",
+                            "=",
+                            "0"
                           ]
                         },
                         {
                           "type": {
-                            "value": "TopDownMovementBehavior::SimulateRightKey"
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
                           },
                           "parameters": [
-                            "Bat",
-                            "TopDownMovement"
+                            "abs(Bat.CenterX() - Player.CenterX())",
+                            ">",
+                            "5"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::CompareNumbers"
+                              },
+                              "parameters": [
+                                "Player.CenterX()",
+                                ">",
+                                "Bat.CenterX()"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "FlipX"
+                              },
+                              "parameters": [
+                                "Bat",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::SimulateRightKey"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "TopDownMovement"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::CompareNumbers"
+                              },
+                              "parameters": [
+                                "Player.CenterX()",
+                                "<",
+                                "Bat.CenterX()"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "FlipX"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::SimulateLeftKey"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "TopDownMovement"
+                              ]
+                            }
                           ]
                         }
                       ]
                     },
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "value": "BuiltinCommonInstructions::CompareNumbers"
-                          },
-                          "parameters": [
-                            "Player.CenterX()",
-                            "<",
-                            "Bat.CenterX()"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "FlipX"
+                            "value": "VarObjet"
                           },
                           "parameters": [
                             "Bat",
-                            "yes"
+                            "MoveY",
+                            "=",
+                            "0"
                           ]
                         },
                         {
                           "type": {
-                            "value": "TopDownMovementBehavior::SimulateLeftKey"
-                          },
-                          "parameters": [
-                            "Bat",
-                            "TopDownMovement"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
                             "value": "BuiltinCommonInstructions::CompareNumbers"
                           },
                           "parameters": [
-                            "Player.PointY(\"Head\")",
-                            "<",
-                            "Bat.CenterY()"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "TopDownMovementBehavior::SimulateUpKey"
-                          },
-                          "parameters": [
-                            "Bat",
-                            "TopDownMovement"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::CompareNumbers"
-                          },
-                          "parameters": [
-                            "Player.PointY(\"Foot\")",
+                            "abs(Bat.CenterY() - Player.CenterY())",
                             ">",
-                            "Bat.CenterY()"
+                            "5"
                           ]
                         }
                       ],
-                      "actions": [
+                      "actions": [],
+                      "events": [
                         {
-                          "type": {
-                            "value": "TopDownMovementBehavior::SimulateDownKey"
-                          },
-                          "parameters": [
-                            "Bat",
-                            "TopDownMovement"
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::CompareNumbers"
+                              },
+                              "parameters": [
+                                "Player.CenterY()",
+                                "<",
+                                "Bat.CenterY()"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::SimulateUpKey"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "TopDownMovement"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::CompareNumbers"
+                              },
+                              "parameters": [
+                                "Player.CenterY()",
+                                ">",
+                                "Bat.CenterY()"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::SimulateDownKey"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "TopDownMovement"
+                              ]
+                            }
                           ]
                         }
                       ]
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Destuck Manager",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::CompareNumbers"
+                              },
+                              "parameters": [
+                                "abs(Bat.CenterX() - Player.CenterX())",
+                                "<",
+                                "5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "MoveX",
+                                "=",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetObjectTimer"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "\"MoveX\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::CompareNumbers"
+                              },
+                              "parameters": [
+                                "abs(Bat.CenterY() - Player.CenterY())",
+                                "<",
+                                "5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "MoveY",
+                                "=",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetObjectTimer"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "\"MoveY\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "folded": true,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareObjectTimer"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "\"MoveX\"",
+                                "<",
+                                "2"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "VarObjet"
+                                  },
+                                  "parameters": [
+                                    "Bat",
+                                    "MoveX",
+                                    "=",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "TopDownMovementBehavior::SimulateRightKey"
+                                  },
+                                  "parameters": [
+                                    "Bat",
+                                    "TopDownMovement"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "FlipX"
+                                  },
+                                  "parameters": [
+                                    "Bat",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "VarObjet"
+                                  },
+                                  "parameters": [
+                                    "Bat",
+                                    "MoveX",
+                                    "=",
+                                    "2"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "TopDownMovementBehavior::SimulateLeftKey"
+                                  },
+                                  "parameters": [
+                                    "Bat",
+                                    "TopDownMovement"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "FlipX"
+                                  },
+                                  "parameters": [
+                                    "Bat",
+                                    "yes"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "folded": true,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareObjectTimer"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "\"MoveY\"",
+                                "<",
+                                "2"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "VarObjet"
+                                  },
+                                  "parameters": [
+                                    "Bat",
+                                    "MoveY",
+                                    "=",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "TopDownMovementBehavior::SimulateUpKey"
+                                  },
+                                  "parameters": [
+                                    "Bat",
+                                    "TopDownMovement"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "VarObjet"
+                                  },
+                                  "parameters": [
+                                    "Bat",
+                                    "MoveY",
+                                    "=",
+                                    "2"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "TopDownMovementBehavior::SimulateDownKey"
+                                  },
+                                  "parameters": [
+                                    "Bat",
+                                    "TopDownMovement"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareObjectTimer"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "\"MoveX\"",
+                                ">",
+                                "2.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "MoveX",
+                                "=",
+                                "1"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ResetObjectTimer"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "\"MoveX\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "MoveX",
+                                "=",
+                                "2"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareObjectTimer"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "\"MoveX\"",
+                                ">",
+                                "2.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "MoveX",
+                                "=",
+                                "2"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ResetObjectTimer"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "\"MoveX\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "MoveX",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareObjectTimer"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "\"MoveY\"",
+                                ">",
+                                "2.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "MoveY",
+                                "=",
+                                "1"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ResetObjectTimer"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "\"MoveY\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "MoveY",
+                                "=",
+                                "2"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareObjectTimer"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "\"MoveY\"",
+                                ">",
+                                "2.5"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "MoveY",
+                                "=",
+                                "2"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ResetObjectTimer"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "\"MoveY\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Bat",
+                                "MoveY",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
