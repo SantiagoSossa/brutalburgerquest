@@ -2986,9 +2986,9 @@
           "variables": [
             {
               "folded": true,
-              "name": "dead",
-              "type": "boolean",
-              "value": false
+              "name": "Health",
+              "type": "number",
+              "value": 100
             }
           ],
           "effects": [],
@@ -4390,7 +4390,7 @@
               ]
             },
             {
-              "name": "",
+              "name": "Dead",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -11805,645 +11805,511 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
-              "name": "Experimental",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [
-                {
-                  "colorB": 228,
-                  "colorG": 176,
-                  "colorR": 74,
-                  "creationTime": 0,
-                  "folded": true,
-                  "name": "Dust",
-                  "source": "",
-                  "type": "BuiltinCommonInstructions::Group",
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "DepartScene"
-                          },
-                          "parameters": [
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "PlayerDust1",
-                            "-100",
-                            "-100",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ChangePlan"
-                          },
-                          "parameters": [
-                            "PlayerDust1",
-                            "=",
-                            "6"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ResetObjectTimer"
-                          },
-                          "parameters": [
-                            "Player",
-                            "\"Dust1\""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "MettreXY"
-                          },
-                          "parameters": [
-                            "PlayerDust1",
-                            "=",
-                            "Player.PointX(\"Foot\")",
-                            "=",
-                            "Player.PointY(\"Foot\") - 10"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PlatformBehavior::IsOnFloor"
-                          },
-                          "parameters": [
-                            "Player",
-                            "PlatformerObject"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
-                          },
-                          "parameters": [
-                            "Player",
-                            "PlatformerObject"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "CompareObjectTimer"
-                          },
-                          "parameters": [
-                            "Player",
-                            "\"Dust1\"",
-                            "<",
-                            "1"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "ParticleSystem::StartEmission"
-                          },
-                          "parameters": [
-                            "PlayerDust1"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "CompareObjectTimer"
-                          },
-                          "parameters": [
-                            "Player",
-                            "\"Dust1\"",
-                            ">",
-                            "1"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "ParticleSystem::StopEmission"
-                          },
-                          "parameters": [
-                            "PlayerDust1"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
-                          },
-                          "parameters": [
-                            "Player",
-                            "PlatformerObject"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::CompareNumbers"
-                          },
-                          "parameters": [
-                            "abs(Player.PlatformerObject::CurrentSpeed())",
-                            "<",
-                            "100"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "ResetObjectTimer"
-                          },
-                          "parameters": [
-                            "Player",
-                            "\"Dust1\""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PlatformBehavior::IsGrabbingPlatform"
-                          },
-                          "parameters": [
-                            "Player",
-                            "PlatformerObject"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "ParticleSystem::StopEmission"
-                          },
-                          "parameters": [
-                            "PlayerDust1"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PlatformBehavior::IsFalling"
-                          },
-                          "parameters": [
-                            "Player",
-                            "PlatformerObject"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "ParticleSystem::StopEmission"
-                          },
-                          "parameters": [
-                            "PlayerDust1"
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "parameters": []
-                },
-                {
-                  "colorB": 228,
-                  "colorG": 176,
-                  "colorR": 74,
-                  "creationTime": 0,
-                  "disabled": true,
-                  "folded": true,
-                  "name": "Burp",
-                  "source": "",
-                  "type": "BuiltinCommonInstructions::Group",
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "KeyPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "x"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "PlayerBurp",
-                            "Player.PointX(\"Head\")",
-                            "Player.PointY(\"Head\") + 75",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "PlayerBurpAddon",
-                            "Player.PointX(\"Head\")",
-                            "Player.PointY(\"Head\") + 75",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ChangePlan"
-                          },
-                          "parameters": [
-                            "PlayerBurp",
-                            "=",
-                            "10"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ChangePlan"
-                          },
-                          "parameters": [
-                            "PlayerBurpAddon",
-                            "=",
-                            "12"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Cache"
-                          },
-                          "parameters": [
-                            "PlayerBurpAddon"
-                          ]
-                        }
-                      ],
-                      "events": [
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": true,
-                                "value": "FlippedX"
-                              },
-                              "parameters": [
-                                "Player"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "SetAngle"
-                              },
-                              "parameters": [
-                                "PlayerBurp",
-                                "=",
-                                "-30"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "SetAngle"
-                              },
-                              "parameters": [
-                                "PlayerBurpAddon",
-                                "=",
-                                "-30"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "FlippedX"
-                              },
-                              "parameters": [
-                                "Player"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "SetAngle"
-                              },
-                              "parameters": [
-                                "PlayerBurp",
-                                "=",
-                                "-150"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "SetAngle"
-                              },
-                              "parameters": [
-                                "PlayerBurpAddon",
-                                "=",
-                                "-150"
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "MettreXY"
-                          },
-                          "parameters": [
-                            "PlayerBurp",
-                            "=",
-                            "Player.PointX(\"Head\")",
-                            "=",
-                            "Player.PointY(\"Head\") + 75"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "MettreXY"
-                          },
-                          "parameters": [
-                            "PlayerBurpAddon",
-                            "=",
-                            "Player.PointX(\"Head\")",
-                            "=",
-                            "Player.PointY(\"Head\") + 75"
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "parameters": []
-                }
-              ],
-              "parameters": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "🎦 Animation",
-              "comment2": ""
-            },
-            {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "AnimationName"
+                    "value": "VarObjet"
                   },
                   "parameters": [
                     "Player",
-                    "\"Attack\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimationEnded2"
-                  },
-                  "parameters": [
-                    "Player"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetAnimationName"
-                  },
-                  "parameters": [
-                    "Player",
-                    "\"Idle\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "AnimationName"
-                  },
-                  "parameters": [
-                    "Player",
-                    "\"Attack\""
+                    "Health",
+                    "!=",
+                    "0"
                   ]
                 }
               ],
               "actions": [],
               "events": [
                 {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Experimental",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "folded": true,
+                      "name": "Dust",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "DepartScene"
+                              },
+                              "parameters": [
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "PlayerDust1",
+                                "-100",
+                                "-100",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ChangePlan"
+                              },
+                              "parameters": [
+                                "PlayerDust1",
+                                "=",
+                                "6"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetObjectTimer"
+                              },
+                              "parameters": [
+                                "Player",
+                                "\"Dust1\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "MettreXY"
+                              },
+                              "parameters": [
+                                "PlayerDust1",
+                                "=",
+                                "Player.PointX(\"Foot\")",
+                                "=",
+                                "Player.PointY(\"Foot\") - 10"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsOnFloor"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "CompareObjectTimer"
+                              },
+                              "parameters": [
+                                "Player",
+                                "\"Dust1\"",
+                                "<",
+                                "1"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ParticleSystem::StartEmission"
+                              },
+                              "parameters": [
+                                "PlayerDust1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CompareObjectTimer"
+                              },
+                              "parameters": [
+                                "Player",
+                                "\"Dust1\"",
+                                ">",
+                                "1"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ParticleSystem::StopEmission"
+                              },
+                              "parameters": [
+                                "PlayerDust1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::CompareNumbers"
+                              },
+                              "parameters": [
+                                "abs(Player.PlatformerObject::CurrentSpeed())",
+                                "<",
+                                "100"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ResetObjectTimer"
+                              },
+                              "parameters": [
+                                "Player",
+                                "\"Dust1\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsGrabbingPlatform"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ParticleSystem::StopEmission"
+                              },
+                              "parameters": [
+                                "PlayerDust1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsFalling"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ParticleSystem::StopEmission"
+                              },
+                              "parameters": [
+                                "PlayerDust1"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "disabled": true,
+                      "folded": true,
+                      "name": "Burp",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "KeyPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "x"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "PlayerBurp",
+                                "Player.PointX(\"Head\")",
+                                "Player.PointY(\"Head\") + 75",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "PlayerBurpAddon",
+                                "Player.PointX(\"Head\")",
+                                "Player.PointY(\"Head\") + 75",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ChangePlan"
+                              },
+                              "parameters": [
+                                "PlayerBurp",
+                                "=",
+                                "10"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ChangePlan"
+                              },
+                              "parameters": [
+                                "PlayerBurpAddon",
+                                "=",
+                                "12"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Cache"
+                              },
+                              "parameters": [
+                                "PlayerBurpAddon"
+                              ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "FlippedX"
+                                  },
+                                  "parameters": [
+                                    "Player"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetAngle"
+                                  },
+                                  "parameters": [
+                                    "PlayerBurp",
+                                    "=",
+                                    "-30"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "SetAngle"
+                                  },
+                                  "parameters": [
+                                    "PlayerBurpAddon",
+                                    "=",
+                                    "-30"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "FlippedX"
+                                  },
+                                  "parameters": [
+                                    "Player"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetAngle"
+                                  },
+                                  "parameters": [
+                                    "PlayerBurp",
+                                    "=",
+                                    "-150"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "SetAngle"
+                                  },
+                                  "parameters": [
+                                    "PlayerBurpAddon",
+                                    "=",
+                                    "-150"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "MettreXY"
+                              },
+                              "parameters": [
+                                "PlayerBurp",
+                                "=",
+                                "Player.PointX(\"Head\")",
+                                "=",
+                                "Player.PointY(\"Head\") + 75"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "MettreXY"
+                              },
+                              "parameters": [
+                                "PlayerBurpAddon",
+                                "=",
+                                "Player.PointX(\"Head\")",
+                                "=",
+                                "Player.PointY(\"Head\") + 75"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "🎦 Animation",
+                  "comment2": ""
+                },
+                {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                        "value": "AnimationName"
                       },
                       "parameters": [
                         "Player",
-                        "PlatformerObject"
+                        "\"Attack\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimationEnded2"
+                      },
+                      "parameters": [
+                        "Player"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
-                  "actions": [],
-                  "events": [
+                  "actions": [
                     {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PlatformBehavior::IsOnFloor"
-                          },
-                          "parameters": [
-                            "Player",
-                            "PlatformerObject"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "Player",
-                            "\"Walk\""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PlatformBehavior::IsJumping"
-                          },
-                          "parameters": [
-                            "Player",
-                            "PlatformerObject"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "Player",
-                            "\"Jump\""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PlatformBehavior::IsFalling"
-                          },
-                          "parameters": [
-                            "Player",
-                            "PlatformerObject"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "Player",
-                            "\"Fall\""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PlatformBehavior::CurrentFallSpeed"
-                          },
-                          "parameters": [
-                            "Player",
-                            "PlatformerObject",
-                            ">",
-                            "1500"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "Player",
-                            "\"FallAir\""
-                          ]
-                        }
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"Idle\""
                       ]
                     }
                   ]
@@ -12454,11 +12320,11 @@
                     {
                       "type": {
                         "inverted": true,
-                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                        "value": "AnimationName"
                       },
                       "parameters": [
                         "Player",
-                        "PlatformerObject"
+                        "\"Attack\""
                       ]
                     }
                   ],
@@ -12469,28 +12335,134 @@
                       "conditions": [
                         {
                           "type": {
-                            "value": "PlatformBehavior::IsOnFloor"
+                            "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
                           },
                           "parameters": [
                             "Player",
                             "PlatformerObject"
                           ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
                         }
                       ],
-                      "actions": [
+                      "actions": [],
+                      "events": [
                         {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "Player",
-                            "\"Idle\""
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsOnFloor"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetAnimationName"
+                              },
+                              "parameters": [
+                                "Player",
+                                "\"Walk\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsJumping"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetAnimationName"
+                              },
+                              "parameters": [
+                                "Player",
+                                "\"Jump\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsFalling"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetAnimationName"
+                              },
+                              "parameters": [
+                                "Player",
+                                "\"Fall\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::CurrentFallSpeed"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject",
+                                ">",
+                                "1500"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetAnimationName"
+                              },
+                              "parameters": [
+                                "Player",
+                                "\"FallAir\""
+                              ]
+                            }
                           ]
                         }
                       ]
@@ -12500,30 +12472,361 @@
                       "conditions": [
                         {
                           "type": {
-                            "value": "PlatformBehavior::IsGrabbingPlatform"
+                            "inverted": true,
+                            "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
                           },
                           "parameters": [
                             "Player",
                             "PlatformerObject"
                           ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsOnFloor"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetAnimationName"
+                              },
+                              "parameters": [
+                                "Player",
+                                "\"Idle\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsGrabbingPlatform"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetAnimationName"
+                              },
+                              "parameters": [
+                                "Player",
+                                "\"Grab\""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "🔄️ Orientation",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject",
+                        "\"Left\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "Player",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject",
+                        "\"Right\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "Player",
+                        "no"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "⚔️ Attack",
+                  "comment2": ""
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "x"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"Attack\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Distance"
+                          },
+                          "parameters": [
+                            "Enemy",
+                            "Player",
+                            "250",
+                            ""
+                          ]
                         },
                         {
                           "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
+                            "value": "VarObjet"
                           },
                           "parameters": [
-                            "Player",
-                            "\"Grab\""
+                            "Enemy",
+                            "Health",
+                            ">",
+                            "0"
                           ]
                         }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::ForEach",
+                          "object": "Enemy",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::CompareNumbers"
+                              },
+                              "parameters": [
+                                "Enemy.CenterY()",
+                                "<=",
+                                "Player.PointY(\"Foot\")"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "FlippedX"
+                                  },
+                                  "parameters": [
+                                    "Player"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                                  },
+                                  "parameters": [
+                                    "Enemy.X()",
+                                    "<",
+                                    "Player.CenterX()"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "ModVarObjet"
+                                  },
+                                  "parameters": [
+                                    "Enemy",
+                                    "Health",
+                                    "-",
+                                    "10"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "FlippedX"
+                                  },
+                                  "parameters": [
+                                    "Player"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                                  },
+                                  "parameters": [
+                                    "Enemy.X()",
+                                    ">",
+                                    "Player.CenterX()"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "ModVarObjet"
+                                  },
+                                  "parameters": [
+                                    "Enemy",
+                                    "Health",
+                                    "-",
+                                    "10"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "🔊 Sound Effect",
+                  "comment2": ""
+                },
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsJumping"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Jump.wav",
+                        "",
+                        "",
+                        ""
                       ]
                     }
                   ]
@@ -12540,7 +12843,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "🔄️ Orientation",
+              "comment": "☠️ Death",
               "comment2": ""
             },
             {
@@ -12548,76 +12851,13 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                    "value": "VarObjet"
                   },
                   "parameters": [
                     "Player",
-                    "PlatformerObject",
-                    "\"Left\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "FlipX"
-                  },
-                  "parameters": [
-                    "Player",
-                    "yes"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "PlatformerObject",
-                    "\"Right\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "FlipX"
-                  },
-                  "parameters": [
-                    "Player",
-                    "no"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "⚔️ Attack",
-              "comment2": ""
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "x"
+                    "Health",
+                    "<=",
+                    "0"
                   ]
                 },
                 {
@@ -12634,178 +12874,27 @@
                   },
                   "parameters": [
                     "Player",
-                    "\"Attack\""
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "Distance"
-                      },
-                      "parameters": [
-                        "Enemy",
-                        "Player",
-                        "250",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "VarObjet"
-                      },
-                      "parameters": [
-                        "Enemy",
-                        "Health",
-                        ">",
-                        "0"
-                      ]
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::ForEach",
-                      "object": "Enemy",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::CompareNumbers"
-                          },
-                          "parameters": [
-                            "Enemy.CenterY()",
-                            "<=",
-                            "Player.PointY(\"Foot\")"
-                          ]
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "FlippedX"
-                              },
-                              "parameters": [
-                                "Player"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "BuiltinCommonInstructions::CompareNumbers"
-                              },
-                              "parameters": [
-                                "Enemy.X()",
-                                "<",
-                                "Player.CenterX()"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "ModVarObjet"
-                              },
-                              "parameters": [
-                                "Enemy",
-                                "Health",
-                                "-",
-                                "10"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": true,
-                                "value": "FlippedX"
-                              },
-                              "parameters": [
-                                "Player"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "BuiltinCommonInstructions::CompareNumbers"
-                              },
-                              "parameters": [
-                                "Enemy.X()",
-                                ">",
-                                "Player.CenterX()"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "ModVarObjet"
-                              },
-                              "parameters": [
-                                "Enemy",
-                                "Health",
-                                "-",
-                                "10"
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "🔊 Sound Effect",
-              "comment2": ""
-            },
-            {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PlatformBehavior::IsJumping"
-                  },
-                  "parameters": [
-                    "Player",
-                    "PlatformerObject"
+                    "\"Dead\""
                   ]
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlaySound"
+                    "value": "ModVarObjet"
                   },
                   "parameters": [
-                    "",
-                    "Jump.wav",
-                    "",
-                    "",
+                    "Player",
+                    "Health",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject",
                     ""
                   ]
                 }
@@ -12834,7 +12923,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Death",
+              "comment": "☠️ Death",
               "comment2": ""
             },
             {
@@ -13266,7 +13355,6 @@
                       "comment2": ""
                     },
                     {
-                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -13288,6 +13376,16 @@
                             "Player.Y()",
                             "<=",
                             "Gorilla.PointY(\"Foot\")"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "AnimationName"
+                          },
+                          "parameters": [
+                            "Gorilla",
+                            "\"Attack\""
                           ]
                         }
                       ],
@@ -13358,6 +13456,35 @@
                               "parameters": [
                                 "Gorilla",
                                 "\"Attack\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "Health",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "Health",
+                                "-",
+                                "10"
                               ]
                             }
                           ]
@@ -14318,6 +14445,37 @@
                         "\"canBite\""
                       ]
                     }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Health",
+                            ">",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Health",
+                            "-",
+                            "10"
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 }
               ],
@@ -15045,6 +15203,55 @@
                           "parameters": [
                             "Explosion",
                             ""
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Explosion",
+                                "Player",
+                                "",
+                                "",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "Health",
+                                ">",
+                                "0"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "Health",
+                                "-",
+                                "10"
+                              ]
+                            }
                           ]
                         }
                       ]
