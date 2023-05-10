@@ -5728,9 +5728,10 @@
           "effects": [],
           "behaviors": [
             {
+              "acceleration": 500,
+              "maxSpeed": 300,
               "name": "Pathfinding",
               "type": "PathfindingBehavior::PathfindingBehavior",
-              "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
               "angularMaxSpeed": 180,
@@ -5739,7 +5740,6 @@
               "extraBorder": 0,
               "gridOffsetX": 0,
               "gridOffsetY": 0,
-              "maxSpeed": 200,
               "rotateObject": false,
               "smoothingMaxCellGap": 1
             },
@@ -11688,6 +11688,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Dust",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -11923,6 +11924,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
+                  "disabled": true,
                   "folded": true,
                   "name": "Burp",
                   "source": "",
@@ -12477,7 +12479,6 @@
               "comment2": ""
             },
             {
-              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -13034,7 +13035,6 @@
           "colorG": 29,
           "colorR": 29,
           "creationTime": 0,
-          "folded": true,
           "name": "Bat",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13334,83 +13334,103 @@
                           "conditions": [
                             {
                               "type": {
-                                "value": "BuiltinCommonInstructions::CompareNumbers"
+                                "inverted": true,
+                                "value": "Distance"
                               },
                               "parameters": [
-                                "abs(Bat.CenterX() - Player.CenterX())",
-                                "<",
-                                "5"
+                                "Bat",
+                                "Player",
+                                "200",
+                                ""
                               ]
-                            },
-                            {
-                              "type": {
-                                "value": "BuiltinCommonInstructions::Once"
-                              },
-                              "parameters": []
                             }
                           ],
-                          "actions": [
+                          "actions": [],
+                          "events": [
                             {
-                              "type": {
-                                "value": "ModVarObjet"
-                              },
-                              "parameters": [
-                                "Bat",
-                                "MoveX",
-                                "=",
-                                "1"
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                                  },
+                                  "parameters": [
+                                    "abs(Bat.CenterX() - Player.CenterX())",
+                                    "<",
+                                    "5"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "ModVarObjet"
+                                  },
+                                  "parameters": [
+                                    "Bat",
+                                    "MoveX",
+                                    "=",
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ResetObjectTimer"
+                                  },
+                                  "parameters": [
+                                    "Bat",
+                                    "\"MoveX\""
+                                  ]
+                                }
                               ]
                             },
                             {
-                              "type": {
-                                "value": "ResetObjectTimer"
-                              },
-                              "parameters": [
-                                "Bat",
-                                "\"MoveX\""
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "BuiltinCommonInstructions::CompareNumbers"
-                              },
-                              "parameters": [
-                                "abs(Bat.CenterY() - Player.CenterY())",
-                                "<",
-                                "5"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "BuiltinCommonInstructions::Once"
-                              },
-                              "parameters": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "ModVarObjet"
-                              },
-                              "parameters": [
-                                "Bat",
-                                "MoveY",
-                                "=",
-                                "1"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ResetObjectTimer"
-                              },
-                              "parameters": [
-                                "Bat",
-                                "\"MoveY\""
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                                  },
+                                  "parameters": [
+                                    "abs(Bat.CenterY() - Player.CenterY())",
+                                    "<",
+                                    "5"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "ModVarObjet"
+                                  },
+                                  "parameters": [
+                                    "Bat",
+                                    "MoveY",
+                                    "=",
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ResetObjectTimer"
+                                  },
+                                  "parameters": [
+                                    "Bat",
+                                    "\"MoveY\""
+                                  ]
+                                }
                               ]
                             }
                           ]
@@ -13427,7 +13447,7 @@
                                 "Bat",
                                 "\"MoveX\"",
                                 "<",
-                                "2"
+                                "3"
                               ]
                             }
                           ],
@@ -13519,7 +13539,7 @@
                                 "Bat",
                                 "\"MoveY\"",
                                 "<",
-                                "2"
+                                "3"
                               ]
                             }
                           ],
@@ -13592,7 +13612,7 @@
                                 "Bat",
                                 "\"MoveX\"",
                                 ">",
-                                "2.5"
+                                "3"
                               ]
                             },
                             {
@@ -13641,7 +13661,7 @@
                                 "Bat",
                                 "\"MoveX\"",
                                 ">",
-                                "2.5"
+                                "3"
                               ]
                             },
                             {
@@ -13690,7 +13710,7 @@
                                 "Bat",
                                 "\"MoveY\"",
                                 ">",
-                                "2.5"
+                                "3"
                               ]
                             },
                             {
@@ -13739,7 +13759,7 @@
                                 "Bat",
                                 "\"MoveY\"",
                                 ">",
-                                "2.5"
+                                "3"
                               ]
                             },
                             {
