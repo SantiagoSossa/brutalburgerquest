@@ -2627,6 +2627,204 @@
         "name": "bur2",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "jbi03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jbi03.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "jbi13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jbi13.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "jbl02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jbl02.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "jbl12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jbl12.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "jbl22.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jbl22.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "heart0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "heart0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "heart1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "heart1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "hive0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hive0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "hive1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hive1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "trap0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "trap0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "trap1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "trap1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "spike0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "spike0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "spike1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "spike1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "spike2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "spike2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "spike3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "spike3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "spike4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "spike4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "spike5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "spike5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/TrapSpawn.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "TrapSpawn",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/TrapSpawn22.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "TrapSpawn22",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/hive0.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hive0",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/hive02.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hive02",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "hive12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hive12.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2715,6 +2913,15 @@
             },
             {
               "name": "jungle_breakeble"
+            },
+            {
+              "name": "trap1"
+            },
+            {
+              "name": "trap2"
+            },
+            {
+              "name": "trap2_spike"
             }
           ]
         },
@@ -4982,7 +5189,49 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "TrapSpawn2",
+                      "image": "TrapSpawn",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "trap_spawn2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "TrapSpawn2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "TrapSpawn22",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -10811,7 +11060,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "jbl0.png",
+                      "image": "jbl02.png",
                       "points": [
                         {
                           "name": "GroundCast",
@@ -10886,7 +11135,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "jbl1.png",
+                      "image": "jbl12.png",
                       "points": [
                         {
                           "name": "GroundCast",
@@ -10961,7 +11210,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "jbl2.png",
+                      "image": "jbl22.png",
                       "points": [
                         {
                           "name": "GroundCast",
@@ -11047,7 +11296,7 @@
                   "timeBetweenFrames": 0.1,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "jbs42.png",
                       "points": [
                         {
@@ -11082,10 +11331,47 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 228,
+                            "y": 20
+                          },
+                          {
+                            "x": 420,
+                            "y": 20
+                          },
+                          {
+                            "x": 420,
+                            "y": 400
+                          },
+                          {
+                            "x": 228,
+                            "y": 400
+                          }
+                        ],
+                        [
+                          {
+                            "x": 75,
+                            "y": 190
+                          },
+                          {
+                            "x": 228,
+                            "y": 190
+                          },
+                          {
+                            "x": 228,
+                            "y": 400
+                          },
+                          {
+                            "x": 75,
+                            "y": 400
+                          }
+                        ]
+                      ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "jbs32.png",
                       "points": [
                         {
@@ -11120,10 +11406,47 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 228,
+                            "y": 20
+                          },
+                          {
+                            "x": 420,
+                            "y": 20
+                          },
+                          {
+                            "x": 420,
+                            "y": 400
+                          },
+                          {
+                            "x": 228,
+                            "y": 400
+                          }
+                        ],
+                        [
+                          {
+                            "x": 75,
+                            "y": 190
+                          },
+                          {
+                            "x": 228,
+                            "y": 190
+                          },
+                          {
+                            "x": 228,
+                            "y": 400
+                          },
+                          {
+                            "x": 75,
+                            "y": 400
+                          }
+                        ]
+                      ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "jbs22.png",
                       "points": [
                         {
@@ -11158,10 +11481,47 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 228,
+                            "y": 20
+                          },
+                          {
+                            "x": 420,
+                            "y": 20
+                          },
+                          {
+                            "x": 420,
+                            "y": 400
+                          },
+                          {
+                            "x": 228,
+                            "y": 400
+                          }
+                        ],
+                        [
+                          {
+                            "x": 75,
+                            "y": 190
+                          },
+                          {
+                            "x": 228,
+                            "y": 190
+                          },
+                          {
+                            "x": 228,
+                            "y": 400
+                          },
+                          {
+                            "x": 75,
+                            "y": 400
+                          }
+                        ]
+                      ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "jbs12.png",
                       "points": [
                         {
@@ -11196,10 +11556,47 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 228,
+                            "y": 20
+                          },
+                          {
+                            "x": 420,
+                            "y": 20
+                          },
+                          {
+                            "x": 420,
+                            "y": 400
+                          },
+                          {
+                            "x": 228,
+                            "y": 400
+                          }
+                        ],
+                        [
+                          {
+                            "x": 75,
+                            "y": 190
+                          },
+                          {
+                            "x": 228,
+                            "y": 190
+                          },
+                          {
+                            "x": 228,
+                            "y": 400
+                          },
+                          {
+                            "x": 75,
+                            "y": 400
+                          }
+                        ]
+                      ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "jbs02.png",
                       "points": [
                         {
@@ -11234,7 +11631,44 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 228,
+                            "y": 20
+                          },
+                          {
+                            "x": 420,
+                            "y": 20
+                          },
+                          {
+                            "x": 420,
+                            "y": 400
+                          },
+                          {
+                            "x": 228,
+                            "y": 400
+                          }
+                        ],
+                        [
+                          {
+                            "x": 75,
+                            "y": 190
+                          },
+                          {
+                            "x": 228,
+                            "y": 190
+                          },
+                          {
+                            "x": 228,
+                            "y": 400
+                          },
+                          {
+                            "x": 75,
+                            "y": 400
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -11791,6 +12225,450 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "name": "heart",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.25,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "heart0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "heart1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "trap1",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.2,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "hive0",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "hive02",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "falling",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "hive12.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "trap2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "trap0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "trap1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "trap2_spike",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "spike0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 96,
+                        "y": 192
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 62,
+                            "y": 0
+                          },
+                          {
+                            "x": 130,
+                            "y": 0
+                          },
+                          {
+                            "x": 130,
+                            "y": 384
+                          },
+                          {
+                            "x": 62,
+                            "y": 384
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "spike1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 96,
+                        "y": 192
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 62,
+                            "y": 0
+                          },
+                          {
+                            "x": 130,
+                            "y": 0
+                          },
+                          {
+                            "x": 130,
+                            "y": 384
+                          },
+                          {
+                            "x": 62,
+                            "y": 384
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "spike2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 96,
+                        "y": 192
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 62,
+                            "y": 0
+                          },
+                          {
+                            "x": 130,
+                            "y": 0
+                          },
+                          {
+                            "x": 130,
+                            "y": 384
+                          },
+                          {
+                            "x": 62,
+                            "y": 384
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "spike3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 96,
+                        "y": 192
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 62,
+                            "y": 0
+                          },
+                          {
+                            "x": 130,
+                            "y": 0
+                          },
+                          {
+                            "x": 130,
+                            "y": 384
+                          },
+                          {
+                            "x": 62,
+                            "y": 384
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "spike4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 96,
+                        "y": 192
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 62,
+                            "y": 0
+                          },
+                          {
+                            "x": 130,
+                            "y": 0
+                          },
+                          {
+                            "x": 130,
+                            "y": 384
+                          },
+                          {
+                            "x": 62,
+                            "y": 384
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "spike5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 96,
+                        "y": 192
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 62,
+                            "y": 0
+                          },
+                          {
+                            "x": 130,
+                            "y": 0
+                          },
+                          {
+                            "x": 130,
+                            "y": 384
+                          },
+                          {
+                            "x": 62,
+                            "y": 384
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -11805,7 +12683,6 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -12628,7 +13505,6 @@
                   "comment2": ""
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -12901,6 +13777,17 @@
               ]
             }
           ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Traps",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
           "parameters": []
         },
         {
@@ -16665,10 +17552,29 @@
                   },
                   "parameters": [
                     "",
-                    "Spider_Egg",
+                    "trap2",
                     "trap_spawn.X()",
                     "trap_spawn.Y()",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "trap2",
+                    "=",
+                    "90"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "trap2",
+                    "\"cooldown\""
                   ]
                 },
                 {
@@ -16677,6 +17583,63 @@
                   },
                   "parameters": [
                     "trap_spawn",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "5",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AjoutHasard"
+                  },
+                  "parameters": [
+                    "",
+                    "trap_spawn2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "trap1",
+                    "trap_spawn2.X()",
+                    "trap_spawn2.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "trap1",
+                    "=",
+                    "90"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "trap1",
+                    "\"cooldown\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "trap_spawn2",
                     ""
                   ]
                 }
@@ -16802,6 +17765,31 @@
                   },
                   "parameters": [
                     "trap_spawn",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "trap_spawn2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "trap_spawn2",
                     ""
                   ]
                 }
@@ -16987,7 +17975,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Camera",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -17026,7 +18013,7 @@
                       },
                       "parameters": [
                         "",
-                        "1.2",
+                        "1",
                         "",
                         ""
                       ]
@@ -58496,6 +59483,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "trap_spawn",
+          "persistentUuid": "247571b8-1077-45da-9da0-3cf8ab6d5150",
+          "width": 0,
+          "x": 384,
+          "y": 1344,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "trap_spawn",
+          "persistentUuid": "810ffa76-b34c-4b0b-a239-f7064e5bc8c2",
+          "width": 0,
+          "x": 1152,
+          "y": 1344,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -58508,7 +59525,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.26896273763797823,
+        "zoomFactor": 0.23554825229692952,
         "windowMask": false
       }
     },
@@ -59775,6 +60792,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "trap_spawn",
+          "persistentUuid": "d63ca2f7-0948-4d5a-b4ba-788a9db4f702",
+          "width": 0,
+          "x": 1344,
+          "y": 960,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "trap_spawn",
+          "persistentUuid": "441906e4-1f48-4dec-b2ac-d820799c550e",
+          "width": 0,
+          "x": 192,
+          "y": 1344,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -59787,7 +60834,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.2675185515162028,
+        "zoomFactor": 0.22664107233034428,
         "windowMask": false
       }
     },
@@ -61069,6 +62116,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "trap_spawn",
+          "persistentUuid": "bcd4d853-bc78-4ea6-9155-478642e5ee5f",
+          "width": 0,
+          "x": 1344,
+          "y": 1344,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "trap_spawn",
+          "persistentUuid": "0fc79fec-b957-4627-b5ba-614592a240d7",
+          "width": 0,
+          "x": 0,
+          "y": 1344,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -61081,7 +62158,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.22664107233034428,
+        "zoomFactor": 0.2192479587905097,
         "windowMask": false
       }
     },
@@ -62363,6 +63440,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "trap_spawn2",
+          "persistentUuid": "a458c1be-e72f-41ac-bbd5-832f77e76dff",
+          "width": 0,
+          "x": 1536,
+          "y": 192,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "trap_spawn2",
+          "persistentUuid": "d9c27b9f-c844-4452-8f1a-d86562da0c88",
+          "width": 0,
+          "x": 576,
+          "y": 576,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -63624,6 +64731,36 @@
           "x": 960,
           "y": 576,
           "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "trap_spawn2",
+          "persistentUuid": "6dc4703d-dd5b-456d-8822-caae1a2034cb",
+          "width": 0,
+          "x": 1344,
+          "y": 768,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "trap_spawn2",
+          "persistentUuid": "97156d87-2d58-4595-99b8-a9f79f6dccd3",
+          "width": 0,
+          "x": 1728,
+          "y": 192,
+          "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -66122,6 +67259,36 @@
           "x": 1152,
           "y": 960,
           "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "trap_spawn2",
+          "persistentUuid": "e911f97a-e0ea-41a6-8579-01e8b83decf4",
+          "width": 0,
+          "x": 576,
+          "y": 192,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "trap_spawn2",
+          "persistentUuid": "d2d6189c-c559-4ebc-aba2-ea20d7c4b85b",
+          "width": 0,
+          "x": 1152,
+          "y": 576,
+          "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
