@@ -2869,7 +2869,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.1530188383785992,
+        "zoomFactor": 0.576590130377067,
         "windowMask": false
       },
       "objectsGroups": [
@@ -12339,7 +12339,7 @@
           "flow": 5,
           "jumpForwardInTimeOnCreation": 0,
           "maxParticleNb": 20,
-          "name": "PlayerDust1",
+          "name": "PlayerDust",
           "particleAlpha1": 255,
           "particleAlpha2": 255,
           "particleAlphaRandomness1": 0,
@@ -12909,6 +12909,52 @@
               ]
             }
           ]
+        },
+        {
+          "additive": false,
+          "assetStoreId": "",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 100,
+          "emitterForceMax": 200,
+          "emitterForceMin": 150,
+          "flow": 200,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 90,
+          "name": "jungle_bossDust",
+          "particleAlpha1": 180,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 10,
+          "particleAngle2": 80,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 255,
+          "particleBlue2": 255,
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 255,
+          "particleGreen2": 255,
+          "particleLifeTimeMax": 1,
+          "particleLifeTimeMin": 0.3,
+          "particleRed1": 255,
+          "particleRed2": 255,
+          "particleSize1": 200,
+          "particleSize2": 100,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 1,
+          "rendererParam2": 1,
+          "rendererType": "Quad",
+          "tags": "",
+          "tank": 60,
+          "textureParticleName": "Dust.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 300,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "events": [
@@ -12937,7 +12983,7 @@
               },
               "parameters": [
                 "",
-                "PlayerDust1",
+                "PlayerDust",
                 "-100",
                 "-100",
                 ""
@@ -12948,7 +12994,7 @@
                 "value": "ChangePlan"
               },
               "parameters": [
-                "PlayerDust1",
+                "PlayerDust",
                 "=",
                 "6"
               ]
@@ -12996,6 +13042,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Experimental",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -13018,7 +13065,7 @@
                                 "value": "MettreXY"
                               },
                               "parameters": [
-                                "PlayerDust1",
+                                "PlayerDust",
                                 "=",
                                 "Player.PointX(\"Foot\")",
                                 "=",
@@ -13066,7 +13113,7 @@
                                 "value": "ParticleSystem::StartEmission"
                               },
                               "parameters": [
-                                "PlayerDust1"
+                                "PlayerDust"
                               ]
                             }
                           ]
@@ -13092,7 +13139,7 @@
                                 "value": "ParticleSystem::StopEmission"
                               },
                               "parameters": [
-                                "PlayerDust1"
+                                "PlayerDust"
                               ]
                             }
                           ]
@@ -13179,7 +13226,7 @@
                                 "value": "ParticleSystem::StopEmission"
                               },
                               "parameters": [
-                                "PlayerDust1"
+                                "PlayerDust"
                               ]
                             }
                           ]
@@ -13997,6 +14044,14 @@
               "actions": [
                 {
                   "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetAnimationName"
                   },
                   "parameters": [
@@ -14108,7 +14163,6 @@
               "colorG": 29,
               "colorR": 29,
               "creationTime": 0,
-              "folded": true,
               "name": "Gorilla",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -15624,6 +15678,7 @@
               "colorG": 29,
               "colorR": 29,
               "creationTime": 0,
+              "folded": true,
               "name": "Spider",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -16202,6 +16257,7 @@
                   "colorG": 29,
                   "colorR": 29,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Spider Ball",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -16332,17 +16388,7 @@
                           ]
                         }
                       ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "Explosion",
-                            ""
-                          ]
-                        }
-                      ],
+                      "actions": [],
                       "events": [
                         {
                           "type": "BuiltinCommonInstructions::Standard",
@@ -16387,6 +16433,21 @@
                                 "Health",
                                 "-",
                                 "10"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "Explosion",
+                                ""
                               ]
                             }
                           ]
@@ -20301,7 +20362,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Spawn",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -20500,7 +20560,7 @@
                       "parameters": [
                         "jungle_boss",
                         "=",
-                        "200"
+                        "10"
                       ]
                     }
                   ]
@@ -20613,6 +20673,38 @@
                   "parameters": [
                     "jungle_boss",
                     "\"GroundHit\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "jungle_bossDust",
+                    "jungle_boss.PointX(\"PseudoCenter\")",
+                    "jungle_boss.PointY(\"GroundCast\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "jungle_bossDust",
+                    "=",
+                    "-90"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "jungle_bossDust",
+                    "=",
+                    "11"
                   ]
                 }
               ]
