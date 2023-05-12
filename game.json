@@ -2490,7 +2490,7 @@
         "alwaysLoaded": false,
         "file": "assets/player_PlayerDust2.png2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/player_PlayerDust2.png2.png\"}",
         "name": "player\\PlayerDust2.png2",
         "smoothed": true,
         "userAdded": false
@@ -2825,6 +2825,15 @@
         "name": "hive12.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Dust.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Dust.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Dust.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -12339,16 +12348,16 @@
           "particleAngle2": 50,
           "particleAngleRandomness1": 0,
           "particleAngleRandomness2": 0,
-          "particleBlue1": 255,
-          "particleBlue2": 255,
+          "particleBlue1": 138,
+          "particleBlue2": 138,
           "particleGravityX": 0,
           "particleGravityY": 0,
-          "particleGreen1": 255,
-          "particleGreen2": 255,
+          "particleGreen1": 138,
+          "particleGreen2": 138,
           "particleLifeTimeMax": 1.5,
           "particleLifeTimeMin": 0.5,
-          "particleRed1": 255,
-          "particleRed2": 255,
+          "particleRed1": 141,
+          "particleRed2": 141,
           "particleSize1": 200,
           "particleSize2": 30,
           "particleSizeRandomness1": 0,
@@ -12358,7 +12367,7 @@
           "rendererType": "Quad",
           "tags": "",
           "tank": -1,
-          "textureParticleName": "player\\PlayerDust2.png2",
+          "textureParticleName": "Dust.png",
           "type": "ParticleSystem::ParticleEmitter",
           "zoneRadius": 2,
           "variables": [],
@@ -12904,6 +12913,58 @@
       ],
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "PlayerDust1",
+                "-100",
+                "-100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "PlayerDust1",
+                "=",
+                "6"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"Dust1\""
+              ]
+            }
+          ]
+        },
+        {
           "colorB": 38,
           "colorG": 29,
           "colorR": 29,
@@ -12935,7 +12996,6 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "Experimental",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -12945,63 +13005,10 @@
                       "colorG": 176,
                       "colorR": 74,
                       "creationTime": 0,
-                      "folded": true,
                       "name": "Dust",
                       "source": "",
                       "type": "BuiltinCommonInstructions::Group",
                       "events": [
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "DepartScene"
-                              },
-                              "parameters": [
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "BuiltinCommonInstructions::Once"
-                              },
-                              "parameters": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Create"
-                              },
-                              "parameters": [
-                                "",
-                                "PlayerDust1",
-                                "-100",
-                                "-100",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ChangePlan"
-                              },
-                              "parameters": [
-                                "PlayerDust1",
-                                "=",
-                                "6"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ResetObjectTimer"
-                              },
-                              "parameters": [
-                                "Player",
-                                "\"Dust1\""
-                              ]
-                            }
-                          ]
-                        },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [],
@@ -13095,21 +13102,21 @@
                           "conditions": [
                             {
                               "type": {
-                                "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
-                              },
-                              "parameters": [
-                                "Player",
-                                "PlatformerObject"
-                              ]
-                            },
-                            {
-                              "type": {
                                 "value": "BuiltinCommonInstructions::CompareNumbers"
                               },
                               "parameters": [
                                 "abs(Player.PlatformerObject::CurrentSpeed())",
                                 "<",
                                 "100"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
                               ]
                             }
                           ],
@@ -13130,35 +13137,39 @@
                           "conditions": [
                             {
                               "type": {
-                                "value": "PlatformBehavior::IsGrabbingPlatform"
+                                "value": "BuiltinCommonInstructions::Or"
                               },
-                              "parameters": [
-                                "Player",
-                                "PlatformerObject"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "ParticleSystem::StopEmission"
-                              },
-                              "parameters": [
-                                "PlayerDust1"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "PlatformBehavior::IsFalling"
-                              },
-                              "parameters": [
-                                "Player",
-                                "PlatformerObject"
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                                  },
+                                  "parameters": [
+                                    "Player",
+                                    "PlatformerObject"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "PlatformBehavior::IsGrabbingPlatform"
+                                  },
+                                  "parameters": [
+                                    "Player",
+                                    "PlatformerObject"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "PlatformBehavior::IsOnFloor"
+                                  },
+                                  "parameters": [
+                                    "Player",
+                                    "PlatformerObject"
+                                  ]
+                                }
                               ]
                             }
                           ],
@@ -13965,6 +13976,15 @@
                     "Health",
                     "<=",
                     "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsOnFloor"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject"
                   ]
                 },
                 {
@@ -15604,7 +15624,6 @@
               "colorG": 29,
               "colorR": 29,
               "creationTime": 0,
-              "folded": true,
               "name": "Spider",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -21327,6 +21346,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Attack3",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
