@@ -2834,6 +2834,123 @@
         "name": "Dust.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ha0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ha0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ha1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ha1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ha2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ha2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ha3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ha3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pct0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pct0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pct1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pct1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "cig0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cig0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "cig1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cig1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ex0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ex0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ex1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ex1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ex2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ex2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ex3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ex3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ex4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ex4.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -3222,6 +3339,36 @@
               "WasJumpKeyReleased": false
             },
             {
+              "name": "FireBullet",
+              "type": "FireBullet::FireBullet",
+              "FireCooldown": 0.1,
+              "HasJustFired": false,
+              "FiringArc": 0,
+              "BulletQuantity": 1,
+              "AngleVariance": 0,
+              "RotateBullet": true,
+              "AmmoQuantity": 0,
+              "ShotsPerReload": 0,
+              "ReloadDuration": 1,
+              "MaxAmmo": 0,
+              "ShotsBeforeNextReload": 0,
+              "TotalShotsFired": 0,
+              "TotalBulletsCreated": 0,
+              "StartingAmmo": 0,
+              "TotalReloadsCompleted": 0,
+              "UnlimitedAmmo": true,
+              "ReloadInProgress": false,
+              "HeatIncreasePerShot": 0,
+              "HeatLevel": 0,
+              "AutomaticReloading": true,
+              "OverheatDuration": 0,
+              "LinearCoolingRate": 0.1,
+              "ExponentialCoolingRate": 0.3,
+              "BulletLayer": "",
+              "RandomizedAngle": 0,
+              "BulletSpeedVariance": 0
+            },
+            {
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 3600,
@@ -3317,6 +3464,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -3364,6 +3521,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -3411,6 +3578,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -3458,6 +3635,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -3518,6 +3705,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -3565,6 +3762,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -3612,6 +3819,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -3659,6 +3876,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -3706,6 +3933,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -3753,6 +3990,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -3800,6 +4047,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -3847,6 +4104,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -3907,6 +4174,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -3954,6 +4231,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4001,6 +4288,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4048,6 +4345,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4108,6 +4415,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4167,6 +4484,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4214,6 +4541,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4261,6 +4598,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4308,6 +4655,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4355,6 +4712,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4414,6 +4781,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4461,6 +4838,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4508,6 +4895,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4567,6 +4964,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4626,6 +5033,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4673,6 +5090,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4720,6 +5147,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4767,6 +5204,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4814,6 +5261,16 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -4861,6 +5318,142 @@
                           "name": "Foot",
                           "x": 127.5,
                           "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 127.5,
+                        "y": 185
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 127.5,
+                        "y": 185
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 45,
+                            "y": 120
+                          },
+                          {
+                            "x": 200,
+                            "y": 120
+                          },
+                          {
+                            "x": 200,
+                            "y": 300
+                          },
+                          {
+                            "x": 45,
+                            "y": 300
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "CigToss",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pct0.png",
+                      "points": [
+                        {
+                          "name": "Head",
+                          "x": 160,
+                          "y": 108
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 127.5,
+                        "y": 185
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 127.5,
+                        "y": 185
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 45,
+                            "y": 120
+                          },
+                          {
+                            "x": 200,
+                            "y": 120
+                          },
+                          {
+                            "x": 200,
+                            "y": 300
+                          },
+                          {
+                            "x": 45,
+                            "y": 300
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pct1.png",
+                      "points": [
+                        {
+                          "name": "Head",
+                          "x": 160,
+                          "y": 108
+                        },
+                        {
+                          "name": "Foot",
+                          "x": 127.5,
+                          "y": 300
+                        },
+                        {
+                          "name": "Hit",
+                          "x": 346,
+                          "y": 235.5
+                        },
+                        {
+                          "name": "Cig",
+                          "x": 258.5,
+                          "y": 206
                         }
                       ],
                       "originPoint": {
@@ -6000,6 +6593,17 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Flash",
+              "type": "Flash::Flash",
+              "HalfPeriodTime": 0.1,
+              "IsFlashing": false,
+              "FlashDuration": 0
+            },
+            {
+              "name": "ShakeObject_PositionAngleScale",
+              "type": "ShakeObject::ShakeObject_PositionAngleScale"
+            },
+            {
               "name": "TopDownMovement",
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 500,
@@ -6647,6 +7251,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Flash",
+              "type": "Flash::Flash",
+              "HalfPeriodTime": 0.1,
+              "IsFlashing": false,
+              "FlashDuration": 0
+            },
+            {
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "canGoDownFromJumpthru": true,
@@ -6665,6 +7276,10 @@
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
+            },
+            {
+              "name": "ShakeObject_PositionAngleScale",
+              "type": "ShakeObject::ShakeObject_PositionAngleScale"
             }
           ],
           "animations": [
@@ -7875,6 +8490,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Flash",
+              "type": "Flash::Flash",
+              "HalfPeriodTime": 0.1,
+              "IsFlashing": false,
+              "FlashDuration": 0
+            },
+            {
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "canGrabWithoutMoving": false,
@@ -7893,6 +8515,10 @@
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
+            },
+            {
+              "name": "ShakeObject_PositionAngleScale",
+              "type": "ShakeObject::ShakeObject_PositionAngleScale"
             }
           ],
           "animations": [
@@ -12955,6 +13581,265 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "name": "hit",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.04,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "ha0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 96,
+                        "y": 96
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "ha1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 96,
+                        "y": 96
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "ha2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 96,
+                        "y": 96
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "ha3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 96,
+                        "y": 96
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "cig",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "cig0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "cig1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "shoot",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "ex0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 96,
+                        "y": 96
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "ex1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 96,
+                        "y": 96
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "ex2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 96,
+                        "y": 96
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "ex3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 96,
+                        "y": 96
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "ex4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 96,
+                        "y": 96
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -13015,7 +13900,6 @@
           "colorG": 29,
           "colorR": 29,
           "creationTime": 0,
-          "folded": true,
           "name": "Player",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13798,150 +14682,687 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "KeyPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "x"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetAnimationName"
+                        "inverted": true,
+                        "value": "AnimationName"
                       },
                       "parameters": [
                         "Player",
-                        "\"Attack\""
+                        "\"Grab\""
                       ]
                     }
                   ],
+                  "actions": [],
                   "events": [
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "value": "Distance"
+                            "value": "KeyPressed"
                           },
                           "parameters": [
-                            "Enemy",
-                            "Player",
-                            "250",
-                            ""
+                            "",
+                            "x"
                           ]
                         },
                         {
                           "type": {
-                            "value": "VarObjet"
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetAnimationName"
                           },
                           "parameters": [
-                            "Enemy",
-                            "Health",
-                            ">",
-                            "0"
+                            "Player",
+                            "\"Attack\""
                           ]
                         }
                       ],
-                      "actions": [],
                       "events": [
                         {
-                          "type": "BuiltinCommonInstructions::ForEach",
-                          "object": "Enemy",
+                          "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
                               "type": {
-                                "value": "BuiltinCommonInstructions::CompareNumbers"
+                                "value": "Distance"
                               },
                               "parameters": [
-                                "Enemy.CenterY()",
-                                "<=",
-                                "Player.PointY(\"Foot\")"
+                                "Enemy",
+                                "Player",
+                                "250",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Enemy",
+                                "Health",
+                                ">",
+                                "0"
                               ]
                             }
                           ],
                           "actions": [],
                           "events": [
                             {
-                              "type": "BuiltinCommonInstructions::Standard",
+                              "type": "BuiltinCommonInstructions::ForEach",
+                              "object": "Enemy",
                               "conditions": [
-                                {
-                                  "type": {
-                                    "value": "FlippedX"
-                                  },
-                                  "parameters": [
-                                    "Player"
-                                  ]
-                                },
                                 {
                                   "type": {
                                     "value": "BuiltinCommonInstructions::CompareNumbers"
                                   },
                                   "parameters": [
-                                    "Enemy.X()",
-                                    "<",
-                                    "Player.CenterX()"
+                                    "Enemy.CenterY()",
+                                    "<=",
+                                    "Player.PointY(\"Foot\")"
                                   ]
                                 }
                               ],
-                              "actions": [
+                              "actions": [],
+                              "events": [
                                 {
-                                  "type": {
-                                    "value": "ModVarObjet"
-                                  },
-                                  "parameters": [
-                                    "Enemy",
-                                    "Health",
-                                    "-",
-                                    "10"
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": true,
-                                    "value": "FlippedX"
-                                  },
-                                  "parameters": [
-                                    "Player"
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "FlippedX"
+                                      },
+                                      "parameters": [
+                                        "Player"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                                      },
+                                      "parameters": [
+                                        "Enemy.X()",
+                                        "<",
+                                        "Player.CenterX()"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "ModVarObjet"
+                                      },
+                                      "parameters": [
+                                        "Enemy",
+                                        "Health",
+                                        "-",
+                                        "10"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                                      },
+                                      "parameters": [
+                                        "Enemy",
+                                        "ShakeObject_PositionAngleScale",
+                                        "0.1",
+                                        "30",
+                                        "0",
+                                        "0",
+                                        "0",
+                                        "0.1",
+                                        "",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Create"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "hit",
+                                        "Enemy.CenterX()-Choose::RandomNumber(\"5,10,15,20,25\")",
+                                        "Enemy.CenterY()+(Choose::RandomNumber(\"5,10,15,20,25\")*Choose::RandomNumber(\"1,-1\"))",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ChangePlan"
+                                      },
+                                      "parameters": [
+                                        "hit",
+                                        "=",
+                                        "100"
+                                      ]
+                                    }
                                   ]
                                 },
                                 {
-                                  "type": {
-                                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                                  },
-                                  "parameters": [
-                                    "Enemy.X()",
-                                    ">",
-                                    "Player.CenterX()"
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "ModVarObjet"
-                                  },
-                                  "parameters": [
-                                    "Enemy",
-                                    "Health",
-                                    "-",
-                                    "10"
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": true,
+                                        "value": "FlippedX"
+                                      },
+                                      "parameters": [
+                                        "Player"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                                      },
+                                      "parameters": [
+                                        "Enemy.X()",
+                                        ">",
+                                        "Player.CenterX()"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "ModVarObjet"
+                                      },
+                                      "parameters": [
+                                        "Enemy",
+                                        "Health",
+                                        "-",
+                                        "10"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                                      },
+                                      "parameters": [
+                                        "Enemy",
+                                        "ShakeObject_PositionAngleScale",
+                                        "0.1",
+                                        "30",
+                                        "0",
+                                        "0",
+                                        "0",
+                                        "0.1",
+                                        "",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Create"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "hit",
+                                        "Enemy.CenterX()+Choose::RandomNumber(\"5,10,15,20,25\")",
+                                        "Enemy.CenterY()+(Choose::RandomNumber(\"5,10,15,20,25\")*Choose::RandomNumber(\"1,-1\"))",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ChangePlan"
+                                      },
+                                      "parameters": [
+                                        "hit",
+                                        "=",
+                                        "100"
+                                      ]
+                                    }
                                   ]
                                 }
                               ]
                             }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Distance"
+                              },
+                              "parameters": [
+                                "jungle_breakeble",
+                                "Player",
+                                "250",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::ForEach",
+                              "object": "Enemy",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                                  },
+                                  "parameters": [
+                                    "jungle_breakeble.CenterY()",
+                                    "<=",
+                                    "Player.PointY(\"Foot\")"
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "FlippedX"
+                                      },
+                                      "parameters": [
+                                        "Player"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                                      },
+                                      "parameters": [
+                                        "jungle_breakeble.X()",
+                                        "<",
+                                        "Player.CenterX()"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "Create"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "hit",
+                                        "jungle_breakeble.CenterX()-Choose::RandomNumber(\"5,10,15,20,25\")",
+                                        "jungle_breakeble.CenterY()+(Choose::RandomNumber(\"5,10,15,20,25\")*Choose::RandomNumber(\"1,-1\"))",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ChangePlan"
+                                      },
+                                      "parameters": [
+                                        "hit",
+                                        "=",
+                                        "100"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetAnimationName"
+                                      },
+                                      "parameters": [
+                                        "jungle_breakeble",
+                                        "\"Break\""
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": true,
+                                        "value": "FlippedX"
+                                      },
+                                      "parameters": [
+                                        "Player"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                                      },
+                                      "parameters": [
+                                        "jungle_breakeble.X()",
+                                        ">",
+                                        "Player.CenterX()"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "Create"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "hit",
+                                        "jungle_breakeble.CenterX()+Choose::RandomNumber(\"5,10,15,20,25\")",
+                                        "jungle_breakeble.CenterY()+(Choose::RandomNumber(\"5,10,15,20,25\")*Choose::RandomNumber(\"1,-1\"))",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ChangePlan"
+                                      },
+                                      "parameters": [
+                                        "hit",
+                                        "=",
+                                        "100"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetAnimationName"
+                                      },
+                                      "parameters": [
+                                        "jungle_breakeble",
+                                        "\"Break\""
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Cigar Toss",
+                      "comment2": ""
+                    },
+                    {
+                      "folded": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "c"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetAnimationName"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"CigToss\""
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "FlippedX"
+                              },
+                              "parameters": [
+                                "Player"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "FireBullet::FireBullet::Fire"
+                              },
+                              "parameters": [
+                                "Player",
+                                "FireBullet",
+                                "Player.PointX(\"Cig\")",
+                                "Player.PointY(\"Cig\")",
+                                "cig",
+                                "0",
+                                "1600",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ChangePlan"
+                              },
+                              "parameters": [
+                                "cig",
+                                "=",
+                                "100"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "FlippedX"
+                              },
+                              "parameters": [
+                                "Player"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "FireBullet::FireBullet::Fire"
+                              },
+                              "parameters": [
+                                "Player",
+                                "FireBullet",
+                                "Player.PointX(\"Cig\")",
+                                "Player.PointY(\"Cig\")",
+                                "cig",
+                                "180",
+                                "1600",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ChangePlan"
+                              },
+                              "parameters": [
+                                "cig",
+                                "=",
+                                "100"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "cig",
+                                "Enemy",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "cig",
+                                "wall",
+                                "",
+                                "",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "cig",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "shoot",
+                            "cig.CenterX()",
+                            "cig.CenterY()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "shoot",
+                            "=",
+                            "100"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Enemy",
+                            "Health",
+                            "-",
+                            "10"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ShakeObject::ShakeObject_PositionAngleScale::ShakeObject_PositionAngleScale"
+                          },
+                          "parameters": [
+                            "Enemy",
+                            "ShakeObject_PositionAngleScale",
+                            "0.1",
+                            "30",
+                            "0",
+                            "0",
+                            "0",
+                            "0.1",
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimationEnded2"
+                          },
+                          "parameters": [
+                            "shoot"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "shoot",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimationName"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"CigToss\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimationEnded2"
+                          },
+                          "parameters": [
+                            "Player"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetAnimationName"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"Idle\""
                           ]
                         }
                       ]
@@ -14061,6 +15482,15 @@
                 },
                 {
                   "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "hit",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ModVarObjet"
                   },
                   "parameters": [
@@ -14101,7 +15531,6 @@
           "colorG": 29,
           "colorR": 29,
           "creationTime": 0,
-          "folded": true,
           "name": "Enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -14154,6 +15583,58 @@
                     "Health",
                     "=",
                     "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimationName"
+                  },
+                  "parameters": [
+                    "Enemy",
+                    "\"Dead\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimationEnded2"
+                  },
+                  "parameters": [
+                    "Enemy"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "Enemy",
+                    "Flash",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Enemy",
+                    ""
                   ]
                 }
               ]
@@ -16714,7 +18195,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Level Genetarion",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -17529,34 +19009,6 @@
                         "Choose::RandomNumber(\"0,0,0,1,2,3\")"
                       ]
                     }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Player",
-                    "jungle_breakeble",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetAnimationName"
-                  },
-                  "parameters": [
-                    "jungle_breakeble",
-                    "\"Break\""
                   ]
                 }
               ]
@@ -18524,6 +19976,10 @@
           "type": "FireBullet::FireBullet"
         },
         {
+          "name": "Flash",
+          "type": "Flash::Flash"
+        },
+        {
           "name": "PathfindingObstacle",
           "type": "PathfindingBehavior::PathfindingObstacleBehavior"
         },
@@ -18542,6 +19998,10 @@
         {
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale"
         },
         {
           "name": "SmoothCamera",
@@ -20362,11 +21822,13 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Spawn",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -21111,7 +22573,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Attack2",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21731,6 +23192,511 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "author": "@4ian",
+      "category": "Visual effect",
+      "extensionNamespace": "",
+      "fullName": "Flash (blink)",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWZsYXNoLW91dGxpbmUiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNywySDE3TDEzLjUsOUgxN0wxMCwyMlYxNEg3VjJNOSw0VjEySDEyVjE0LjY2TDE0LDExSDEwLjI0TDEzLjc2LDRIOVoiIC8+PC9zdmc+",
+      "name": "Flash",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/flash-outline.svg",
+      "shortDescription": "Make objects flash (alternately visible and invisible) for a period of time.",
+      "version": "1.0.1",
+      "description": [
+        "Make objects flash (alternately visible and invisible) for a period of time.",
+        "",
+        "It can be used to:",
+        "- Let players know they are invincible after being hit",
+        "- Catch player attention on the interface (for instance a \"press start\" text)",
+        "",
+        ""
+      ],
+      "origin": {
+        "identifier": "Flash",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "flash",
+        "blink",
+        "visible",
+        "invisible",
+        "hit",
+        "damage"
+      ],
+      "authorIds": [
+        "wWP8BSlAW0UP4NeaHa2LcmmDzmH2"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Make the object flash (blink) for a period of time, so that it is alternately visible and invisible.\nTrigger the effect by using the Flash action.",
+          "fullName": "Flash (blink)",
+          "name": "Flash",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Flash::Flash::PropertyIsFlashing"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ObjectTimer"
+                          },
+                          "parameters": [
+                            "Object",
+                            "\"FlashTimer\"",
+                            "Object.Behavior::PropertyHalfPeriodTime()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "Object"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Cache"
+                          },
+                          "parameters": [
+                            "Object"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Object",
+                            "\"FlashTimer\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ObjectTimer"
+                          },
+                          "parameters": [
+                            "Object",
+                            "\"FlashTimer\"",
+                            "Object.Behavior::PropertyHalfPeriodTime()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "Object"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "Object",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Object",
+                            "\"FlashTimer\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ObjectTimer"
+                          },
+                          "parameters": [
+                            "Object",
+                            "\"FlashDurationTimer\"",
+                            "Object.Behavior::PropertyFlashDuration()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Flash::Flash::Stop"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Flash::Flash",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Make the specified object(s) blink for the given duration.",
+              "fullName": "Flash (blink)",
+              "functionType": "Action",
+              "name": "Flash",
+              "sentence": "Make _PARAM0_ blink for _PARAM2_ seconds",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "GetArgumentAsNumber(\"FlashDuration\")",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"FlashDurationTimer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Flash::Flash::SetPropertyFlashDuration"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "GetArgumentAsNumber(\"FlashDuration\")"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Flash::Flash::SetPropertyIsFlashing"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Flash::Flash",
+                  "type": "behavior"
+                },
+                {
+                  "description": "Duration of the blinking, in seconds",
+                  "name": "FlashDuration",
+                  "type": "expression"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the specified objects are flashing.",
+              "fullName": "Is object flashing",
+              "functionType": "Condition",
+              "name": "IsFlashing",
+              "sentence": "_PARAM0_ is flashing",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "False"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Flash::Flash::PropertyIsFlashing"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Flash::Flash",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onOwnerRemovedFromScene",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Flash::Flash::Stop"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Flash::Flash",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onDeActivate",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Flash::Flash::Stop"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Flash::Flash",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Stop the flashing of the specified object.",
+              "fullName": "Stop flashing",
+              "functionType": "Action",
+              "name": "Stop",
+              "sentence": "Stop flashing _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Flash::Flash::PropertyIsFlashing"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "Object",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Flash::Flash::SetPropertyIsFlashing"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Flash::Flash",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "0.1",
+              "type": "Number",
+              "unit": "Second",
+              "label": "Half period (time during which object is invisible)",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "HalfPeriodTime"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "IsFlashing"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "FlashDuration"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": []
+    },
     {
       "author": "@4ian",
       "category": "Game mechanic",
@@ -46379,32 +48345,22 @@
       "author": "Tristan Rhodes (https://victrisgames.itch.io/)",
       "category": "Visual effect",
       "extensionNamespace": "",
-      "fullName": "Shake Object (position, angle, scale)",
+      "fullName": "Shake object",
       "helpPath": "https://victrisgames.itch.io/gdevelop-camera-shake-example",
       "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWFycm93LWFsbCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMywxMUgxOEwxNi41LDkuNUwxNy45Miw4LjA4TDIxLjg0LDEyTDE3LjkyLDE1LjkyTDE2LjUsMTQuNUwxOCwxM0gxM1YxOEwxNC41LDE2LjVMMTUuOTIsMTcuOTJMMTIsMjEuODRMOC4wOCwxNy45Mkw5LjUsMTYuNUwxMSwxOFYxM0g2TDcuNSwxNC41TDYuMDgsMTUuOTJMMi4xNiwxMkw2LjA4LDguMDhMNy41LDkuNUw2LDExSDExVjZMOS41LDcuNUw4LjA4LDYuMDhMMTIsMi4xNkwxNS45Miw2LjA4TDE0LjUsNy41TDEzLDZWMTFaIiAvPjwvc3ZnPg==",
       "name": "ShakeObject",
       "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/arrow-all.svg",
-      "shortDescription": "Shake an object, using one or more ways to shake (position, angle, scale).",
-      "version": "1.5.5",
+      "shortDescription": "Shake an object.",
+      "version": "1.5.6",
       "description": [
-        "Select one or more methods of shaking:",
-        "- Position: Shake the X and/or Y position of the object ",
-        "- Angle: Shake the angle (rotation) of the object ",
-        "- Scale: Shake the scale of the object (must be a sprite)",
+        "Shake an object (position, angle or scale).",
         "",
-        "Control how the object shakes:",
-        "- Amplitude: How far the object moves during each shake",
-        "- Duration: Amount of time to shake the object",
-        "- Time between shakes: Amount of time between each movement of the object",
-        "- Keep shaking until stopped (boolean)",
+        "It can be used for:",
+        "- Hit or impact",
+        "- Object slowly rocking back and forth (like a ship)",
+        "- Simulate engine vibration, earthquake, or pulsing",
         "",
-        "Tips:",
-        "- For a single-shake effect, set the \"Time between shakes\" to be equal to \"Duration\"  (great for a hit or impact)",
-        "- To make the single-shake move in the opposite direction, use negative numbers ",
-        "- To repeat a single-shake effect in a loop, add a condition \"Object is not shaking\" ",
-        "- Use a long \"Time between shakes\" to simulate a slow moving object (like a ship rocking back and forth)",
-        "- Make sure to \"Stop shaking\" before starting a new shake if it uses different parameters. ",
-        "- Use \"Shake until stopped\" to simulate engine vibration, earthquake, or pulsing"
+        "The top-down RPG example uses this extension for damage animations ([open the project online](https://editor.gdevelop.io/?project=example://top-down-rpg))."
       ],
       "origin": {
         "identifier": "ShakeObject",
@@ -46433,7 +48389,7 @@
           "objectType": "",
           "eventsFunctions": [
             {
-              "description": "Shake an object, using one or more ways to shake (position, angle).",
+              "description": "Shake an object, using one or more ways to shake (position, angle). Make sure to \"Stop shaking\" before starting a new shake if it uses different parameters. ",
               "fullName": "Shake object (position, angle)",
               "functionType": "Action",
               "name": "ShakeObject_PositionAngle",
@@ -46817,6 +48773,7 @@
                 },
                 {
                   "description": "Amplitude of position shake in Y direction (in pixels)  (For example: 5)",
+                  "longDescription": "Use a negative number to make the single-shake move in the opposite direction.",
                   "name": "PowerY",
                   "type": "expression"
                 },
@@ -46827,6 +48784,7 @@
                 },
                 {
                   "description": "Amount of time between shakes (in seconds) (Default: 0.08)",
+                  "longDescription": "For a single-shake effect, set it to the same value as \"Duration\".",
                   "name": "TimeBetweenShakes",
                   "type": "expression"
                 },
@@ -48452,7 +50410,7 @@
           "objectType": "Sprite",
           "eventsFunctions": [
             {
-              "description": "Shake an object, using one or more ways to shake (position, angle, scale).",
+              "description": "Shake an object, using one or more ways to shake (position, angle, scale). Make sure to \"Stop shaking\" before starting a new shake if it uses different parameters.",
               "fullName": "Shake object (position, angle, scale)",
               "functionType": "Action",
               "name": "ShakeObject_PositionAngleScale",
@@ -48848,6 +50806,7 @@
                 },
                 {
                   "description": "Amplitude of position shake in Y direction (in pixels)  (For example: 5)",
+                  "longDescription": "Use a negative number to make the single-shake move in the opposite direction.",
                   "name": "PowerY",
                   "type": "expression"
                 },
@@ -48863,6 +50822,7 @@
                 },
                 {
                   "description": "Amount of time between shakes (in seconds) (Default: 0.08)",
+                  "longDescription": "For a single-shake effect, set it to the same value as \"Duration\".",
                   "name": "TimeBetweenShakes",
                   "type": "expression"
                 },
