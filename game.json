@@ -9674,6 +9674,12 @@
               "name": "oldXPos",
               "type": "number",
               "value": 0
+            },
+            {
+              "folded": true,
+              "name": "bossReady",
+              "type": "boolean",
+              "value": false
             }
           ],
           "effects": [],
@@ -10507,7 +10513,7 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.05,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -10973,7 +10979,157 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
+                      "image": "jbh1.png",
+                      "points": [
+                        {
+                          "name": "GroundCast",
+                          "x": 210,
+                          "y": 400
+                        },
+                        {
+                          "name": "PseudoCenter",
+                          "x": 420,
+                          "y": 290
+                        },
+                        {
+                          "name": "Ammo",
+                          "x": 99,
+                          "y": 300
+                        },
+                        {
+                          "name": "WallCheck",
+                          "x": -350,
+                          "y": 300
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 228,
+                            "y": 20
+                          },
+                          {
+                            "x": 420,
+                            "y": 20
+                          },
+                          {
+                            "x": 420,
+                            "y": 400
+                          },
+                          {
+                            "x": 228,
+                            "y": 400
+                          }
+                        ],
+                        [
+                          {
+                            "x": 75,
+                            "y": 190
+                          },
+                          {
+                            "x": 228,
+                            "y": 190
+                          },
+                          {
+                            "x": 228,
+                            "y": 400
+                          },
+                          {
+                            "x": 75,
+                            "y": 400
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
                       "image": "jbh2.png",
+                      "points": [
+                        {
+                          "name": "GroundCast",
+                          "x": 210,
+                          "y": 400
+                        },
+                        {
+                          "name": "PseudoCenter",
+                          "x": 420,
+                          "y": 290
+                        },
+                        {
+                          "name": "Ammo",
+                          "x": 99,
+                          "y": 300
+                        },
+                        {
+                          "name": "WallCheck",
+                          "x": -350,
+                          "y": 300
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 228,
+                            "y": 20
+                          },
+                          {
+                            "x": 420,
+                            "y": 20
+                          },
+                          {
+                            "x": 420,
+                            "y": 400
+                          },
+                          {
+                            "x": 228,
+                            "y": 400
+                          }
+                        ],
+                        [
+                          {
+                            "x": 75,
+                            "y": 190
+                          },
+                          {
+                            "x": 228,
+                            "y": 190
+                          },
+                          {
+                            "x": 228,
+                            "y": 400
+                          },
+                          {
+                            "x": 75,
+                            "y": 400
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "jbh0.png",
                       "points": [
                         {
                           "name": "GroundCast",
@@ -11060,7 +11216,82 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "jbl02.png",
+                      "image": "jbl12.png",
+                      "points": [
+                        {
+                          "name": "GroundCast",
+                          "x": 210,
+                          "y": 400
+                        },
+                        {
+                          "name": "PseudoCenter",
+                          "x": 420,
+                          "y": 290
+                        },
+                        {
+                          "name": "Ammo",
+                          "x": 99,
+                          "y": 300
+                        },
+                        {
+                          "name": "WallCheck",
+                          "x": -350,
+                          "y": 300
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 228,
+                            "y": 20
+                          },
+                          {
+                            "x": 420,
+                            "y": 20
+                          },
+                          {
+                            "x": 420,
+                            "y": 400
+                          },
+                          {
+                            "x": 228,
+                            "y": 400
+                          }
+                        ],
+                        [
+                          {
+                            "x": 75,
+                            "y": 190
+                          },
+                          {
+                            "x": 228,
+                            "y": 190
+                          },
+                          {
+                            "x": 228,
+                            "y": 400
+                          },
+                          {
+                            "x": 75,
+                            "y": 400
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "jbl22.png",
                       "points": [
                         {
                           "name": "GroundCast",
@@ -11210,7 +11441,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "jbl22.png",
+                      "image": "jbl02.png",
                       "points": [
                         {
                           "name": "GroundCast",
@@ -17975,6 +18206,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Camera",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -20050,6 +20282,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Spawn",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -20258,6 +20491,15 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "jungle_boss"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Raycast"
                       },
                       "parameters": [
@@ -20269,15 +20511,6 @@
                         "",
                         "jungle_enemy.leftGroundY",
                         ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AjoutObjConcern"
-                      },
-                      "parameters": [
-                        "",
-                        "jungle_boss"
                       ]
                     },
                     {
@@ -20323,22 +20556,19 @@
                   ]
                 }
               ]
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "Attack1",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "jungle_boss"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Tween::HasFinished"
@@ -20349,6 +20579,41 @@
                     "\"initfall\""
                   ]
                 },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "\"GroundHit\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Attack1",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
                     "value": "CheatCode::CheatCodeEntered"
@@ -20367,35 +20632,47 @@
                     "",
                     "jungle_boss"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "bossReady",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
-              "actions": [],
-              "events": [
+              "actions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Tween::AddObjectPositionYTween"
-                      },
-                      "parameters": [
-                        "jungle_boss",
-                        "Tween",
-                        "\"rise\"",
-                        "jungle_boss.Y() - 576",
-                        "\"easeInExpo\"",
-                        "500",
-                        ""
-                      ]
-                    }
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "bossReady",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "Tween",
+                    "\"rise\"",
+                    "jungle_boss.Y() - 576",
+                    "\"easeInExpo\"",
+                    "500",
+                    ""
                   ]
                 }
               ]
@@ -20490,121 +20767,6 @@
                     "jungle_boss",
                     "Tween",
                     "\"overPlayer\""
-                  ]
-                }
-              ]
-            },
-            {
-              "disabled": true,
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Tween::HasFinished"
-                  },
-                  "parameters": [
-                    "jungle_boss",
-                    "Tween",
-                    "\"overPlayer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "FlippedX"
-                      },
-                      "parameters": [
-                        "jungle_boss"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Raycast"
-                      },
-                      "parameters": [
-                        "wall",
-                        "jungle_boss.PointX(\"GroundCast\")",
-                        "jungle_boss.PointY(\"GroundCast\")",
-                        "90",
-                        "1000",
-                        "",
-                        "jungle_enemy.leftGroundY",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": []
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "FlippedX"
-                      },
-                      "parameters": [
-                        "jungle_boss"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Raycast"
-                      },
-                      "parameters": [
-                        "wall",
-                        "jungle_boss.PointX(\"GroundCast\")",
-                        "jungle_boss.PointY(\"GroundCast\")",
-                        "90",
-                        "1000",
-                        "",
-                        "jungle_enemy.rightGroundY",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": []
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Tween::AddObjectPositionYTween"
-                      },
-                      "parameters": [
-                        "jungle_boss",
-                        "Tween",
-                        "\"fall\"",
-                        "max(Variable(jungle_enemy.leftGroundY),Variable(jungle_enemy.rightGroundY)) - 192",
-                        "\"easeInExpo\"",
-                        "500",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Tween::RemoveTween"
-                      },
-                      "parameters": [
-                        "jungle_boss",
-                        "Tween",
-                        "\"overPlayer\""
-                      ]
-                    }
                   ]
                 }
               ]
@@ -20730,9 +20892,108 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "jungle_boss"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "Tween",
+                    "\"fall\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "\"GroundHit\""
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AjoutObjConcern"
+              },
+              "parameters": [
+                "",
+                "jungle_boss"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimationName"
+              },
+              "parameters": [
+                "jungle_boss",
+                "\"GroundHit\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimationEnded2"
+              },
+              "parameters": [
+                "jungle_boss"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "jungle_boss",
+                "bossReady",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "jungle_boss",
+                "\"Idle\""
+              ]
+            }
+          ]
         },
         {
           "colorB": 228,
@@ -20747,16 +21008,6 @@
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
-                {
-                  "type": {
-                    "value": "Tween::HasFinished"
-                  },
-                  "parameters": [
-                    "jungle_boss",
-                    "Tween",
-                    "\"initfall\""
-                  ]
-                },
                 {
                   "type": {
                     "value": "CheatCode::CheatCodeEntered"
@@ -20775,6 +21026,16 @@
                     "",
                     "jungle_boss"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "bossReady",
+                    "True"
+                  ]
                 }
               ],
               "actions": [
@@ -20785,6 +21046,16 @@
                   "parameters": [
                     "",
                     "\"jungle_bossAttack2\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "bossReady",
+                    "False"
                   ]
                 }
               ]
@@ -21035,6 +21306,16 @@
                     "jungle_boss",
                     "\"Idle\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "bossReady",
+                    "True"
+                  ]
                 }
               ]
             }
@@ -21055,22 +21336,31 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "Tween::HasFinished"
-                  },
-                  "parameters": [
-                    "jungle_boss",
-                    "Tween",
-                    "\"initfall\""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "CheatCode::CheatCodeEntered"
                   },
                   "parameters": [
                     "",
                     "\"three\"",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "jungle_boss"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "bossReady",
+                    "True"
                   ]
                 }
               ],
@@ -21082,6 +21372,16 @@
                   "parameters": [
                     "jungle_boss",
                     "\"Attack3\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "bossReady",
+                    "False"
                   ]
                 }
               ],
@@ -21196,37 +21496,35 @@
                       ]
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionPoint"
-                  },
-                  "parameters": [
-                    "wall",
-                    "jungle_boss.PointX(\"WallCheck\")",
-                    "jungle_boss.PointY(\"WallCheck\")"
-                  ]
                 },
                 {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetAnimationName"
-                  },
-                  "parameters": [
-                    "jungle_boss",
-                    "\"WallHit\""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.43"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "jungle_boss",
+                        "\"WallHit\""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -21271,6 +21569,25 @@
                 },
                 {
                   "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "\"Idle\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "jungle_boss",
+                    "bossReady",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::AddObjectPositionXTween"
                   },
                   "parameters": [
@@ -21291,80 +21608,6 @@
                     "jungle_boss",
                     "Tween",
                     "\"open\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "AjoutObjConcern"
-                  },
-                  "parameters": [
-                    "",
-                    "jungle_boss"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::HasFinished"
-                  },
-                  "parameters": [
-                    "jungle_boss",
-                    "Tween",
-                    "\"close\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetAnimationName"
-                  },
-                  "parameters": [
-                    "jungle_boss",
-                    "\"Idle\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "AnimationName"
-                  },
-                  "parameters": [
-                    "jungle_boss",
-                    "\"WallHit\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimationEnded2"
-                  },
-                  "parameters": [
-                    "jungle_boss"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetAnimationName"
-                  },
-                  "parameters": [
-                    "jungle_boss",
-                    "\"Idle\""
                   ]
                 }
               ]
@@ -58216,7 +58459,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.21324100146709069,
+        "zoomFactor": 0.1806572626959323,
         "windowMask": false
       }
     },
