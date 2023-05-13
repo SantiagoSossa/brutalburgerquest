@@ -2986,7 +2986,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.576590130377067,
+        "zoomFactor": 0.3872848542745619,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3251,6 +3251,7 @@
           "value": true
         },
         {
+          "folded": true,
           "name": "jungle_boss",
           "type": "structure",
           "children": [
@@ -3302,6 +3303,23 @@
           ]
         },
         {
+          "name": "trap1",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "groundPosition",
+              "type": "number",
+              "value": -1
+            },
+            {
+              "name": "playerPosition",
+              "type": "number",
+              "value": -1
+            }
+          ]
+        },
+        {
           "folded": true,
           "name": "boss_active",
           "type": "boolean",
@@ -3321,7 +3339,7 @@
               "folded": true,
               "name": "Health",
               "type": "number",
-              "value": 100
+              "value": 10000
             }
           ],
           "effects": [],
@@ -13156,9 +13174,21 @@
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "fall",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "animations": [
             {
               "name": "idle",
@@ -13900,11 +13930,13 @@
           "colorG": 29,
           "colorR": 29,
           "creationTime": 0,
+          "folded": true,
           "name": "Player",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -13922,9 +13954,9 @@
               "actions": [],
               "events": [
                 {
-                  "colorB": 228,
-                  "colorG": 176,
-                  "colorR": 74,
+                  "colorB": 38,
+                  "colorG": 29,
+                  "colorR": 29,
                   "creationTime": 0,
                   "folded": true,
                   "name": "Experimental",
@@ -13932,9 +13964,9 @@
                   "type": "BuiltinCommonInstructions::Group",
                   "events": [
                     {
-                      "colorB": 228,
-                      "colorG": 176,
-                      "colorR": 74,
+                      "colorB": 38,
+                      "colorG": 29,
+                      "colorR": 29,
                       "creationTime": 0,
                       "name": "Dust",
                       "source": "",
@@ -14119,9 +14151,9 @@
                       "parameters": []
                     },
                     {
-                      "colorB": 228,
-                      "colorG": 176,
-                      "colorR": 74,
+                      "colorB": 38,
+                      "colorG": 29,
+                      "colorR": 29,
                       "creationTime": 0,
                       "disabled": true,
                       "folded": true,
@@ -14315,12 +14347,12 @@
                 {
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
+                    "b": 38,
+                    "g": 29,
+                    "r": 29,
+                    "textB": 255,
+                    "textG": 255,
+                    "textR": 255
                   },
                   "comment": "🎦 Animation",
                   "comment2": ""
@@ -14602,12 +14634,12 @@
                 {
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
+                    "b": 38,
+                    "g": 29,
+                    "r": 29,
+                    "textB": 255,
+                    "textG": 255,
+                    "textR": 255
                   },
                   "comment": "🔄️ Orientation",
                   "comment2": ""
@@ -14667,12 +14699,12 @@
                 {
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
+                    "b": 38,
+                    "g": 29,
+                    "r": 29,
+                    "textB": 255,
+                    "textG": 255,
+                    "textR": 255
                   },
                   "comment": "⚔️ Attack",
                   "comment2": ""
@@ -15081,12 +15113,12 @@
                     {
                       "type": "BuiltinCommonInstructions::Comment",
                       "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
+                        "b": 38,
+                        "g": 29,
+                        "r": 29,
+                        "textB": 255,
+                        "textG": 255,
+                        "textR": 255
                       },
                       "comment": "Cigar Toss",
                       "comment2": ""
@@ -15372,12 +15404,12 @@
                 {
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
+                    "b": 38,
+                    "g": 29,
+                    "r": 29,
+                    "textB": 255,
+                    "textG": 255,
+                    "textR": 255
                   },
                   "comment": "🔊 Sound Effect",
                   "comment2": ""
@@ -15422,12 +15454,12 @@
             {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
+                "b": 38,
+                "g": 29,
+                "r": 29,
+                "textB": 255,
+                "textG": 255,
+                "textR": 255
               },
               "comment": "☠️ Death",
               "comment2": ""
@@ -15516,14 +15548,301 @@
           "parameters": []
         },
         {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
+          "colorB": 38,
+          "colorG": 29,
+          "colorR": 29,
           "creationTime": 0,
           "name": "Traps",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 38,
+                "g": 29,
+                "r": 29,
+                "textB": 255,
+                "textG": 255,
+                "textR": 255
+              },
+              "comment": "🪤 Trap1",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Tween::Exists"
+                  },
+                  "parameters": [
+                    "trap1",
+                    "Tween",
+                    "\"fall\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "trap1",
+                    "<",
+                    "Player.CenterY()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CenterX"
+                  },
+                  "parameters": [
+                    "trap1",
+                    "<",
+                    "Player.CenterX() + 10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CenterX"
+                  },
+                  "parameters": [
+                    "trap1",
+                    ">",
+                    "Player.CenterX() - 10"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"Detected\"",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "trap1",
+                    "fall",
+                    "True"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Raycast"
+                      },
+                      "parameters": [
+                        "Player",
+                        "trap1.CenterX()",
+                        "trap1.Y()",
+                        "90",
+                        "1000",
+                        "",
+                        "trap1.playerPosition",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Raycast"
+                      },
+                      "parameters": [
+                        "wall",
+                        "trap1.CenterX()",
+                        "trap1.CenterY()",
+                        "90",
+                        "1000",
+                        "",
+                        "trap1.groundPosition",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"Calculated\"",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "trap1.playerPosition",
+                            "=",
+                            "-1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "trap1.groundPosition",
+                            "<",
+                            "Variable(trap1.groundPosition)"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "trap1",
+                            "fall",
+                            "True"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "trap1",
+                            "fall",
+                            "False"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "trap1",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "trap1",
+                    "fall",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"Fell\"",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "trap1",
+                    "fall",
+                    "False"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "trap1",
+                        "Tween",
+                        "\"fall\"",
+                        "Variable(trap1.groundPosition) - 180",
+                        "\"easeInCubic\"",
+                        "100 + (Variable(trap1.groundPosition) - trap1.Y())",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "trap1.groundPosition",
+                        "=",
+                        "-1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "trap1.playerPosition",
+                        "=",
+                        "-1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
           "parameters": []
         },
         {
@@ -15531,6 +15850,7 @@
           "colorG": 29,
           "colorR": 29,
           "creationTime": 0,
+          "folded": true,
           "name": "Enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -15538,12 +15858,12 @@
             {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
+                "b": 38,
+                "g": 29,
+                "r": 29,
+                "textB": 255,
+                "textG": 255,
+                "textR": 255
               },
               "comment": "☠️ Death",
               "comment2": ""
@@ -15651,12 +15971,12 @@
                 {
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
+                    "b": 38,
+                    "g": 29,
+                    "r": 29,
+                    "textB": 255,
+                    "textG": 255,
+                    "textR": 255
                   },
                   "comment": "🎦 Animation",
                   "comment2": ""
@@ -15770,14 +16090,14 @@
                     {
                       "type": "BuiltinCommonInstructions::Comment",
                       "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
+                        "b": 38,
+                        "g": 29,
+                        "r": 29,
+                        "textB": 255,
+                        "textG": 255,
+                        "textR": 255
                       },
-                      "comment": "🏃‍♂️ Movementd",
+                      "comment": "🏃‍♂️ Movement",
                       "comment2": ""
                     },
                     {
@@ -15849,12 +16169,12 @@
                     {
                       "type": "BuiltinCommonInstructions::Comment",
                       "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
+                        "b": 38,
+                        "g": 29,
+                        "r": 29,
+                        "textB": 255,
+                        "textG": 255,
+                        "textR": 255
                       },
                       "comment": "🔄️ Orientation",
                       "comment2": ""
@@ -16017,12 +16337,12 @@
                     {
                       "type": "BuiltinCommonInstructions::Comment",
                       "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
+                        "b": 38,
+                        "g": 29,
+                        "r": 29,
+                        "textB": 255,
+                        "textG": 255,
+                        "textR": 255
                       },
                       "comment": "⚔️ Attack",
                       "comment2": ""
@@ -16182,12 +16502,12 @@
                 {
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
+                    "b": 38,
+                    "g": 29,
+                    "r": 29,
+                    "textB": 255,
+                    "textG": 255,
+                    "textR": 255
                   },
                   "comment": "🎦 Animation",
                   "comment2": ""
@@ -16239,12 +16559,12 @@
                 {
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
+                    "b": 38,
+                    "g": 29,
+                    "r": 29,
+                    "textB": 255,
+                    "textG": 255,
+                    "textR": 255
                   },
                   "comment": "🏃‍♂️ Movement & 🔄️ Orientation",
                   "comment2": ""
@@ -16478,9 +16798,9 @@
                           ]
                         },
                         {
-                          "colorB": 228,
-                          "colorG": 176,
-                          "colorR": 74,
+                          "colorB": 38,
+                          "colorG": 29,
+                          "colorR": 29,
                           "creationTime": 0,
                           "name": "Destuck Manager",
                           "source": "",
@@ -17048,12 +17368,12 @@
                 {
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
+                    "b": 38,
+                    "g": 29,
+                    "r": 29,
+                    "textB": 255,
+                    "textG": 255,
+                    "textR": 255
                   },
                   "comment": "⚔️ Attack",
                   "comment2": ""
@@ -17167,12 +17487,12 @@
                 {
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
+                    "b": 38,
+                    "g": 29,
+                    "r": 29,
+                    "textB": 255,
+                    "textG": 255,
+                    "textR": 255
                   },
                   "comment": "🎦 Animation",
                   "comment2": ""
@@ -17286,12 +17606,12 @@
                     {
                       "type": "BuiltinCommonInstructions::Comment",
                       "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
+                        "b": 38,
+                        "g": 29,
+                        "r": 29,
+                        "textB": 255,
+                        "textG": 255,
+                        "textR": 255
                       },
                       "comment": "🏃‍♂️ Movement",
                       "comment2": ""
@@ -17365,12 +17685,12 @@
                     {
                       "type": "BuiltinCommonInstructions::Comment",
                       "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
+                        "b": 38,
+                        "g": 29,
+                        "r": 29,
+                        "textB": 255,
+                        "textG": 255,
+                        "textR": 255
                       },
                       "comment": "🔄️ Orientation",
                       "comment2": ""
@@ -17516,12 +17836,12 @@
                     {
                       "type": "BuiltinCommonInstructions::Comment",
                       "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
+                        "b": 38,
+                        "g": 29,
+                        "r": 29,
+                        "textB": 255,
+                        "textG": 255,
+                        "textR": 255
                       },
                       "comment": "⚔️ Attack",
                       "comment2": ""
@@ -18195,6 +18515,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Level Genetarion",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -22179,7 +22500,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Attack1",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -22573,6 +22893,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Attack2",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
