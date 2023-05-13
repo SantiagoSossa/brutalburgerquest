@@ -2986,7 +2986,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3872848542745619,
+        "zoomFactor": 0.14319860445995916,
         "windowMask": false
       },
       "objectsGroups": [
@@ -13347,11 +13347,17 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "spike0.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 96,
+                          "y": 192
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 96,
-                        "y": 192
+                        "x": 0,
+                        "y": 180
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -13383,11 +13389,17 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "spike1.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 96,
+                          "y": 192
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 96,
-                        "y": 192
+                        "x": 0,
+                        "y": 180
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -13419,11 +13431,17 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "spike2.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 96,
+                          "y": 192
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 96,
-                        "y": 192
+                        "x": 0,
+                        "y": 180
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -13455,11 +13473,17 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "spike3.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 96,
+                          "y": 192
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 96,
-                        "y": 192
+                        "x": 0,
+                        "y": 180
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -13491,11 +13515,17 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "spike4.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 96,
+                          "y": 192
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 96,
-                        "y": 192
+                        "x": 0,
+                        "y": 180
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -13527,11 +13557,17 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "spike5.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 96,
+                          "y": 192
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 96,
-                        "y": 192
+                        "x": 0,
+                        "y": 180
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -15557,239 +15593,310 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 38,
-                "g": 29,
-                "r": 29,
-                "textB": 255,
-                "textG": 255,
-                "textR": 255
-              },
-              "comment": "🪤 Trap1",
-              "comment2": ""
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Tween::Exists"
-                  },
-                  "parameters": [
-                    "trap1",
-                    "Tween",
-                    "\"fall\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PosY"
-                  },
-                  "parameters": [
-                    "trap1",
-                    "<",
-                    "Player.CenterY()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CenterX"
-                  },
-                  "parameters": [
-                    "trap1",
-                    "<",
-                    "Player.CenterX() + 10"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CenterX"
-                  },
-                  "parameters": [
-                    "trap1",
-                    ">",
-                    "Player.CenterX() - 10"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "DebuggerTools::ConsoleLog"
-                  },
-                  "parameters": [
-                    "\"Detected\"",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "trap1",
-                    "fall",
-                    "True"
-                  ]
-                }
-              ],
+              "colorB": 38,
+              "colorG": 29,
+              "colorR": 29,
+              "creationTime": 0,
+              "folded": true,
+              "name": "Trap 1",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 38,
+                    "g": 29,
+                    "r": 29,
+                    "textB": 255,
+                    "textG": 255,
+                    "textR": 255
+                  },
+                  "comment": "🪤 Trap1",
+                  "comment2": ""
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "value": "Raycast"
+                        "inverted": true,
+                        "value": "Tween::Exists"
                       },
                       "parameters": [
-                        "Player",
-                        "trap1.CenterX()",
-                        "trap1.Y()",
-                        "90",
-                        "1000",
-                        "",
-                        "trap1.playerPosition",
-                        ""
+                        "trap1",
+                        "Tween",
+                        "\"fall\""
                       ]
                     },
                     {
                       "type": {
-                        "value": "Raycast"
+                        "value": "PosY"
                       },
                       "parameters": [
-                        "wall",
-                        "trap1.CenterX()",
-                        "trap1.CenterY()",
-                        "90",
-                        "1000",
-                        "",
-                        "trap1.groundPosition",
-                        ""
+                        "trap1",
+                        "<",
+                        "Player.CenterY()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CenterX"
+                      },
+                      "parameters": [
+                        "trap1",
+                        "<",
+                        "Player.CenterX() + 10"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CenterX"
+                      },
+                      "parameters": [
+                        "trap1",
+                        ">",
+                        "Player.CenterX() - 10"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "DebuggerTools::ConsoleLog"
+                        "value": "SetObjectVariableAsBoolean"
                       },
                       "parameters": [
-                        "\"Calculated\"",
-                        "",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "VarScene"
-                          },
-                          "parameters": [
-                            "trap1.playerPosition",
-                            "=",
-                            "-1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "VarScene"
-                          },
-                          "parameters": [
-                            "trap1.groundPosition",
-                            "<",
-                            "Variable(trap1.groundPosition)"
-                          ]
-                        }
+                        "trap1",
+                        "fall",
+                        "True"
                       ]
                     }
                   ],
-                  "actions": [],
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "value": "ObjectVariableAsBoolean"
+                            "value": "Raycast"
                           },
                           "parameters": [
-                            "trap1",
-                            "fall",
-                            "True"
+                            "Player",
+                            "trap1.CenterX()",
+                            "trap1.Y()",
+                            "90",
+                            "1000",
+                            "",
+                            "trap1.playerPosition",
+                            ""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "Raycast"
+                          },
+                          "parameters": [
+                            "wall",
+                            "trap1.CenterX()",
+                            "trap1.CenterY()",
+                            "90",
+                            "1000",
+                            "",
+                            "trap1.groundPosition",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": []
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "trap1.playerPosition",
+                                "=",
+                                "-1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "trap1.groundPosition",
+                                "<",
+                                "Variable(trap1.groundPosition)"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "ObjectVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "trap1",
+                                "fall",
+                                "True"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetObjectVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "trap1",
+                                "fall",
+                                "False"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "trap1",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "trap1",
+                        "fall",
+                        "True"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "trap1",
+                        "fall",
+                        "False"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "value": "SetObjectVariableAsBoolean"
+                            "value": "Tween::AddObjectPositionYTween"
                           },
                           "parameters": [
                             "trap1",
-                            "fall",
-                            "False"
+                            "Tween",
+                            "\"fall\"",
+                            "Variable(trap1.groundPosition) - 180",
+                            "\"easeInCubic\"",
+                            "100 + (Variable(trap1.groundPosition) - trap1.Y())",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "trap1.groundPosition",
+                            "=",
+                            "-1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "trap1.playerPosition",
+                            "=",
+                            "-1"
                           ]
                         }
                       ]
                     }
                   ]
                 }
-              ]
+              ],
+              "parameters": []
             },
             {
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "trap1",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "trap1",
-                    "fall",
-                    "True"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "DebuggerTools::ConsoleLog"
-                  },
-                  "parameters": [
-                    "\"Fell\"",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "trap1",
-                    "fall",
-                    "False"
-                  ]
-                }
-              ],
+              "colorB": 38,
+              "colorG": 29,
+              "colorR": 29,
+              "creationTime": 0,
+              "folded": true,
+              "name": "Trap 2",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 38,
+                    "g": 29,
+                    "r": 29,
+                    "textB": 255,
+                    "textG": 255,
+                    "textR": 255
+                  },
+                  "comment": "🪤 Trap2",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "trap2",
                   "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionPoint"
+                      },
+                      "parameters": [
+                        "trap2",
+                        "Player.PointX(\"Foot\")",
+                        "Player.PointY(\"Foot\") + 10"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "BuiltinCommonInstructions::Once"
@@ -15800,47 +15907,71 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Tween::AddObjectPositionYTween"
+                        "value": "Create"
                       },
                       "parameters": [
-                        "trap1",
-                        "Tween",
-                        "\"fall\"",
-                        "Variable(trap1.groundPosition) - 180",
-                        "\"easeInCubic\"",
-                        "100 + (Variable(trap1.groundPosition) - trap1.Y())",
+                        "",
+                        "trap2_spike",
+                        "trap2.X()",
+                        "trap2.Y() - 180",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "trap2_spike",
+                        "=",
+                        "5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Health",
+                        "-",
+                        "10"
                       ]
                     }
                   ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
+                  "conditions": [
                     {
                       "type": {
-                        "value": "ModVarScene"
+                        "value": "AnimationEnded2"
                       },
                       "parameters": [
-                        "trap1.groundPosition",
-                        "=",
-                        "-1"
+                        "trap2_spike"
                       ]
                     },
                     {
                       "type": {
-                        "value": "ModVarScene"
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
                       },
                       "parameters": [
-                        "trap1.playerPosition",
-                        "=",
-                        "-1"
+                        "trap2_spike",
+                        ""
                       ]
                     }
                   ]
                 }
-              ]
+              ],
+              "parameters": []
             }
           ],
           "parameters": []
@@ -19640,6 +19771,14 @@
                     "trap_spawn.X()",
                     "trap_spawn.Y()",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseAnimation"
+                  },
+                  "parameters": [
+                    "trap2"
                   ]
                 },
                 {
