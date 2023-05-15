@@ -16939,34 +16939,59 @@
                               ]
                             }
                           ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimationName"
+                          },
+                          "parameters": [
+                            "Gorilla",
+                            "\"Attack\""
+                          ]
                         },
                         {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "VarObjet"
-                              },
-                              "parameters": [
-                                "Player",
-                                "Health",
-                                ">",
-                                "0"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "ModVarObjet"
-                              },
-                              "parameters": [
-                                "Player",
-                                "Health",
-                                "-",
-                                "10"
-                              ]
-                            }
+                          "type": {
+                            "value": "Sprite"
+                          },
+                          "parameters": [
+                            "Gorilla",
+                            "=",
+                            "8"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Health",
+                            ">",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Health",
+                            "-",
+                            "10"
                           ]
                         }
                       ]
@@ -17300,6 +17325,7 @@
                           "colorG": 29,
                           "colorR": 29,
                           "creationTime": 0,
+                          "folded": true,
                           "name": "Destuck Manager",
                           "source": "",
                           "type": "BuiltinCommonInstructions::Group",
@@ -17936,35 +17962,58 @@
                         "\"canBite\""
                       ]
                     }
-                  ],
-                  "events": [
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "VarObjet"
-                          },
-                          "parameters": [
-                            "Player",
-                            "Health",
-                            ">",
-                            "0"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "ModVarObjet"
-                          },
-                          "parameters": [
-                            "Player",
-                            "Health",
-                            "-",
-                            "10"
-                          ]
-                        }
+                      "type": {
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "Bat",
+                        "\"Attack\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Sprite"
+                      },
+                      "parameters": [
+                        "Bat",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Health",
+                        ">",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Health",
+                        "-",
+                        "10"
                       ]
                     }
                   ]
