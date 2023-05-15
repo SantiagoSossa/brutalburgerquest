@@ -2967,15 +2967,15 @@
   ],
   "layouts": [
     {
-      "b": 209,
+      "b": 103,
       "disableInputWhenNotFocused": true,
       "mangledName": "Main_95Game",
       "name": "Main_Game",
-      "r": 209,
+      "r": 46,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 209,
+      "v": 12,
       "uiSettings": {
         "grid": true,
         "gridType": "rectangular",
@@ -2986,7 +2986,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.14319860445995916,
+        "zoomFactor": 0.12540837927260853,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3045,9 +3045,6 @@
             },
             {
               "name": "trap2"
-            },
-            {
-              "name": "trap2_spike"
             }
           ]
         },
@@ -3339,7 +3336,13 @@
               "folded": true,
               "name": "Health",
               "type": "number",
-              "value": 10000
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Ready",
+              "type": "boolean",
+              "value": false
             }
           ],
           "effects": [],
@@ -5935,6 +5938,10 @@
               "canBeGrabbed": false,
               "platformType": "NormalPlatform",
               "yGrabOffset": 0
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -6164,6 +6171,10 @@
               "canBeGrabbed": true,
               "platformType": "NormalPlatform",
               "yGrabOffset": 0
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -6219,6 +6230,10 @@
               "canBeGrabbed": true,
               "platformType": "NormalPlatform",
               "yGrabOffset": 0
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -6361,6 +6376,10 @@
               "canBeGrabbed": true,
               "platformType": "NormalPlatform",
               "yGrabOffset": 0
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -6432,7 +6451,12 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "animations": [
             {
               "name": "wallTile0",
@@ -6635,6 +6659,10 @@
               "movementAngleOffset": 0,
               "rotateObject": false,
               "viewpoint": "TopDown"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -7298,6 +7326,10 @@
             {
               "name": "ShakeObject_PositionAngleScale",
               "type": "ShakeObject::ShakeObject_PositionAngleScale"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -8537,6 +8569,10 @@
             {
               "name": "ShakeObject_PositionAngleScale",
               "type": "ShakeObject::ShakeObject_PositionAngleScale"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -9899,7 +9935,12 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "animations": [
             {
               "name": "",
@@ -10166,9 +10207,9 @@
           "effects": [],
           "behaviors": [
             {
+              "acceleration": 1500,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
-              "acceleration": 1500,
               "canGoDownFromJumpthru": false,
               "canGrabPlatforms": false,
               "canGrabWithoutMoving": false,
@@ -10184,6 +10225,10 @@
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -12836,8 +12881,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 125,
+                        "y": 125
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -12853,8 +12898,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 125,
+                        "y": 125
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -12870,8 +12915,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 125,
+                        "y": 125
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -12887,8 +12932,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 125,
+                        "y": 125
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -12904,8 +12949,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 125,
+                        "y": 125
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -12921,8 +12966,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 125,
+                        "y": 125
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -12938,8 +12983,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 125,
+                        "y": 125
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -12955,8 +13000,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 125,
+                        "y": 125
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -13276,7 +13321,12 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "animations": [
             {
               "name": "",
@@ -13906,6 +13956,52 @@
               ]
             }
           ]
+        },
+        {
+          "additive": false,
+          "assetStoreId": "",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 360,
+          "emitterForceMax": 60,
+          "emitterForceMin": 50,
+          "flow": 100,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 400,
+          "name": "PlayerSpawnSmoke",
+          "particleAlpha1": 225,
+          "particleAlpha2": 225,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 51,
+          "particleBlue2": 51,
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 51,
+          "particleGreen2": 51,
+          "particleLifeTimeMax": 2.5,
+          "particleLifeTimeMin": 0.5,
+          "particleRed1": 255,
+          "particleRed2": 255,
+          "particleSize1": 100,
+          "particleSize2": 150,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 30,
+          "rendererParam2": 1,
+          "rendererType": "Point",
+          "tags": "",
+          "tank": -1,
+          "textureParticleName": "",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 5,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "events": [
@@ -13971,6 +14067,180 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Ready",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsOnFloor"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "player_spin",
+                    "Player.X()",
+                    "Player.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "player_spin",
+                    "=",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "PlayerSpawnSmoke",
+                    "player_spin.CenterX()",
+                    "player_spin.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "PlayerSpawnSmoke",
+                    "=",
+                    "9"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectOpacityTween"
+                  },
+                  "parameters": [
+                    "environment",
+                    "Tween",
+                    "\"show\"",
+                    "255",
+                    "\"linear\"",
+                    "1000",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "player_spin",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "PlayerSpawnSmoke",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "Player",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Health",
+                        "=",
+                        "100"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Ready",
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
@@ -14903,12 +15173,21 @@
                                     },
                                     {
                                       "type": {
+                                        "value": "ResetObjectTimer"
+                                      },
+                                      "parameters": [
+                                        "hit",
+                                        "\"spawned\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
                                         "value": "ChangePlan"
                                       },
                                       "parameters": [
                                         "hit",
                                         "=",
-                                        "100"
+                                        "10"
                                       ]
                                     }
                                   ]
@@ -14979,12 +15258,21 @@
                                     },
                                     {
                                       "type": {
+                                        "value": "ResetObjectTimer"
+                                      },
+                                      "parameters": [
+                                        "hit",
+                                        "\"spawned\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
                                         "value": "ChangePlan"
                                       },
                                       "parameters": [
                                         "hit",
                                         "=",
-                                        "100"
+                                        "10"
                                       ]
                                     }
                                   ]
@@ -15069,7 +15357,7 @@
                                       "parameters": [
                                         "hit",
                                         "=",
-                                        "100"
+                                        "10"
                                       ]
                                     },
                                     {
@@ -15126,7 +15414,7 @@
                                       "parameters": [
                                         "hit",
                                         "=",
-                                        "100"
+                                        "10"
                                       ]
                                     },
                                     {
@@ -15339,7 +15627,7 @@
                           "parameters": [
                             "shoot",
                             "=",
-                            "100"
+                            "10"
                           ]
                         },
                         {
@@ -15497,6 +15785,53 @@
                 "textG": 255,
                 "textR": 255
               },
+              "comment": "☠️ Hit",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "hit",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "hit",
+                    "\"spawned\"",
+                    ">",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "hit",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 38,
+                "g": 29,
+                "r": 29,
+                "textB": 255,
+                "textG": 255,
+                "textR": 255
+              },
               "comment": "☠️ Death",
               "comment2": ""
             },
@@ -15521,6 +15856,17 @@
                   "parameters": [
                     "Player",
                     "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneInstancesCount"
+                  },
+                  "parameters": [
+                    "",
+                    "player_spin",
+                    "=",
+                    "0"
                   ]
                 },
                 {
@@ -15577,6 +15923,14 @@
                     "PlatformerObject",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ParticleSystem::StopEmission"
+                  },
+                  "parameters": [
+                    "PlayerDust"
+                  ]
                 }
               ]
             }
@@ -15588,6 +15942,7 @@
           "colorG": 29,
           "colorR": 29,
           "creationTime": 0,
+          "folded": true,
           "name": "Traps",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -16095,6 +16450,7 @@
               "colorG": 29,
               "colorR": 29,
               "creationTime": 0,
+              "folded": true,
               "name": "Gorilla",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -16732,6 +17088,17 @@
                       },
                       "parameters": [
                         "Bat",
+                        "Health",
+                        "!=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Player",
                         "Health",
                         "!=",
                         "0"
@@ -20037,7 +20404,7 @@
                   "parameters": [
                     "",
                     "Player",
-                    "1920*(RandomInRange(0,3))",
+                    "1920*(RandomInRange(1,3))",
                     "576",
                     "\"\""
                   ]
@@ -20050,6 +20417,24 @@
                     "Player",
                     "=",
                     "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Player"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "environment",
+                    "=",
+                    "0"
                   ]
                 }
               ],
@@ -20248,30 +20633,6 @@
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
-                    {
-                      "type": {
-                        "value": "SetCameraCenterX"
-                      },
-                      "parameters": [
-                        "",
-                        "=",
-                        "lerp(CameraX(),Player.X(),0.05)",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetCameraCenterY"
-                      },
-                      "parameters": [
-                        "",
-                        "=",
-                        "lerp(CameraY(),Player.Y(),0.05)",
-                        "",
-                        ""
-                      ]
-                    },
                     {
                       "type": {
                         "value": "ClampCamera"
