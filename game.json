@@ -3454,7 +3454,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.10624567678190769,
+        "zoomFactor": 0.06678339008395101,
         "windowMask": false
       },
       "objectsGroups": [
@@ -16837,6 +16837,31 @@
         },
         {
           "assetStoreId": "",
+          "name": "TimeBackground",
+          "tags": "",
+          "type": "PrimitiveDrawing::Drawer",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "fillOpacity": 255,
+          "outlineSize": 0,
+          "outlineOpacity": 255,
+          "fillColor": {
+            "b": 254,
+            "g": 0,
+            "r": 134
+          },
+          "outlineColor": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "absoluteCoordinates": false,
+          "clearBetweenFrames": false,
+          "antialiasing": "none"
+        },
+        {
+          "assetStoreId": "",
           "name": "NewSprite",
           "tags": "",
           "type": "Sprite",
@@ -17088,6 +17113,28 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "Time",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "MM:SS",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 180,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         }
       ],
       "events": [
@@ -17310,6 +17357,33 @@
                       },
                       "parameters": [
                         "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GameTime\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "Time",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "TimeBackground",
+                        ""
                       ]
                     },
                     {
@@ -19184,7 +19258,6 @@
           "colorG": 29,
           "colorR": 29,
           "creationTime": 0,
-          "folded": true,
           "name": "Traps",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -24117,6 +24190,22 @@
                 },
                 {
                   "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Time"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "TimeBackground"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ModVarScene"
                   },
                   "parameters": [
@@ -24472,6 +24561,19 @@
           "target": "jungle_boss"
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 38,
+            "g": 29,
+            "r": 29,
+            "textB": 255,
+            "textG": 255,
+            "textR": 255
+          },
+          "comment": "Heart Background",
+          "comment2": ""
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -24492,6 +24594,73 @@
                 "-10",
                 "((SceneInstancesCount(heart))*180) + 20",
                 "200",
+                "100"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 38,
+            "g": 29,
+            "r": 29,
+            "textB": 255,
+            "textG": 255,
+            "textR": 255
+          },
+          "comment": "Time",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Time",
+                "=",
+                "TimeFormatter::SecondsToHHMMSS(TimerElapsedTime(\"GameTime\"))"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "TimeBackground",
+                "=",
+                "Time.X()",
+                "=",
+                "Time.Y()"
+              ]
+            },
+            {
+              "type": {
+                "value": "PrimitiveDrawing::RoundedRectangle"
+              },
+              "parameters": [
+                "TimeBackground",
+                "-25",
+                "-10",
+                "Time.Width() + 30",
+                "210",
                 "100"
               ]
             }
@@ -28058,6 +28227,124 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "author": "@Bouh",
+      "category": "User interface",
+      "extensionNamespace": "",
+      "fullName": "Time formatting",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWNsb2NrLWRpZ2l0YWwiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiw2QTIsMiAwIDAsMCAwLDhWMTZBMiwyIDAgMCwwIDIsMThIMjJBMiwyIDAgMCwwIDI0LDE2VjhBMiwyIDAgMCwwIDIyLDZNMiw4SDIyVjE2SDJNMyw5VjEwLjVINi4yNUwzLDE1SDQuNzVMOCwxMC41VjlNOS4yNSw5VjEwLjVIMTAuNzVWOU0xMiw5VjEwLjVIMTMuNVYxNUgxNVY5TTE3LDlBMSwxIDAgMCwwIDE2LDEwVjE0QTEsMSAwIDAsMCAxNywxNUgyMEExLDEgMCAwLDAgMjEsMTRWMTBBMSwxIDAgMCwwIDIwLDlNMTcuNSwxMC41SDE5LjVWMTMuNUgxNy41TTkuMjUsMTMuNVYxNUgxMC43NVYxMy41IiAvPjwvc3ZnPg==",
+      "name": "TimeFormatter",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/clock-digital.svg",
+      "shortDescription": "Converts seconds into standard time formats, such as HH:MM:SS. ",
+      "version": "0.0.2",
+      "description": [
+        "Ideal for displaying timers on screen.",
+        "",
+        "Formats included:",
+        "* HH:MM:SS",
+        "* HH:MM:SS.000 (displays milliseconds)"
+      ],
+      "origin": {
+        "identifier": "TimeFormatter",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "time",
+        "timer",
+        "format",
+        "hours",
+        "minutes",
+        "seconds",
+        "milliseconds"
+      ],
+      "authorIds": [
+        "2OwwM8ToR9dx9RJ2sAKTcrLmCB92"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [
+        {
+          "description": "Format time in seconds to HH:MM:SS.",
+          "fullName": "Format time in seconds to HH:MM:SS",
+          "functionType": "StringExpression",
+          "name": "SecondsToHHMMSS",
+          "sentence": "Format time _PARAM1_ to HH:MM:SS in _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "var format_time = function (time_second) {\r",
+                "    date = new Date(null);\r",
+                "    date.setSeconds(time_second);\r",
+                "    if (time_second >= 3600) {\r",
+                "        return date.toISOString().substr(11, 8); // MM:SS\r",
+                "    } else {\r",
+                "        return date.toISOString().substr(14, 5); // HH:MM:SS\r",
+                "    }\r",
+                "}\r",
+                "\r",
+                "eventsFunctionContext.returnValue = format_time(eventsFunctionContext.getArgument(\"TimeInSeconds\"));"
+              ],
+              "parameterObjects": "",
+              "useStrict": false,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "expressionType": {
+            "type": "string"
+          },
+          "parameters": [
+            {
+              "description": "Time, in seconds",
+              "name": "TimeInSeconds",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Format time in seconds to HH:MM:SS.000, including milliseconds.",
+          "fullName": "Format time in seconds to HH:MM:SS.000",
+          "functionType": "StringExpression",
+          "name": "SecondsToHHMMSS000",
+          "sentence": "Format time _PARAM1_ to HH:MM:SS in _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "var format_time = function (time_second) {\r",
+                "    date = new Date(null);\r",
+                "    date.setMilliseconds(1000*time_second);\r",
+                "    if (time_second >= 3600) {\r",
+                "        return date.toISOString().substr(11, 12); // MM:SS.000\r",
+                "    } else {\r",
+                "        return date.toISOString().substr(14, 9); // HH:MM:SS.000\r",
+                "    }\r",
+                "}\r",
+                "\r",
+                "eventsFunctionContext.returnValue = format_time(eventsFunctionContext.getArgument(\"TimeInSeconds\"));"
+              ],
+              "parameterObjects": "",
+              "useStrict": false,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "expressionType": {
+            "type": "string"
+          },
+          "parameters": [
+            {
+              "description": "Time, in seconds",
+              "name": "TimeInSeconds",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [],
+      "eventsBasedObjects": []
+    },
     {
       "author": "@4ian",
       "category": "Visual effect",
@@ -77065,6 +77352,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "name": "Time",
+          "persistentUuid": "a86a33b3-6fa7-4456-b071-6baf1a10f89e",
+          "width": 0,
+          "x": 3000,
+          "y": 167,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "name": "TimeBackground",
+          "persistentUuid": "845468cf-3ca4-4eb9-afbe-9d8b4d8b7b6f",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -77077,7 +77394,7 @@
         "gridColor": 4478351,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.35385714350733294,
+        "zoomFactor": 0.4040547324057901,
         "windowMask": false
       }
     }
