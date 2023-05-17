@@ -3454,7 +3454,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.052947694940691986,
+        "zoomFactor": 0.10624567678190769,
         "windowMask": false
       },
       "objectsGroups": [
@@ -17148,6 +17148,7 @@
           "colorG": 29,
           "colorR": 29,
           "creationTime": 0,
+          "folded": true,
           "name": "Player",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -19183,6 +19184,7 @@
           "colorG": 29,
           "colorR": 29,
           "creationTime": 0,
+          "folded": true,
           "name": "Traps",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -19192,6 +19194,7 @@
               "colorG": 29,
               "colorR": 29,
               "creationTime": 0,
+              "folded": true,
               "name": "Trap 1",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -19456,25 +19459,12 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "CollisionNP"
+                        "value": "Tween::HasFinished"
                       },
                       "parameters": [
                         "trap1",
-                        "Player",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "VarObjet"
-                      },
-                      "parameters": [
-                        "Player",
-                        "Health",
-                        ">",
-                        "0"
+                        "Tween",
+                        "\"fall\""
                       ]
                     },
                     {
@@ -19492,17 +19482,6 @@
                       "parameters": [
                         "trap1",
                         ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "Player",
-                        "Health",
-                        "-",
-                        "10"
                       ]
                     },
                     {
@@ -19526,16 +19505,60 @@
                         "=",
                         "30"
                       ]
-                    },
+                    }
+                  ],
+                  "events": [
                     {
-                      "type": {
-                        "value": "Flash::Flash::Flash"
-                      },
-                      "parameters": [
-                        "Player",
-                        "Flash",
-                        "1",
-                        ""
+                      "disabled": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Explosion",
+                            "Player",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Flash::Flash::IsFlashing"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Flash",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Health",
+                            "-",
+                            "10"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Flash::Flash::Flash"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Flash",
+                            "1",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -19548,6 +19571,7 @@
               "colorG": 29,
               "colorR": 29,
               "creationTime": 0,
+              "folded": true,
               "name": "Trap 2",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -19726,6 +19750,17 @@
                     },
                     {
                       "type": {
+                        "inverted": true,
+                        "value": "Flash::Flash::IsFlashing"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Flash",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "BuiltinCommonInstructions::Once"
                       },
                       "parameters": []
@@ -19897,6 +19932,7 @@
                   "colorG": 29,
                   "colorR": 29,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Gorilla",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -20423,6 +20459,17 @@
                             },
                             {
                               "type": {
+                                "inverted": true,
+                                "value": "Flash::Flash::IsFlashing"
+                              },
+                              "parameters": [
+                                "Player",
+                                "Flash",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
                                 "value": "BuiltinCommonInstructions::Once"
                               },
                               "parameters": []
@@ -20463,6 +20510,7 @@
                   "colorG": 29,
                   "colorR": 29,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Bat",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -21455,6 +21503,17 @@
                         },
                         {
                           "type": {
+                            "inverted": true,
+                            "value": "Flash::Flash::IsFlashing"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Flash",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "BuiltinCommonInstructions::Once"
                           },
                           "parameters": []
@@ -21493,6 +21552,7 @@
                   "colorG": 29,
                   "colorR": 29,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Spider",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -22231,6 +22291,17 @@
                                 },
                                 {
                                   "type": {
+                                    "inverted": true,
+                                    "value": "Flash::Flash::IsFlashing"
+                                  },
+                                  "parameters": [
+                                    "Player",
+                                    "Flash",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
                                     "value": "BuiltinCommonInstructions::Once"
                                   },
                                   "parameters": []
@@ -22540,6 +22611,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Level Genetarion",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -24231,6 +24303,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Camera",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -66633,7 +66706,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.23554825229692952,
+        "zoomFactor": 0.19955591185563523,
         "windowMask": false
       }
     },
@@ -71884,7 +71957,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.22786458333333334,
+        "zoomFactor": 0.20628500307287026,
         "windowMask": false
       }
     },
